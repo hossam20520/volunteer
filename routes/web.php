@@ -9,15 +9,6 @@ Route::get('/home', function () {
     return redirect()->route('admin.home');
 });
 
-
-
-Route::get('/volunteer', 'volunteerController@choose')->name('choose');
-
-Route::get('/volunteer/register', 'volunteerController@registerForm')->name('registerForm');
-
-Route::post('/volunteer/register', 'volunteerController@register')->name('registerPost');
-
-
 Auth::routes(['register' => false]);
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {

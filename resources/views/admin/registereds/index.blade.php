@@ -42,11 +42,23 @@
                             {{ trans('cruds.registered.fields.branch') }}
                         </th>
                         <th>
+                            {{ trans('cruds.registered.fields.phone') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.registered.fields.age') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
                     <tr>
                         <td>
+                        </td>
+                        <td>
+                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                        </td>
+                        <td>
+                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                         </td>
                         <td>
                             <input class="search" type="text" placeholder="{{ trans('global.search') }}">
@@ -87,6 +99,12 @@
                             </td>
                             <td>
                                 {{ $registered->branch ?? '' }}
+                            </td>
+                            <td>
+                                {{ $registered->phone ?? '' }}
+                            </td>
+                            <td>
+                                {{ $registered->age ?? '' }}
                             </td>
                             <td>
                                 @can('registered_show')

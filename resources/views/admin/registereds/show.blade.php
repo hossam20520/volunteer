@@ -55,6 +55,22 @@
                             {{ $registered->branch }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.phone') }}
+                        </th>
+                        <td>
+                            {{ $registered->phone }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.age') }}
+                        </th>
+                        <td>
+                            {{ $registered->age }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

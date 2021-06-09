@@ -109,6 +109,10 @@ return [
             'idnumber_helper'   => ' ',
             'branch'            => 'Branch',
             'branch_helper'     => ' ',
+            'phone'             => 'Phone',
+            'phone_helper'      => ' ',
+            'age'               => 'Age',
+            'age_helper'        => ' ',
         ],
     ],
 ];

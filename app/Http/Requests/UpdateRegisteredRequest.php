@@ -33,6 +33,16 @@ class UpdateRegisteredRequest extends FormRequest
                 'string',
                 'nullable',
             ],
+            'phone' => [
+                'string',
+                'nullable',
+            ],
+            'age' => [
+                'nullable',
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
+            ],
         ];
     }
 }

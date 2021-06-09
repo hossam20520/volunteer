@@ -27,6 +27,8 @@ class Registered extends Model
         'fname',
         'idnumber',
         'branch',
+        'phone',
+        'age',
         'created_at',
         'updated_at',
         'deleted_at',

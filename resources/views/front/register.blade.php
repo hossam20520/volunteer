@@ -62,7 +62,19 @@
 
 
                         <div class="form-group">
-                            <input type="text" class="form-input" value="{{ $city }}" name="city" id="name" placeholder="City"/>
+                            <input type="text" class="form-input"  value="{{ $lastname }}" name="NID" id="name" placeholder="National ID"/>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" value="{{ $city }}" name="branch" id="name" placeholder="Branch"/>
                         </div>
 
                         <div class="form-group">
@@ -75,7 +87,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" placeholder="Your ID"/>
+                            <input type="text" class="form-input"  value="{{ $ID }}" name="NID" id="email" placeholder="National ID"/>
                         </div>
 
                         <div class="form-group">

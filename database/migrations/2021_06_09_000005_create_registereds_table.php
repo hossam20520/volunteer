@@ -14,6 +14,8 @@ class CreateRegisteredsTable extends Migration
             $table->string('fname')->nullable();
             $table->string('idnumber')->nullable();
             $table->string('branch')->nullable();
+            $table->string('phone')->nullable();
+            $table->integer('age')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
