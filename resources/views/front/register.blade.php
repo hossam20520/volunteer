@@ -124,6 +124,7 @@
                             <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" placeholder="رقم العضوية "/>
                         </div>
                         
+                        
                         <div class="form-group">
                             <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" placeholder="رقم البطاقة"/>
                         </div>
