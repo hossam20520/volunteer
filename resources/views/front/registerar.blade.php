@@ -40,24 +40,24 @@
                     @if(Session::has('message'))
                     <h2 class="form-title  {{ Session::get('alert-class') }}">{{ Session::get('message') }} 
                          @if(Session::get('alert-class') == "success-2020")
-                    <a href="https://ercelearning.com/login/"> سجل الان</a>
+                    <a href="https://ercelearning.com/login/"> Login Now</a>
                          @endif
                     
                     </h2> 
                     @endif
                     <form method="POST" id="signup-form"  action="{{ route('registerPost') }}" class="signup-form">
                         @csrf
-                        <h2 class="form-title">انشاء حساب</h2>
+                        <h2 class="form-title">Create account</h2>
                         <div class="form-group">
-                        <input type="text" class="form-input" value="{{ $username }}" name="username" id="name" placeholder="اسم المستخدم"/>
+                        <input type="text" class="form-input" value="{{ $username }}" name="username" id="name" placeholder="username"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" id="name" placeholder="الاسم الاول"/>
+                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" id="name" placeholder="First Name"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" id="name" placeholder="الاسم الاخير"/>
+                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" id="name" placeholder="last Name"/>
                         </div>
 
 
@@ -65,18 +65,18 @@
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" id="name" placeholder="رقم الموبايل"/>
+                            <input type="number" class="form-input"  value="{{ $lastname }}" name="Your phone" id="name" placeholder="Phone"/>
                         </div>
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $age }}" name="age" id="name" placeholder="السن"/>
+                            <input type="number" class="form-input"  value="{{ $lastname }}" name="age" id="name" placeholder="Age"/>
                         </div>
 
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $city }}"  name="branch">
-                                <option>اختر الفرع</option>
+                                <option>Choose Branch</option>
                               <option value="فرع مدينة نصر ">فرع مدينة نصر </option>
                               <option value="فرع زينهم">فرع زينهم</option>
                               <option value="فرع الجيزة">فرع الجيزة</option>
@@ -113,36 +113,36 @@
 
                 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" placeholder="الدولة"/>
+                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" placeholder="country"/>
 
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" placeholder="البريد الالكتروني"/>
+                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" placeholder="Your Email"/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" placeholder="رقم العضوية "/>
+                            <input type="text" class="form-input"  value="{{ $lastname }}" name="mid" id="name" placeholder="Membership ID"/>
                         </div>
                         
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" placeholder="رقم البطاقة"/>
+                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" placeholder="National ID"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" id="password" placeholder="الباسورد"/>
+                            <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                 
                         <div class="form-group">
                             <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                            <label for="agree-term" class="label-agree-term"><span><span></span></span>انا موافق على الشروط  <a href="#" class="term-service">الشروط</a></label>
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="تسجل"/>
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
                         </div>
                     </form>
                     <p class="loginhere">
-                       هل لديك حساب ؟ <a href="https://ercelearning.com/login/" class="loginhere-link"> قم بتسجل الدخول من هنا</a>
+                        Have already an account ? <a href="https://ercelearning.com/login/" class="loginhere-link">Login here</a>
                     </p>
                 </div>
             </div>

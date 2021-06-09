@@ -33,7 +33,10 @@ public function choose(){
             "lastname"=> "",
             "city"=>"",
             "country" => "",
-            "ID"=>""
+            "ID"=>"",
+            "mid"=>"",
+            "phone"=>"",
+            "age"=>""
         );
         return view('front.register' , $values);
     }
@@ -77,7 +80,10 @@ public function choose(){
                 "lastname"=> "",
                 "city"=>"",
                 "country" => "",
-                "ID"=>""
+                "ID"=>"",
+                "mid"=>"",
+                "phone"=>"",
+                "age"=>""
             );
             return view('front.register' ,$values );
             
@@ -91,7 +97,10 @@ public function choose(){
                 "lastname"=> "",
                 "city"=>"",
                 "country" => "",
-                "ID"=>""
+                "ID"=>"",
+                "mid"=>"",
+                "phone"=>"",
+                "age"=>""
             );
 
             $client = new client();
@@ -112,7 +121,10 @@ public function choose(){
                                             "lastname"=> "",
                                             "city"=>"",
                                             "country" => "",
-                                            "ID"=>""
+                                            "ID"=>"",
+                                            "mid"=>"",
+                                            "phone"=>"",
+                                            "age"=>""
                                         );
                                      
                                         return view('front.register' , $values);
@@ -130,7 +142,10 @@ public function choose(){
                                             "lastname"=> $request->lname,
                                             "city"=> $request->city,
                                             "country" => $request->country,
-                                            "ID"=>$ID
+                                            "ID"=>$ID,
+                                            "mid"=>$request->mid,
+                                            "phone"=>$request->phone,
+                                            "age"=>$request->age
                                         );
                                         // $va = json_encode( $values , true);
 
@@ -144,7 +159,8 @@ public function choose(){
                                            $it =  $response['warnings'][$key]['item'];
 
                                            if($it == "username"){
-                                               $message = "This username already exists, choose another";
+                                               $message = "اسم المستخدم موجود بالفعل";
+                                            //    $message = "This username already exists, choose another";
                                                Session::flash('message', $message); 
                                                Session::flash('alert-class', 'danger-2020'); 
                                                return view('front.register' , $values );
@@ -152,7 +168,8 @@ public function choose(){
 
 
                                            if($it == "password"){
-                                            $message = "Your password is weak!";
+                                            // $message = "Your password is weak!";
+                                            $message = "كلمة السر ضعيفة استخدم حروف كابيتال وارقام";
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
                                             return view('front.register' ,$values);
@@ -160,7 +177,8 @@ public function choose(){
 
 
                                         if($it == "email"){
-                                            $message = "This email address is already registered!";
+                                            // $message = "This email address is already registered!";
+                                            $message = "البريد الالكتروني مسجل بالفعل";
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
                                             return view('front.register' , $values );
