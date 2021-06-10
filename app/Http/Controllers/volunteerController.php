@@ -111,7 +111,11 @@ public function chooseEn(){
                 "phone"=>"",
                 "age"=>""
             );
-            return view('front.register' ,$values );
+            if($request->langa == "en"){
+                return view('front.registerenglish' , $values );
+               }else{
+                return view('front.register' , $values );
+               }
             
         }else{
 
@@ -153,7 +157,11 @@ public function chooseEn(){
                                             "age"=>""
                                         );
                                      
-                                        return view('front.register' , $values);
+                                        if($request->langa == "en"){
+                                            return view('front.registerenglish' , $values );
+                                           }else{
+                                            return view('front.register' , $values );
+                                           }
                               
                                         // return  "Success";
                                  
@@ -189,7 +197,13 @@ public function chooseEn(){
                                             //    $message = "This username already exists, choose another";
                                                Session::flash('message', $message); 
                                                Session::flash('alert-class', 'danger-2020'); 
-                                               return view('front.register' , $values );
+                                               if($request->langa == "en"){
+                                                return view('front.registerenglish' , $values );
+                                               }else{
+                                                return view('front.register' , $values );
+                                               }
+                                             
+
                                            }
 
 
@@ -198,7 +212,11 @@ public function chooseEn(){
                                             $message = "كلمة السر ضعيفة استخدم حروف كابيتال وارقام";
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
-                                            return view('front.register' ,$values);
+                                            if($request->langa == "en"){
+                                                return view('front.registerenglish' , $values );
+                                               }else{
+                                                return view('front.register' , $values );
+                                               }
                                         }
 
 
@@ -207,7 +225,11 @@ public function chooseEn(){
                                             $message = "البريد الالكتروني مسجل بالفعل";
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
-                                            return view('front.register' , $values );
+                                            if($request->langa == "en"){
+                                                return view('front.registerenglish' , $values );
+                                               }else{
+                                                return view('front.register' , $values );
+                                               }
                                         }
 
 

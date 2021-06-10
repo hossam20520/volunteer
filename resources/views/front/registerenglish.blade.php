@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <input type="text" class="form-input" value="{{ $firstname }}" name="fname" id="name" placeholder="First Name"/>
                         </div>
-
+                        <input type="hidden" class="form-input" value="en" name="langa" id="name" />
                         <div class="form-group">
                             <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" id="name" placeholder="Last Name"/>
                         </div>
