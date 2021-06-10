@@ -15,8 +15,16 @@ class volunteerController extends Controller
 
 public function choose(){
     return view('front.vol');
+
+
+
+
 }
 
+
+public function chooseEn(){
+    return view('front.volen');
+}
 
 
 
@@ -42,6 +50,24 @@ public function choose(){
     }
 
 
+
+    public function registerFormEn(){
+
+        $values = array(
+            "username"=> "",
+            "password"=> "",
+            "email"=> "",
+            "firstname"=> "",
+            "lastname"=> "",
+            "city"=>"",
+            "country" => "",
+            "ID"=>"",
+            "mid"=>"",
+            "phone"=>"",
+            "age"=>""
+        );
+        return view('front.registerenglish' , $values);
+    }
  
 
 
