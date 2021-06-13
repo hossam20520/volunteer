@@ -76,19 +76,19 @@ public function chooseEn(){
 
 if($request->password != $request->confirm){
 
-         $values = array(
-                "username"=> "",
-                "password"=> "",
-                "email"=> "",
-                "firstname"=> "",
-                "lastname"=> "",
-                "city"=>"",
-                "country" => "",
-                "ID"=>"",
-                "mid"=>"",
-                "phone"=>"",
-                "age"=>""
-            );
+    $values = array(
+        "username"=> $request->username,
+        "password"=> $request->password,
+        "email"=> $request->email,
+        "firstname"=>  $request->fname,
+        "lastname"=> $request->lname,
+        "city"=> $request->city,
+        "country" => $request->country,
+        "ID"=>$ID,
+        "mid"=>$request->mid,
+        "phone"=>$request->phone,
+        "age"=>$request->age
+    );
             $message = "كلمة السر ليست متطابقة";
                                             //    $message = "This username already exists, choose another";
              Session::flash('message', $message); 
