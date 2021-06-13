@@ -168,7 +168,9 @@ if($request->password != $request->confirm){
                                     $res->getHeader('content-type');
                                     $response = json_decode($res->getBody(), true);
 
-                                    return $response;
+                                    // return $response;
+
+                                    // exception
                                     if($response['success']){
 
                                         Session::flash('alert-class', 'success-2020'); 
