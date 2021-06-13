@@ -40,16 +40,16 @@
                     @if(Session::has('message'))
                     <h2 class="form-title  {{ Session::get('alert-class') }}">{{ Session::get('message') }} 
                          @if(Session::get('alert-class') == "success-2020")
-                    <a href="https://ercelearning.com/login/"> سجل الان</a>
+                        <a href="https://ercelearning.com/login/"> سجل الان</a>
                          @endif
                     
                     </h2> 
                     @endif
                     <form method="POST" id="signup-form"  action="{{ route('registerPost') }}" class="signup-form">
                         @csrf
-                        <h2 class="form-title">انشاء حساب</h2>
+                        <h2 class="form-title" style="text-decoration: underline;">انشاء حساب</h2>
                         <div class="form-group">
-                            <span> اسم المستخدم يجب ان يتكون من كلمة واحدة فقط باللغة الانجليزيية </span>
+                            <span style="font-size: 13px;float: right;color: red;"> اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية </span>
                         <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="اسم المستخدم"/>
                         </div>
 
@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="form-group">
-                            <span> كلمة السر يجب ان تحتوي على حروف كابيتال ورموز وارقام </span>
+                            <span style="font-size: 13px;float: right;color: red;">  يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
                             <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>
                           
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
