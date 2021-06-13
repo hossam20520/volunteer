@@ -49,6 +49,7 @@
                         @csrf
                         <h2 class="form-title">انشاء حساب</h2>
                         <div class="form-group">
+                            <span> اسم المستخدم يجب ان يتكون من كلمة واحدة فقط باللغة الانجليزيية </span>
                         <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="اسم المستخدم"/>
                         </div>
 
@@ -130,6 +131,7 @@
                         </div>
 
                         <div class="form-group">
+                            <span> كلمة السر يجب ان تحتوي على حروف كابيتال ورموز وارقام </span>
                             <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>
                           
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>

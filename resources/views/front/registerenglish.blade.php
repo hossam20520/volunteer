@@ -49,6 +49,7 @@
                         @csrf
                         <h2 class="form-title">Create account</h2>
                         <div class="form-group">
+                            <span> Username Must be one word </span>
                         <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="Username"/>
                         </div>
 
@@ -130,6 +131,7 @@
                         </div>
 
                         <div class="form-group">
+                            <span> The password must contain capital letters, symbols and numbers</span>
                             <input type="text" class="form-input" name="password" id="password" required placeholder="Password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>

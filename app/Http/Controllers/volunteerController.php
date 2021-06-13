@@ -90,13 +90,16 @@ if($request->password != $request->confirm){
         "age"=>$request->age
     );
             $message = "كلمة السر ليست متطابقة";
-                                            //    $message = "This username already exists, choose another";
+                                            //$message = "This username already exists, choose another";
              Session::flash('message', $message); 
              Session::flash('alert-class', 'danger-2020'); 
 
 
   return view('front.registerenglish' , $values );  
 }
+
+
+
 
     
         $obj =  array(
