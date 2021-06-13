@@ -12,4 +12,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Registered
     Route::apiResource('registereds', 'RegisteredApiController');
+
+    // Others
+    Route::apiResource('others', 'OthersApiController');
 });

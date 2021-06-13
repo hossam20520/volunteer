@@ -45,6 +45,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('registereds/parse-csv-import', 'RegisteredController@parseCsvImport')->name('registereds.parseCsvImport');
     Route::post('registereds/process-csv-import', 'RegisteredController@processCsvImport')->name('registereds.processCsvImport');
     Route::resource('registereds', 'RegisteredController');
+
+      // Others
+      Route::delete('others/destroy', 'OthersController@massDestroy')->name('others.massDestroy');
+      Route::post('others/parse-csv-import', 'OthersController@parseCsvImport')->name('others.parseCsvImport');
+      Route::post('others/process-csv-import', 'OthersController@processCsvImport')->name('others.processCsvImport');
+      Route::resource('others', 'OthersController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password
