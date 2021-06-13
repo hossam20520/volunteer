@@ -111,9 +111,9 @@ if($request->password != $request->confirm){
             "password"=> $request->password,
             "email"=> $request->email,
             "firstname"=>  $request->fname,
-            "lastname"=> $request->lname,
-            "city"=> $request->city,
-            "country" => $request->country
+            "lastname"=> $request->lname
+            // "city"=> $request->city,
+            // "country" => $request->country
         )
         );
       
