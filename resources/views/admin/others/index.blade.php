@@ -60,6 +60,15 @@
                             {{ trans('cruds.other.fields.password') }}
                         </th>
                         <th>
+                            {{ trans('cruds.other.fields.phone') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.other.fields.age') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.other.fields.accept_terms') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -98,6 +107,14 @@
                         </td>
                         <td>
                             <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                        </td>
+                        <td>
+                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                        </td>
+                        <td>
+                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                        </td>
+                        <td>
                         </td>
                         <td>
                         </td>
@@ -141,6 +158,16 @@
                             </td>
                             <td>
                                 {{ $other->password ?? '' }}
+                            </td>
+                            <td>
+                                {{ $other->phone ?? '' }}
+                            </td>
+                            <td>
+                                {{ $other->age ?? '' }}
+                            </td>
+                            <td>
+                                <span style="display:none">{{ $other->accept_terms ?? '' }}</span>
+                                <input type="checkbox" disabled="disabled" {{ $other->accept_terms ? 'checked' : '' }}>
                             </td>
                             <td>
                                 @can('other_show')

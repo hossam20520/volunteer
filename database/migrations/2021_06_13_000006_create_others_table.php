@@ -20,6 +20,9 @@ class CreateOthersTable extends Migration
             $table->string('country')->nullable();
             $table->string('city')->nullable();
             $table->string('password')->nullable();
+            $table->string('phone')->nullable();
+            $table->integer('age')->nullable();
+            $table->boolean('accept_terms')->default(0)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -103,6 +103,30 @@
                             {{ $other->password }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.phone') }}
+                        </th>
+                        <td>
+                            {{ $other->phone }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.age') }}
+                        </th>
+                        <td>
+                            {{ $other->age }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.accept_terms') }}
+                        </th>
+                        <td>
+                            <input type="checkbox" disabled="disabled" {{ $other->accept_terms ? 'checked' : '' }}>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

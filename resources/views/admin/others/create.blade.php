@@ -110,6 +110,39 @@
                 <span class="help-block">{{ trans('cruds.other.fields.password_helper') }}</span>
             </div>
             <div class="form-group">
+                <label for="phone">{{ trans('cruds.other.fields.phone') }}</label>
+                <input class="form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}" type="text" name="phone" id="phone" value="{{ old('phone', '') }}">
+                @if($errors->has('phone'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('phone') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.other.fields.phone_helper') }}</span>
+            </div>
+            <div class="form-group">
+                <label for="age">{{ trans('cruds.other.fields.age') }}</label>
+                <input class="form-control {{ $errors->has('age') ? 'is-invalid' : '' }}" type="number" name="age" id="age" value="{{ old('age', '') }}" step="1">
+                @if($errors->has('age'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('age') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.other.fields.age_helper') }}</span>
+            </div>
+            <div class="form-group">
+                <div class="form-check {{ $errors->has('accept_terms') ? 'is-invalid' : '' }}">
+                    <input type="hidden" name="accept_terms" value="0">
+                    <input class="form-check-input" type="checkbox" name="accept_terms" id="accept_terms" value="1" {{ old('accept_terms', 0) == 1 ? 'checked' : '' }}>
+                    <label class="form-check-label" for="accept_terms">{{ trans('cruds.other.fields.accept_terms') }}</label>
+                </div>
+                @if($errors->has('accept_terms'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('accept_terms') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.other.fields.accept_terms_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>
