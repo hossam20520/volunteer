@@ -132,6 +132,12 @@
                             <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="confirm" id="password" placeholder="Confirm password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
                 
                         <div class="form-group">
                             <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />

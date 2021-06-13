@@ -49,15 +49,15 @@
                         @csrf
                         <h2 class="form-title">انشاء حساب</h2>
                         <div class="form-group">
-                        <input type="text" class="form-input" value="{{ $username }}" name="username" id="name" placeholder="اسم المستخدم"/>
+                        <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="اسم المستخدم"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" id="name" placeholder="الاسم الاول"/>
+                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" required id="name" placeholder="الاسم الاول"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" id="name" placeholder="الاسم الاخير"/>
+                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" required id="name" placeholder="الاسم الاخير"/>
                         </div>
 
 
@@ -65,12 +65,12 @@
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" id="name" placeholder="رقم الموبايل"/>
+                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="رقم الموبايل"/>
                         </div>
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $age }}" name="age" id="name" placeholder="السن"/>
+                            <input type="number" class="form-input"  value="{{ $age }}"  required name="age" id="name" placeholder="السن"/>
                         </div>
 
                         <div class="form-group">
@@ -113,24 +113,32 @@
 
                 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" placeholder="الدولة"/>
+                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" required placeholder="الدولة"/>
 
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" placeholder="البريد الالكتروني"/>
+                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="البريد الالكتروني"/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" placeholder="رقم العضوية "/>
+                            <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" required placeholder="رقم العضوية "/>
                         </div>
                         
                         
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" placeholder="رقم البطاقة"/>
+                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email"  required placeholder="رقم البطاقة"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" id="password" placeholder="الباسورد"/>
+                            <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>
+                          
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+
+
+                        <div class="form-group">
+                            
+                            <input type="text" class="form-input" name="confirm" id="password"  required placeholder="تأكيد كلمة السر"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                 

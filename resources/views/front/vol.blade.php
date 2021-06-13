@@ -48,14 +48,14 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
-      <div class="contact-link float-right">
+      {{-- <div class="contact-link float-right">
        <a href="#contact" class="scrollto" style="
     background-color: #ffffffb3;
     padding: 5px;
     color: black;
     border-radius: 9px;
 ">تواصل معنا</a>
-      </div>
+      </div> --}}
 
     </div>
   </header><!-- End #header -->

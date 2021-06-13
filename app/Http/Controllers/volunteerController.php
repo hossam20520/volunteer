@@ -72,6 +72,32 @@ public function chooseEn(){
 
 
     public function register(Request $request){
+
+
+if($request->password != $request->confirm){
+
+         $values = array(
+                "username"=> "",
+                "password"=> "",
+                "email"=> "",
+                "firstname"=> "",
+                "lastname"=> "",
+                "city"=>"",
+                "country" => "",
+                "ID"=>"",
+                "mid"=>"",
+                "phone"=>"",
+                "age"=>""
+            );
+            $message = "كلمة السر ليست متطابقة";
+                                            //    $message = "This username already exists, choose another";
+             Session::flash('message', $message); 
+             Session::flash('alert-class', 'danger-2020'); 
+
+
+  return view('front.registerenglish' , $values );  
+}
+
     
         $obj =  array(
         "form_params" =>  array(

@@ -49,15 +49,15 @@
                         @csrf
                         <h2 class="form-title">Create account</h2>
                         <div class="form-group">
-                        <input type="text" class="form-input" value="{{ $username }}" name="username" id="name" placeholder="Username"/>
+                        <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="Username"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" id="name" placeholder="First Name"/>
+                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" id="name" required placeholder="First Name"/>
                         </div>
                         <input type="hidden" class="form-input" value="en" name="langa" id="name" />
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" id="name" placeholder="Last Name"/>
+                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" id="name" required placeholder="Last Name"/>
                         </div>
 
 
@@ -65,17 +65,17 @@
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" id="name" placeholder="Phone Number"/>
+                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" id="name" required placeholder="Phone Number"/>
                         </div>
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $age }}" name="age" id="name" placeholder="Age"/>
+                            <input type="number" class="form-input"  value="{{ $age }}" name="age" id="name" required  placeholder="Age"/>
                         </div>
 
                         <div class="form-group">
                             
-                            <select class="form-input" value="{{ $city }}"  name="branch">
+                            <select class="form-input" value="{{ $city }}" required  name="branch">
                                 <option>Branch</option>
                               <option value="فرع مدينة نصر ">فرع مدينة نصر </option>
                               <option value="فرع زينهم">فرع زينهم</option>
@@ -113,24 +113,30 @@
 
                 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" placeholder="Country"/>
+                            <input type="text" class="form-input"  value="{{ $country }}" name="country" required id="name" placeholder="Country"/>
 
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" placeholder="Email"/>
+                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="Email"/>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" placeholder="Membership ID"/>
+                            <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" required  placeholder="Membership ID"/>
                         </div>
                         
                         
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" placeholder="National ID "/>
+                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" required placeholder="National ID "/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <input type="text" class="form-input" name="password" id="password" required placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="confirm" id="password" placeholder="Confirm password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                 
