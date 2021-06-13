@@ -147,7 +147,7 @@
                             <label for="agree-term" class="label-agree-term"><span><span></span></span> Accept Terms <a href="#" class="term-service">Terms</a></label>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Register"/>
+                            <input type="submit" name="submit" id="submit" class="form-submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" value="Register"/>
                         </div>
                     </form>
                     <p class="loginhere">
