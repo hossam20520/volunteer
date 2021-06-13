@@ -119,7 +119,7 @@ if($request->password != $request->confirm){
       
       
         $ID = $request->ID;
-        $user = Registered::where('idnumber' , $ID)->first();
+        $user = Registered::where('code' , $ID)->first();
         // return $user;
         
         if($user == null){
