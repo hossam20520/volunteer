@@ -54,7 +54,25 @@ public function chooseEn(){
 
 
 
+    public function registerFormEnNot(){
 
+        $values = array(
+            "username"=> "",
+            "password"=> "",
+            "email"=> "",
+            "firstname"=> "",
+            "lastname"=> "",
+            "company"=> "",
+            "job"=> "",
+            "eq"=> "",
+            "country"=> "",
+            "city"=> "",
+            "phone"=> "",
+            "age"=> "",
+            "accept_terms"=> ""
+        );
+        return view('front.others.registereng' , $values);
+    }
 
 
     public function registerFormNot(){
@@ -80,12 +98,43 @@ public function chooseEn(){
 
 
 
-    public function registerFormEnNot(){
 
-    }
 
 
     public function nonVolunteer(Request $request){
+
+
+        if($request->password != $request->confirm){
+
+            $values = array(
+                "username"=> $request->username,
+                "password"=> $request->password,
+                "email"=> $request->email,
+                "firstname"=>  $request->fname,
+                "lastname"=> $request->lname,
+                "company"=> $request->company,
+                "job"=> $request->job,
+                "eq"=> $request->eq,
+                "country"=> $request->country,
+                "city"=> $request->city,
+                "phone"=> $request->phone,
+                "age"=> $request->age,
+            );
+                    $message = "كلمة السر ليست متطابقة";
+                                                    //$message = "This username already exists, choose another";
+                     Session::flash('message', $message); 
+                     Session::flash('alert-class', 'danger-2020'); 
+        
+                     if($request->langa == "en"){
+                        return view('front.others.registereng' , $values );
+                       }else{
+                        return view('front.others.register' , $values );
+                       }
+
+        }
+
+
+
 
         $obj =  array(
             "form_params" =>  array(
@@ -154,7 +203,7 @@ public function chooseEn(){
                                         );
                                      
                                         if($request->langa == "en"){
-                                            return view('front.others.registerenglish' , $values );
+                                            return view('front.others.registereng' , $values );
                                            }else{
                                             return view('front.others.register' , $values );
                                            }
@@ -196,7 +245,7 @@ public function chooseEn(){
                                                Session::flash('message', $message); 
                                                Session::flash('alert-class', 'danger-2020'); 
                                                if($request->langa == "en"){
-                                                return view('front.others.registerenglish' , $values );
+                                                return view('front.others.registereng' , $values );
                                                }else{
                                                 return view('front.others.register' , $values );
                                                }
@@ -211,7 +260,7 @@ public function chooseEn(){
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
                                             if($request->langa == "en"){
-                                                return view('front.others.registerenglish' , $values );
+                                                return view('front.others.registereng' , $values );
                                                }else{
                                                 return view('front.others.register' , $values );
                                                }
@@ -224,7 +273,7 @@ public function chooseEn(){
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
                                             if($request->langa == "en"){
-                                                return view('front.others.registerenglish' , $values );
+                                                return view('front.others.registereng' , $values );
                                                }else{
                                                 return view('front.others.register' , $values );
                                                }
@@ -292,8 +341,12 @@ if($request->password != $request->confirm){
              Session::flash('message', $message); 
              Session::flash('alert-class', 'danger-2020'); 
 
+             if($request->langa == "en"){
+                return view('front.registerenglish' , $values );
+               }else{
+                return view('front.register' , $values );
+               }
 
-  return view('front.registerenglish' , $values );  
 }
 
 

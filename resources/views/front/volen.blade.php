@@ -74,7 +74,7 @@
             <div class="validate"></div>
           </div>
           <div class="col-md-6 form-group pl-md-1">
-        <a href="https://ercelearning.com/login/signup.php?"> <button type="button" class="btn btn-primary">No</button> </a>
+        <a href="{{ route('registerFormNotVolEn') }}"> <button type="button" class="btn btn-primary">No</button> </a>
             <div class="validate"></div>
           </div>
         </div>

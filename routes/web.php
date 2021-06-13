@@ -23,7 +23,7 @@ Route::get('/volunteer/register/en', 'volunteerController@registerFormEn')->name
 
 Route::get('/volunteer/no/register', 'volunteerController@registerFormNot')->name('registerFormNotVol');
 
-Route::get('/volunteer/no/register/en', 'volunteerController@registerFormEnNot')->name('registerFormEnNotVol');
+Route::get('/volunteer/no/register/en', 'volunteerController@registerFormEnNot')->name('registerFormNotVolEn');
 Route::post('/volunteer/no/register', 'volunteerController@nonVolunteer')->name('registerPostNot');
 
 

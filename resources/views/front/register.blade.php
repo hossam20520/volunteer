@@ -152,6 +152,8 @@
                             <input type="submit" name="submit" id="submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" class="form-submit" value="تسجل"/>
                             
                         </div>
+
+                        <input type="hidden" class="form-input" value="ar" name="langa" id="name" />
                     </form>
                     <p class="loginhere">
                        هل لديك حساب ؟ <a href="https://ercelearning.com/login/" class="loginhere-link"> قم بتسجل الدخول من هنا</a>

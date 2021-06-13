@@ -40,25 +40,25 @@
                     @if(Session::has('message'))
                     <h2 class="form-title  {{ Session::get('alert-class') }}">{{ Session::get('message') }} 
                          @if(Session::get('alert-class') == "success-2020")
-                        <a href="https://ercelearning.com/login/"> سجل الان</a>
+                        <a href="https://ercelearning.com/login/"> Login now</a>
                          @endif
                     
                     </h2> 
                     @endif
                     <form method="POST" id="signup-form"  action="{{ route('registerPostNot') }}" class="signup-form">
                         @csrf
-                        <h2 class="form-title" style="text-decoration: underline;">انشاء حساب</h2>
+                        <h2 class="form-title" style="text-decoration: underline;"> Create account</h2>
                         <div class="form-group">
-                            <span style="font-size: 13px;float: right;color: red;"> اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية </span>
-                        <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="اسم المستخدم"/>
+                            <span style="font-size: 13px;"> Username must be one small word.</span>
+                        <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="Username"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" required id="name" placeholder="الاسم الاول"/>
+                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" required id="name" placeholder="First Name"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" required id="name" placeholder="الاسم الاخير"/>
+                            <input type="text" class="form-input"  value="{{ $lastname }}" name="lname" required id="name" placeholder="Last Name"/>
                         </div>
 
 
@@ -66,18 +66,18 @@
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="رقم الموبايل"/>
+                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="Phone Number"/>
                         </div>
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $age }}"  required name="age" id="name" placeholder="السن"/>
+                            <input type="number" class="form-input"  value="{{ $age }}"  required name="age" id="name" placeholder="Age"/>
                         </div>
 
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $city }}"  name="city">
-                                <option>اخترالمدينة </option>
+                                <option>Select City </option>
                               <option value=" مدينة نصر "> مدينة نصر </option>
                               <option value=" زينهم"> زينهم</option>
                               <option value=" الجيزة"> الجيزة</option>
@@ -114,31 +114,31 @@
 
                 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" required placeholder="الدولة"/>
+                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" required placeholder="Country"/>
 
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="البريد الالكتروني"/>
+                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="Email"/>
                         </div>
                        
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name" required placeholder="الوظيفة"/>
+                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name" required placeholder="Job"/>
                         </div>
 
 
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="المؤهل الدراسي"/>
+                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="Educational qualification"/>
                         </div>
 
 
                         
-                        <input type="hidden" class="form-input" value="ar" name="langa" id="name" />
+                      
             
                         <div class="form-group">
-                            <span style="font-size: 13px;float: right;color: red;">  يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
-                            <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>
+                            <span style="font-size: 13px;"> The password must contain capital letters, symbols and numbers</span>
+                            <input type="text" class="form-input" name="password" id="password"  required placeholder=" Password"/>
                           
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
@@ -146,13 +146,13 @@
 
                         <div class="form-group">
                             
-                            <input type="text" class="form-input" name="confirm" id="password"  required placeholder="تأكيد كلمة السر"/>
+                            <input type="text" class="form-input" name="confirm" id="password"  required placeholder="Confirm Password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
-                
+                        <input type="hidden" class="form-input" value="en" name="langa" id="name" />
                         <div class="form-group">
                             <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                            <label for="agree-term" class="label-agree-term"><span><span></span></span>انا موافق على الشروط  <a href="#" class="term-service">الشروط</a></label>
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span> Accept Terms <a href="#" class="term-service">Terms</a></label>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="submit" id="submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" class="form-submit" value="تسجل"/>
@@ -160,7 +160,7 @@
                         </div>
                     </form>
                     <p class="loginhere">
-                       هل لديك حساب ؟ <a href="https://ercelearning.com/login/" class="loginhere-link"> قم بتسجل الدخول من هنا</a>
+                        Have an account ? <a href="https://ercelearning.com/login/" class="loginhere-link"> Login from here </a>
                     </p>
                 </div>
             </div>
