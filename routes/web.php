@@ -21,6 +21,13 @@ Route::get('/volunteer/register/en', 'volunteerController@registerFormEn')->name
 
 
 
+Route::get('/volunteer/no/register', 'volunteerController@registerFormNot')->name('registerFormNotVol');
+
+Route::get('/volunteer/no/register/en', 'volunteerController@registerFormEnNot')->name('registerFormEnNotVol');
+Route::post('/volunteer/no/register', 'volunteerController@nonVolunteer')->name('registerPostNot');
+
+
+
 Route::post('/volunteer/register', 'volunteerController@register')->name('registerPost');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {

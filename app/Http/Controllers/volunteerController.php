@@ -8,6 +8,7 @@ use App\Models\Registered;
 use Session;
 use Redirect;
 
+use App\Models\Other;
 class volunteerController extends Controller
 {
     //
@@ -48,6 +49,203 @@ public function chooseEn(){
         );
         return view('front.register' , $values);
     }
+
+
+
+
+
+
+
+
+    public function registerFormNot(){
+
+        $values = array(
+            "username"=> "",
+            "password"=> "",
+            "email"=> "",
+            "firstname"=> "",
+            "lastname"=> "",
+            "company"=> "",
+            "job"=> "",
+            "eq"=> "",
+            "country"=> "",
+            "city"=> "",
+            "phone"=> "",
+            "age"=> "",
+            "accept_terms"=> ""
+        );
+        return view('front.others.register' , $values);
+
+    }
+
+
+
+    public function registerFormEnNot(){
+
+    }
+
+
+    public function nonVolunteer(Request $request){
+
+        $obj =  array(
+            "form_params" =>  array(
+                "moodlewsrestformat"=> "json",
+                "wsfunction"=> "auth_email_signup_user",
+                "wstoken"=> "53497a42c19c91fd64d3b65be615a5ca",
+                "username"=> $request->username,
+                "password"=> $request->password,
+                "email"=> $request->email,
+                "firstname"=>  $request->fname,
+                "lastname"=> $request->lname
+                // "city"=> $request->city,
+                // "country" => $request->country
+            )
+            );
+
+
+
+
+
+
+
+
+
+            $client = new client();
+            $res = $client->post(env('FRONT_API_URL')."/webservice/rest/server.php?moodlewsrestformat=json", $obj );
+        
+                                    $res->getHeader('content-type');
+                                    $response = json_decode($res->getBody(), true);
+
+
+                                    if($response['success']){
+                                        Other::insert([
+                                        "username"=> $request->username,
+                                        "password"=> $request->password,
+                                        "email"=> $request->email,
+                                        "firstname"=>  $request->fname,
+                                        "lastname"=> $request->lname,
+                                        "company"=> $request->company,
+                                        "job"=> $request->job,
+                                        "eq"=> $request->eq,
+                                        "country"=> $request->country,
+                                        "city"=> $request->city,
+                                        "phone"=> $request->phone,
+                                        "age"=> $request->age,
+                                        "accept_terms"=> true
+                                        ]);
+
+                                        Session::flash('alert-class', 'success-2020'); 
+                                        Session::flash('message', 'Thank You'); 
+
+                                        $values = array(
+                                            "username"=> "",
+                                            "password"=> "",
+                                            "email"=> "",
+                                            "firstname"=> "",
+                                            "lastname"=> "",
+                                            "company"=> "",
+                                            "job"=> "",
+                                            "eq"=> "",
+                                            "country"=> "",
+                                            "city"=> "",
+                                            "phone"=> "",
+                                            "age"=> "",
+                                            "accept_terms"=> ""
+                                        );
+                                     
+                                        if($request->langa == "en"){
+                                            return view('front.others.registerenglish' , $values );
+                                           }else{
+                                            return view('front.others.register' , $values );
+                                           }
+                              
+                                        // return  "Success";
+                                 
+                                 
+                                    }else{
+
+                                        $values = array(
+                                            "username"=> $request->username,
+                                            "password"=> $request->password,
+                                            "email"=> $request->email,
+                                            "firstname"=>  $request->fname,
+                                            "lastname"=> $request->lname,
+                                            "company"=> $request->company,
+                                            "job"=> $request->job,
+                                            "eq"=> $request->eq,
+                                            "country"=> $request->country,
+                                            "city"=> $request->city,
+                                            "phone"=> $request->phone,
+                                            "age"=> $request->age,
+                                            "accept_terms"=> true
+                                        );
+                                        // $va = json_encode( $values , true);
+
+                                      
+
+                                        // return $va['username'];
+
+                                        foreach ($response['warnings'] as $key => $value) {
+                                            
+
+                                           $it =  $response['warnings'][$key]['item'];
+
+                                           if($it == "username"){
+                                               $message = "اسم المستخدم موجود بالفعل";
+                                            //    $message = "This username already exists, choose another";
+                                               Session::flash('message', $message); 
+                                               Session::flash('alert-class', 'danger-2020'); 
+                                               if($request->langa == "en"){
+                                                return view('front.others.registerenglish' , $values );
+                                               }else{
+                                                return view('front.others.register' , $values );
+                                               }
+                                             
+
+                                           }
+
+
+                                           if($it == "password"){
+                                            // $message = "Your password is weak!";
+                                            $message = "كلمة السر ضعيفة استخدم حروف كابيتال وارقام";
+                                            Session::flash('message', $message); 
+                                            Session::flash('alert-class', 'danger-2020'); 
+                                            if($request->langa == "en"){
+                                                return view('front.others.registerenglish' , $values );
+                                               }else{
+                                                return view('front.others.register' , $values );
+                                               }
+                                        }
+
+
+                                        if($it == "email"){
+                                            // $message = "This email address is already registered!";
+                                            $message = "البريد الالكتروني مسجل بالفعل";
+                                            Session::flash('message', $message); 
+                                            Session::flash('alert-class', 'danger-2020'); 
+                                            if($request->langa == "en"){
+                                                return view('front.others.registerenglish' , $values );
+                                               }else{
+                                                return view('front.others.register' , $values );
+                                               }
+                                        }
+
+
+                                        }
+      
+                                  
+                                    } 
+
+
+    }
+
+
+
+
+
+
+
+
 
 
 

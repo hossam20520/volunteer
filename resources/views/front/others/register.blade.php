@@ -45,7 +45,7 @@
                     
                     </h2> 
                     @endif
-                    <form method="POST" id="signup-form"  action="{{ route('registerPost') }}" class="signup-form">
+                    <form method="POST" id="signup-form"  action="{{ route('registerPostNot') }}" class="signup-form">
                         @csrf
                         <h2 class="form-title" style="text-decoration: underline;">انشاء حساب</h2>
                         <div class="form-group">
@@ -76,35 +76,35 @@
 
                         <div class="form-group">
                             
-                            <select class="form-input" value="{{ $city }}"  name="branch">
-                                <option>اختر الفرع</option>
-                              <option value="فرع مدينة نصر ">فرع مدينة نصر </option>
-                              <option value="فرع زينهم">فرع زينهم</option>
-                              <option value="فرع الجيزة">فرع الجيزة</option>
-                              <option value="فرع القليوبية ">فرع القليوبية </option>
-                              <option value="فرع شمال سيناء ">فرع شمال سيناء </option>
-                              <option value="فرع جنوب سيناء">فرع جنوب سيناء </option>
-                              <option value="فرع البحر الاحمر ">فرع البحر الاحمر </option>
-                              <option value="فرع الاسكندرية">فرع الاسكندرية</option>
-                              <option value="فرع مرسى مطروح">فرع مرسى مطروح</option>
-                              <option value="فرع بور سعيد">فرع بور سعيد</option>
-                              <option value="فرع السويس">فرع السويس </option>
-                              <option value="فرع الشرقية">فرع الشرقية</option>
-                              <option value="فرع دمياط">فرع دمياط</option>
-                              <option value="فرع الدقهلية">فرع الدقهلية</option>
-                              <option value="فرع كفر الشيخ">فرع كفر الشيخ</option>
-                              <option value="فرع الغربية">فرع الغربية</option>
-                              <option value="فرع المنوفية">فرع المنوفية</option>
-                              <option value="فرع البحيرة">فرع البحيرة</option>
-                              <option value="فرع الفيوم">فرع الفيوم </option>
-                              <option value="فرع بنى سويف ">فرع بنى سويف </option>
-                              <option value="فرع المنيا">فرع المنيا</option>
-                              <option value="فرع اسيوط">فرع اسيوط </option>
-                              <option value="فرع سوهاج">فرع سوهاج</option>
-                              <option value="فرع الاقصر">فرع الاقصر</option>
-                              <option value="فرع اسوان">فرع اسوان</option>
-                              <option value="فرع الوادى الجديد">فرع الوادى الجديد</option>
-                              <option value="فرع قنا ">فرع قنا </option>
+                            <select class="form-input" value="{{ $city }}"  name="city">
+                                <option>اخترالمدينة </option>
+                              <option value=" مدينة نصر "> مدينة نصر </option>
+                              <option value=" زينهم"> زينهم</option>
+                              <option value=" الجيزة"> الجيزة</option>
+                              <option value=" القليوبية "> القليوبية </option>
+                              <option value=" شمال سيناء "> شمال سيناء </option>
+                              <option value=" جنوب سيناء"> جنوب سيناء </option>
+                              <option value=" البحر الاحمر "> البحر الاحمر </option>
+                              <option value=" الاسكندرية"> الاسكندرية</option>
+                              <option value=" مرسى مطروح"> مرسى مطروح</option>
+                              <option value=" بور سعيد"> بور سعيد</option>
+                              <option value=" السويس"> السويس </option>
+                              <option value=" الشرقية"> الشرقية</option>
+                              <option value=" دمياط"> دمياط</option>
+                              <option value=" الدقهلية"> الدقهلية</option>
+                              <option value=" كفر الشيخ"> كفر الشيخ</option>
+                              <option value=" الغربية"> الغربية</option>
+                              <option value=" المنوفية"> المنوفية</option>
+                              <option value=" البحيرة"> البحيرة</option>
+                              <option value=" الفيوم"> الفيوم </option>
+                              <option value=" بنى سويف "> بنى سويف </option>
+                              <option value=" المنيا"> المنيا</option>
+                              <option value=" اسيوط"> اسيوط </option>
+                              <option value=" سوهاج"> سوهاج</option>
+                              <option value=" الاقصر"> الاقصر</option>
+                              <option value=" اسوان"> اسوان</option>
+                              <option value=" الوادى الجديد"> الوادى الجديد</option>
+                              <option value="فرع قنا "> قنا </option>
 
 
                             </select>
@@ -121,15 +121,21 @@
                         <div class="form-group">
                             <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="البريد الالكتروني"/>
                         </div>
+                       
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $mid }}" name="mid" id="name" required placeholder="رقم العضوية "/>
-                        </div>
-                        
-                        
-                        <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email"  required placeholder="رقم البطاقة"/>
+                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name" required placeholder="الوظيفة"/>
                         </div>
 
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="المؤهل الدراسي"/>
+                        </div>
+
+
+                        
+                      
+            
                         <div class="form-group">
                             <span style="font-size: 13px;float: right;color: red;">  يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
                             <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>

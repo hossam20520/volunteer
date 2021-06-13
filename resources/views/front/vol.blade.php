@@ -73,8 +73,8 @@
          <a href="{{ route('registerForm') }}" > <button type="button" class="btn btn-primary">نعم </button> </a>
             <div class="validate"></div>
           </div>
-          <div class="col-md-6 form-group pl-md-1">
-        <a href="https://ercelearning.com/login/signup.php?"> <button type="button" class="btn btn-primary">لا</button> </a>
+          <div class="col-md-6 form-group pl-md-1"> 
+        <a href="{{ route('registerFormNotVol') }}"> <button type="button" class="btn btn-primary">لا</button> </a>
             <div class="validate"></div>
           </div>
         </div>
