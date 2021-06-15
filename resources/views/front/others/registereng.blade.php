@@ -76,8 +76,8 @@
 
                         <div class="form-group">
                             
-                            <select class="form-input" value="{{ $city }}"  name="city">
-                                <option>Select City </option>
+                            <select class="form-input" value="{{ $city }}" required name="city">
+                                <option>Select Branch </option>
                               <option value=" مدينة نصر "> مدينة نصر </option>
                               <option value=" زينهم"> زينهم</option>
                               <option value=" الجيزة"> الجيزة</option>
@@ -123,10 +123,12 @@
                         </div>
                        
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name" required placeholder="Job"/>
+                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name"  placeholder="Job"/>
                         </div>
 
-
+                        <div class="form-group">
+                            <input type="text" class="form-input"  value="{{ $company }}" name="company" id="name"  placeholder="company"/>
+                        </div>
 
                         <div class="form-group">
                             <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="Educational qualification"/>
