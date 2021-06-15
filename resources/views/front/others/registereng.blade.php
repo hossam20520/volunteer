@@ -71,7 +71,7 @@
 
 
                         <div class="form-group">
-                            <input type="number" class="form-input" max="16" value="{{ $age }}"  required name="age" id="name" placeholder="Age"/>
+                            <input type="number" class="form-input" min="16" value="{{ $age }}"  required name="age" id="name" placeholder="Age"/>
                         </div>
 
                         <div class="form-group">
@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="Educational qualification"/>
+                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="Academic qualification"/>
                         </div>
 
 

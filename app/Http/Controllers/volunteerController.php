@@ -423,6 +423,9 @@ if($request->password != $request->confirm){
 
                                     // exception
                                     if($response['success']){
+                                        Registered::where('code' , $ID)->update(["age"=>$request->age ]);  
+
+
 
                                         Session::flash('alert-class', 'success-2020'); 
                                         Session::flash('message', 'Thank You'); 
