@@ -136,6 +136,38 @@ public function chooseEn(){
 
 
 
+        if($request->age < 16){
+
+            $values = array(
+                "username"=> $request->username,
+                "password"=> $request->password,
+                "email"=> $request->email,
+                "firstname"=>  $request->fname,
+                "lastname"=> $request->lname,
+                "company"=> $request->company,
+                "job"=> $request->job,
+                "eq"=> $request->eq,
+                "country"=> $request->country,
+                "city"=> $request->city,
+                "phone"=> $request->phone,
+                "age"=> $request->age,
+            );
+                    $message = "سنك اقل من 16 سنة";
+                                                    //$message = "This username already exists, choose another";
+        Session::flash('message', $message); 
+        Session::flash('alert-class', 'danger-2020'); 
+
+        if($request->langa == "en"){
+            return view('front.others.registereng' , $values );
+            }else{
+            return view('front.others.register' , $values );
+            }
+        
+        }
+
+
+
+
         $obj =  array(
             "form_params" =>  array(
                 "moodlewsrestformat"=> "json",
@@ -337,6 +369,35 @@ if($request->password != $request->confirm){
         "age"=>$request->age
     );
             $message = "كلمة السر ليست متطابقة";
+                                            //$message = "This username already exists, choose another";
+             Session::flash('message', $message); 
+             Session::flash('alert-class', 'danger-2020'); 
+
+             if($request->langa == "en"){
+                return view('front.registerenglish' , $values );
+               }else{
+                return view('front.register' , $values );
+               }
+
+}
+
+
+if($request->age < 16){
+
+    $values = array(
+        "username"=> $request->username,
+        "password"=> $request->password,
+        "email"=> $request->email,
+        "firstname"=>  $request->fname,
+        "lastname"=> $request->lname,
+        "city"=> $request->city,
+        "country" => $request->country,
+        "ID"=>$request->ID,
+        "mid"=>$request->mid,
+        "phone"=>$request->phone,
+        "age"=>$request->age
+    );
+            $message = "سنك اقل من 16 سنة";
                                             //$message = "This username already exists, choose another";
              Session::flash('message', $message); 
              Session::flash('alert-class', 'danger-2020'); 
