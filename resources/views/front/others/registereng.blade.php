@@ -148,8 +148,8 @@
 
                         <div class="form-group">
                             
-                            <input type="text" class="form-input" name="confirm" id="password"  required placeholder="Confirm Password"/>
-                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            <input type="text" class="form-input" name="confirm" id="passwordcon"  required placeholder="Confirm Password"/>
+                            <span toggle="#passwordcon" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <input type="hidden" class="form-input" value="en" name="langa" id="name" />
                         <div class="form-group">

@@ -137,8 +137,8 @@
 
 
                         <div class="form-group">
-                            <input type="text" class="form-input" name="confirm" id="password" placeholder="Confirm password"/>
-                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            <input type="text" class="form-input" name="confirm" id="passwordcon" placeholder="Confirm password"/>
+                            <span toggle="#passwordcon" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                 
                         <div class="form-group">
