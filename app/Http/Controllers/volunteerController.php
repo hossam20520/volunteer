@@ -235,9 +235,9 @@ public function chooseEn(){
                                         );
                                      
                                         if($request->langa == "en"){
-                                            return view('front.others.registereng' , $values );
+                                            return view('front.success_en' , $values );
                                            }else{
-                                            return view('front.others.register' , $values );
+                                            return view('front.success_ar' , $values );
                                            }
                               
                                         // return  "Success";
@@ -506,9 +506,9 @@ if($request->age < 16){
                                         );
                                      
                                         if($request->langa == "en"){
-                                            return view('front.registerenglish' , $values );
+                                            return view('front.success_en' , $values );
                                            }else{
-                                            return view('front.register' , $values );
+                                            return view('front.success_ar' , $values );
                                            }
                               
                                         // return  "Success";
