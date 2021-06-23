@@ -79,8 +79,8 @@
                         
                              <select class="form-input" value="{{ $city }}"  name="branch">
                                 <option>اختر الفرع</option>
-                              <option {{ ($city) == "فرع مدينة نصر" ? "selected":"") }} value="فرع مدينة نصر ">فرع مدينة نصر </option>
-                              <option  {{ ($city) == "فرع زينهم" ? "selected":"") }} value="فرع زينهم">فرع زينهم</option>
+                              <option {{ $city == "فرع مدينة نصر" ? "selected":"" }} value="فرع مدينة نصر ">فرع مدينة نصر </option>
+                              <option  {{ $city == "فرع زينهم" ? "selected":"" }} value="فرع زينهم">فرع زينهم</option>
                               <option value="فرع الجيزة">فرع الجيزة</option>
                               <option value="فرع القليوبية ">فرع القليوبية </option>
                               <option value="فرع شمال سيناء ">فرع شمال سيناء </option>
