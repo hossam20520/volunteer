@@ -121,7 +121,7 @@ public function chooseEn(){
                 "age"=> $request->age,
             );
                     $message = "كلمة السر ليست متطابقة";
-                                                    //$message = "This username already exists, choose another";
+                     //$message = "This username already exists, choose another";
                      Session::flash('message', $message); 
                      Session::flash('alert-class', 'danger-2020'); 
         
@@ -474,6 +474,10 @@ if($request->age < 16){
                 "age"=>""
             );
 
+
+
+            
+
             $client = new client();
             $res = $client->post(env('FRONT_API_URL')."/webservice/rest/server.php?moodlewsrestformat=json", $obj );
         
@@ -484,7 +488,7 @@ if($request->age < 16){
 
                                     // exception
                                     if($response['success']){
-                                        Registered::where('code' , $ID)->update(["age"=>$request->age ]);  
+                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone]);  
 
 
 
