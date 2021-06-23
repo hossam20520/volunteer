@@ -78,6 +78,7 @@
                            
                         
                              <select class="form-input" value="{{ $city }}"  name="branch">
+                                {{ $city }}
                                 <option>اختر الفرع</option>
                               <option {{ $city == "فرع مدينة نصر" ? "selected":"" }} value="فرع مدينة نصر ">فرع مدينة نصر </option>
                               <option  {{ $city == "فرع زينهم" ? "selected":"" }} value="فرع زينهم">فرع زينهم</option>
@@ -114,7 +115,7 @@
 
                 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" required placeholder="الدولة"/>
+                            <input type="text" class="form-input"  value="Egypt" name="country" id="name" required placeholder="الدولة"/>
 
                         </div>
 

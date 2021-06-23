@@ -114,7 +114,7 @@
 
                 
                         <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $country }}" name="country" id="name" required placeholder="Country"/>
+                            <input type="text" class="form-input"  value="Egypt" name="country" id="name" required placeholder="Country"/>
 
                         </div>
 
