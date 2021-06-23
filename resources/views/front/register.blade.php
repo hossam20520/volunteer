@@ -140,7 +140,7 @@
                         </div>
 
                         <div class="form-group">
-                            <span style="font-size: 13px;float: right;color: red;">  يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
+                            <span style="font-size: 13px;float: right;color: red;">  (&*#!ّّ%^-؟\)يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
                             <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>
                           
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>

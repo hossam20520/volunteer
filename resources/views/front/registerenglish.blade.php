@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="form-group">
-                            <span style="font-size: 13px; color: red;"> The password must contain capital letters, symbols and numbers</span>
+                            <span style="font-size: 13px; color: red;"> The password must contain capital letters, symbols and numbers(&*#!ّّ%^-؟\)</span>
                             <input type="text" class="form-input" name="password" id="password" required placeholder="Password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
