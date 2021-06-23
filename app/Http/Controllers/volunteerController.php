@@ -440,17 +440,17 @@ if($request->age < 16){
             Session::flash('alert-class', 'danger-2020'); 
 
             $values = array(
-                "username"=> "",
-                "password"=> "",
-                "email"=> "",
-                "firstname"=> "",
-                "lastname"=> "",
-                "city"=>"",
-                "country" => "",
-                "ID"=>"",
-                "mid"=>"",
-                "phone"=>"",
-                "age"=>""
+                "username"=> $request->username,
+                "password"=> $request->password,
+                "email"=> $request->email,
+                "firstname"=>  $request->fname,
+                "lastname"=> $request->lname,
+                "city"=> $request->city,
+                "country" => $request->country,
+                "ID"=>$request->ID,
+                "mid"=>$request->mid,
+                "phone"=>$request->phone,
+                "age"=>$request->age
             );
             if($request->langa == "en"){
                 return view('front.registerenglish' , $values );
