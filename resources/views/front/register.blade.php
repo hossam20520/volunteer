@@ -75,14 +75,9 @@
                         </div>
 
                         <div class="form-group">
-                             @if ($city !== " ")
-                             <div class="form-group">
-                                <input type="text" class="form-input"  value="{{ $city }}"  required name="branch" id="name" placeholder="الفرع"/>
-                            </div>
-    
-                            @else
-                              
-                            <select class="form-input" value="{{ $city }}"  name="branch">
+                             @if ($city == "")
+                        
+                             <select class="form-input" value="{{ $city }}"  name="branch">
                                 <option>اختر الفرع</option>
                               <option value="فرع مدينة نصر ">فرع مدينة نصر </option>
                               <option value="فرع زينهم">فرع زينهم</option>
@@ -113,6 +108,12 @@
                               <option value="فرع قنا ">فرع قنا </option>
                             </select>
 
+                            
+                            @else
+                            <div class="form-group">
+                                <input type="text" class="form-input"  value="{{ $city }}"  required name="branch" id="name" placeholder="الفرع"/>
+                            </div>
+                           
 
                             @endif   
                           
