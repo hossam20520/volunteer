@@ -352,11 +352,11 @@ public function chooseEn(){
 
     public function register(Request $request){
 
-
+        $username = preg_replace("/\s+/", "", $request->username); 
 if($request->password != $request->confirm){
 
     $values = array(
-        "username"=> $request->username,
+        "username"=> $username,
         "password"=> $request->password,
         "email"=> $request->email,
         "firstname"=>  $request->fname,
@@ -385,7 +385,7 @@ if($request->password != $request->confirm){
 if($request->age < 16){
 
     $values = array(
-        "username"=> $request->username,
+        "username"=> $username ,
         "password"=> $request->password,
         "email"=> $request->email,
         "firstname"=>  $request->fname,
@@ -419,7 +419,7 @@ if($request->age < 16){
             "moodlewsrestformat"=> "json",
             "wsfunction"=> "auth_email_signup_user",
             "wstoken"=> "53497a42c19c91fd64d3b65be615a5ca",
-            "username"=> $request->username,
+            "username"=> $username,
             "password"=> $request->password,
             "email"=> $request->email,
             "firstname"=>  $request->fname,
@@ -440,7 +440,7 @@ if($request->age < 16){
             Session::flash('alert-class', 'danger-2020'); 
 
             $values = array(
-                "username"=> $request->username,
+                "username"=> $username,
                 "password"=> $request->password,
                 "email"=> $request->email,
                 "firstname"=>  $request->fname,
@@ -521,7 +521,7 @@ if($request->age < 16){
                                     }else{
 
                                         $values = array(
-                                            "username"=> $request->username,
+                                            "username"=> $username,
                                             "password"=> $request->password,
                                             "email"=> $request->email,
                                             "firstname"=>  $request->fname,
