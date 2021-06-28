@@ -198,6 +198,44 @@ public function chooseEn(){
                                     $response = json_decode($res->getBody(), true);
 
                                     
+
+
+
+                                    if(count($response) !== 2 ){   
+
+
+                                        if($response['errorcode']  == "invalidparameter"){
+                                            $values = array(
+                                                "username"=> "",
+                                                "password"=> $request->password,
+                                                "email"=> $request->email,
+                                                "firstname"=>  $request->fname,
+                                                "lastname"=> $request->lname,
+                                                "company"=> $request->company,
+                                                "job"=> $request->job,
+                                                "eq"=> $request->eq,
+                                                "country"=> $request->country,
+                                                "city"=> $request->city,
+                                                "phone"=> $request->phone,
+                                                "age"=> $request->age,
+                                            );
+    
+                                            $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
+                                            Session::flash('alert-class', 'danger-2020'); 
+                                            Session::flash('message', $message); 
+                                   
+    
+                                            if($request->langa == "en"){
+                                                return view('front.others.registereng' , $values );
+                                                }else{
+                                                return view('front.others.register' , $values );
+                                                }
+
+
+                                     }else{
+
+                                    
+
                                     if($response['success']){
                                         Other::insert([
                                         "username"=> $username,
@@ -316,6 +354,9 @@ public function chooseEn(){
       
                                   
                                     } 
+
+
+                                }
 
 
     }
@@ -492,7 +533,7 @@ if($request->age < 16){
 
                                     // $isTouch = isset($response);
 
-                                    print_r(count($response));
+                                    // print_r(count($response));
 
                                     if(count($response) !== 2 ){
 
@@ -500,16 +541,16 @@ if($request->age < 16){
                                         if($response['errorcode']  == "invalidparameter"){
                                             $values = array(
                                                 "username"=> "",
-                                                "password"=> "",
-                                                "email"=> "",
-                                                "firstname"=> "",
-                                                "lastname"=> "",
-                                                "branch"=>"",
-                                                "country" => "",
-                                                "ID"=>"",
-                                                "mid"=>"",
-                                                "phone"=>"",
-                                                "age"=>""
+                                                "password"=> $request->password,
+                                                "email"=> $request->email,
+                                                "firstname"=>  $request->fname,
+                                                "lastname"=> $request->lname,
+                                                "branch"=> $request->branch,
+                                                "country" => $request->country,
+                                                "ID"=>$request->ID,
+                                                "mid"=>$request->mid,
+                                                "phone"=>$request->phone,
+                                                "age"=>$request->age
                                             );
     
                                             $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
