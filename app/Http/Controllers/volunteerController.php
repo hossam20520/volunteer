@@ -253,6 +253,10 @@ public function chooseEn(){
                                         "accept_terms"=> true
                                         ]);
 
+
+
+                                        Session::flash('username', $username); 
+                                        Session::flash('password', $request->password); 
                                         Session::flash('alert-class', 'success-2020'); 
                                         Session::flash('message', 'Thank You'); 
 
@@ -360,6 +364,13 @@ public function chooseEn(){
 
 
     }
+
+}
+
+
+
+
+    
 
 
 
@@ -585,6 +596,8 @@ if($request->age < 16){
                                         Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone]);  
 
 
+                                        Session::flash('username', $username); 
+                                        Session::flash('password', $request->password);
 
                                         Session::flash('alert-class', 'success-2020'); 
                                         Session::flash('message', 'Thank You'); 
