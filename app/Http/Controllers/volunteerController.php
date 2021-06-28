@@ -199,7 +199,7 @@ public function chooseEn(){
 
                                     
 
-
+                            print_r($response);
 
                                     if(count($response) !== 2 ){   
 
