@@ -492,7 +492,9 @@ if($request->age < 16){
 
                                     // $isTouch = isset($response);
 
-                                    // print_r($response['errorcode']);
+                                    print_r(count($response));
+
+
 
                                     if($response['errorcode']  == "invalidparameter"){
                                         $values = array(
@@ -510,6 +512,7 @@ if($request->age < 16){
                                         );
 
                                         $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
+                                        Session::flash('alert-class', 'danger-2020'); 
                                         Session::flash('message', $message); 
                                
 
