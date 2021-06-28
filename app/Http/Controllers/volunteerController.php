@@ -509,12 +509,14 @@ if($request->age < 16){
                                             "age"=>""
                                         );
 
-                                        
+                                        $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
+                                        Session::flash('message', $message); 
                                         if($request->langa == "en"){
-                                            return view('front.success_en' , $values );
-                                           }else{
-                                            return view('front.success_ar' , $values );
-                                           }
+                                            if($request->langa == "en"){
+                                                return view('front.registerenglish' , $values );
+                                               }else{
+                                                return view('front.register' , $values );
+                                               }
                                     }
                                 //    if($isTouch){
 
