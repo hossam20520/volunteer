@@ -491,7 +491,7 @@ if($request->age < 16){
 
                                     $isTouch = isset($response);
 
-                                    print_r($response);
+                                    // print_r($response);
                                    if(!$isTouch){
 
                                    
