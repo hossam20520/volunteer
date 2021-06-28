@@ -492,7 +492,30 @@ if($request->age < 16){
 
                                     // $isTouch = isset($response);
 
-                                    print_r($response['errorcode']);
+                                    // print_r($response['errorcode']);
+
+                                    if($response['errorcode']  == "invalidparameter"){
+                                        $values = array(
+                                            "username"=> "",
+                                            "password"=> "",
+                                            "email"=> "",
+                                            "firstname"=> "",
+                                            "lastname"=> "",
+                                            "branch"=>"",
+                                            "country" => "",
+                                            "ID"=>"",
+                                            "mid"=>"",
+                                            "phone"=>"",
+                                            "age"=>""
+                                        );
+
+                                        
+                                        if($request->langa == "en"){
+                                            return view('front.success_en' , $values );
+                                           }else{
+                                            return view('front.success_ar' , $values );
+                                           }
+                                    }
                                 //    if($isTouch){
 
                                    
