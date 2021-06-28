@@ -691,7 +691,7 @@ if($request->age < 16){
                                         }
 
 
-                                      $message = "كلكة السر يجب ان يحتوي على رقم";
+                                             $message = "كلكة السر يجب ان يحتوي على رقم";
                                             Session::flash('message', $message); 
                                             Session::flash('alert-class', 'danger-2020'); 
                                             if($request->langa == "en"){
