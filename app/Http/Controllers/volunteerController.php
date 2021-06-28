@@ -328,17 +328,7 @@ public function chooseEn(){
                                            }
 
 
-                                           if($it == "password"){
-                                            // $message = "Your password is weak!";
-                                            $message = "كلمة السر ضعيفة استخدم حروف كابيتال وارقام";
-                                            Session::flash('message', $message); 
-                                            Session::flash('alert-class', 'danger-2020'); 
-                                            if($request->langa == "en"){
-                                                return view('front.others.registereng' , $values );
-                                               }else{
-                                                return view('front.others.register' , $values );
-                                               }
-                                        }
+                              
 
 
                                         if($it == "email"){
@@ -352,6 +342,15 @@ public function chooseEn(){
                                                 return view('front.others.register' , $values );
                                                }
                                         }
+
+                                        $message = "كلمة السر يجب ان تحتوي على رقم";
+                                        Session::flash('message', $message); 
+                                        Session::flash('alert-class', 'danger-2020'); 
+                                          if($request->langa == "en"){
+                                            return view('front.others.registereng' , $values );
+                                           }else{
+                                            return view('front.others.register' , $values );
+                                           }
 
 
                                         }
@@ -676,7 +675,7 @@ if($request->age < 16){
                                                }else{
                                                 return view('front.register' , $values );
                                                }
-                                        }
+                                              }
 
 
                                         if($it == "email"){
@@ -691,6 +690,15 @@ if($request->age < 16){
                                                }
                                         }
 
+
+                                      $message = "كلكة السر يجب ان يحتوي على رقم";
+                                            Session::flash('message', $message); 
+                                            Session::flash('alert-class', 'danger-2020'); 
+                                            if($request->langa == "en"){
+                                                return view('front.registerenglish' , $values );
+                                               }else{
+                                                return view('front.register' , $values );
+                                               }
 
                                         }
       
