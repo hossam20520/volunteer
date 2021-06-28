@@ -492,7 +492,7 @@ if($request->age < 16){
                                     $isTouch = isset($response);
 
                                     // print_r($response);
-                                   if(!$isTouch){
+                                //    if($isTouch){
 
                                    
 
@@ -602,29 +602,31 @@ if($request->age < 16){
                                     } 
 
 
-                                }else{
+                                // }
+                                
+                                // else{
 
-                                    $values = array(
-                                        "username"=> "",
-                                        "password"=> "",
-                                        "email"=> "",
-                                        "firstname"=> "",
-                                        "lastname"=> "",
-                                        "branch"=>"",
-                                        "country" => "",
-                                        "ID"=>"",
-                                        "mid"=>"",
-                                        "phone"=>"",
-                                        "age"=>""
-                                    );
-                                    if($request->langa == "en"){
-                                        return view('front.registerenglish' , $values );
-                                       }else{
-                                        return view('front.register' , $values );
-                                       }
+                                //     $values = array(
+                                //         "username"=> "",
+                                //         "password"=> "",
+                                //         "email"=> "",
+                                //         "firstname"=> "",
+                                //         "lastname"=> "",
+                                //         "branch"=>"",
+                                //         "country" => "",
+                                //         "ID"=>"",
+                                //         "mid"=>"",
+                                //         "phone"=>"",
+                                //         "age"=>""
+                                //     );
+                                //     if($request->langa == "en"){
+                                //         return view('front.registerenglish' , $values );
+                                //        }else{
+                                //         return view('front.register' , $values );
+                                //        }
 
 
-                                }
+                                // }
         }
 
 
