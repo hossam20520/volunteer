@@ -59,6 +59,8 @@
   <section id="hero">
     <div class="hero-container" style="background-color: #25252594;">>
       <h1 style="color:#0ae625">Thank You</h1>
+      <h2>Username: {{ Session::get('username') }}</h2>
+      <h2>Password: {{ Session::get('password') }}</h2>
       <h2><a href="https://ercelearning.com/login/" style="color: #ffffff; text-decoration:underline"> login now </a></h2>
  <!-- ======= Hero Section  <div class="countdown" data-count="2021/12/3" data-template="%w weeks %d days <br> %H:%M:%S"></div>======= -->    
 
