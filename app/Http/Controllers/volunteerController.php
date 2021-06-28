@@ -350,10 +350,11 @@ public function chooseEn(){
  
 
 
-    public function register(Request $request){
+public function register(Request $request){
 
-        $username = preg_replace("/\s+/", "", $request->username); 
-if($request->password != $request->confirm){
+ $username = preg_replace("/\s+/", "", $request->username); 
+
+ if($request->password != $request->confirm){
 
     $values = array(
         "username"=> $username,
@@ -491,7 +492,7 @@ if($request->age < 16){
 
                                     // $isTouch = isset($response);
 
-                                    // print_r($response);
+                                    print_r($response);
                                 //    if($isTouch){
 
                                    
@@ -608,7 +609,7 @@ if($request->age < 16){
                                 }
                                       
                                 //catch exception
-                                catch(Exception $e) {
+               catch(Exception $e) {
 
 
 
