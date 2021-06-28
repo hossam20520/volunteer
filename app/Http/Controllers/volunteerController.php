@@ -322,7 +322,7 @@ public function chooseEn(){
                                       
 
                                         // return $va['username'];
-                                       print_r($response['warnings']);
+                                    //    print_r($response['warnings']);
                                         foreach ($response['warnings'] as $key => $value) {
                                             
 
