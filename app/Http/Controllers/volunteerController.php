@@ -199,7 +199,7 @@ public function chooseEn(){
 
                                     
 
-                            print_r($response);
+                            // print_r($response);
 
                                     if(count($response) !== 2 ){   
 
@@ -307,7 +307,7 @@ public function chooseEn(){
                                       
 
                                         // return $va['username'];
-
+                       print_r($response['warnings']);
                                         foreach ($response['warnings'] as $key => $value) {
                                             
 
@@ -316,8 +316,8 @@ public function chooseEn(){
                                            if($it == "username"){
                                                $message = "اسم المستخدم موجود بالفعل";
                                             //    $message = "This username already exists, choose another";
-                                               Session::flash('message', $message); 
-                                               Session::flash('alert-class', 'danger-2020'); 
+                                                  Session::flash('message', $message); 
+                                                  Session::flash('alert-class', 'danger-2020'); 
                                                if($request->langa == "en"){
                                                 return view('front.others.registereng' , $values );
                                                }else{
