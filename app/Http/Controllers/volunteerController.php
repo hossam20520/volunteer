@@ -104,6 +104,8 @@ public function chooseEn(){
     public function nonVolunteer(Request $request){
 
         $username = preg_replace("/\s+/", "", $request->username); 
+
+        // start if 
         if($request->password != $request->confirm){
 
             $values = array(
@@ -134,7 +136,10 @@ public function chooseEn(){
         }
 
 
+        // end if 
 
+
+//    start if 2
 
         if($request->age < 16){
 
@@ -164,6 +169,9 @@ public function chooseEn(){
             }
         
         }
+
+
+        // end if 2
 
 
 
@@ -204,6 +212,12 @@ public function chooseEn(){
                                     if(count($response) !== 2 ){   
 
 
+
+
+
+
+
+
                                         if($response['errorcode']  == "invalidparameter"){
                                             $values = array(
                                                 "username"=> "",
@@ -223,13 +237,14 @@ public function chooseEn(){
                                             $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
                                             Session::flash('alert-class', 'danger-2020'); 
                                             Session::flash('message', $message); 
-                                   
-    
                                             if($request->langa == "en"){
                                                 return view('front.others.registereng' , $values );
                                                 }else{
                                                 return view('front.others.register' , $values );
                                                 }
+
+
+                                            }
 
 
                                      }else{
@@ -358,13 +373,13 @@ public function chooseEn(){
                                   
                                     } 
 
-
                                 }
+                                
 
 
     }
 
-}
+
 
 
 
