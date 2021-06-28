@@ -269,7 +269,7 @@ public function chooseEn(){
                                         ]);
 
 
-                                        print_r($response);
+                                        // print_r($response);
                                         Session::flash('username', $username); 
                                         Session::flash('password', $request->password); 
                                         Session::flash('alert-class', 'success-2020'); 
