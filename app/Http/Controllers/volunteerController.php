@@ -495,7 +495,7 @@ if($request->age < 16){
                                 //    if($isTouch){
 
                                    
-                                    // try {
+                                    try {
                                  
                              
                                            
