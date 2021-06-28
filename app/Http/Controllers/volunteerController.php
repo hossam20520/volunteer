@@ -207,7 +207,7 @@ public function chooseEn(){
 
                                     
 
-                            print_r(count($response));
+                            // print_r(count($response));
 
                                     if(count($response) !== 2 ){   
 
