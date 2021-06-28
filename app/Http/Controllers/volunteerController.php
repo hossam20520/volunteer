@@ -197,7 +197,7 @@ public function chooseEn(){
                                     $res->getHeader('content-type');
                                     $response = json_decode($res->getBody(), true);
 
-
+                                    
                                     if($response['success']){
                                         Other::insert([
                                         "username"=> $username,
@@ -487,6 +487,15 @@ if($request->age < 16){
                                     // return $response;
 
                                     // exception
+
+
+                                    $isTouch = isset($response['success']);
+                                   if(!$isTouch){
+
+                                   
+
+                                           
+                                     
                                     if($response['success']){
                                         Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone]);  
 
@@ -589,6 +598,31 @@ if($request->age < 16){
       
                                   
                                     } 
+
+
+                                }else{
+
+                                    $values = array(
+                                        "username"=> "",
+                                        "password"=> "",
+                                        "email"=> "",
+                                        "firstname"=> "",
+                                        "lastname"=> "",
+                                        "branch"=>"",
+                                        "country" => "",
+                                        "ID"=>"",
+                                        "mid"=>"",
+                                        "phone"=>"",
+                                        "age"=>""
+                                    );
+                                    if($request->langa == "en"){
+                                        return view('front.registerenglish' , $values );
+                                       }else{
+                                        return view('front.register' , $values );
+                                       }
+
+
+                                }
         }
 
 
