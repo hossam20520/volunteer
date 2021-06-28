@@ -494,37 +494,44 @@ if($request->age < 16){
 
                                     print_r(count($response));
 
+                                    if(count($response) !== 2 ){
 
 
-                                    if($response['errorcode']  == "invalidparameter"){
-                                        $values = array(
-                                            "username"=> "",
-                                            "password"=> "",
-                                            "email"=> "",
-                                            "firstname"=> "",
-                                            "lastname"=> "",
-                                            "branch"=>"",
-                                            "country" => "",
-                                            "ID"=>"",
-                                            "mid"=>"",
-                                            "phone"=>"",
-                                            "age"=>""
-                                        );
+                                        if($response['errorcode']  == "invalidparameter"){
+                                            $values = array(
+                                                "username"=> "",
+                                                "password"=> "",
+                                                "email"=> "",
+                                                "firstname"=> "",
+                                                "lastname"=> "",
+                                                "branch"=>"",
+                                                "country" => "",
+                                                "ID"=>"",
+                                                "mid"=>"",
+                                                "phone"=>"",
+                                                "age"=>""
+                                            );
+    
+                                            $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
+                                            Session::flash('alert-class', 'danger-2020'); 
+                                            Session::flash('message', $message); 
+                                   
+    
+                                            if($request->langa == "en"){
+                                                return view('front.registerenglish' , $values );
+                                               }else{
+                                                return view('front.register' , $values );
+                                               }
+    
+    
+    
+                                        }
 
-                                        $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
-                                        Session::flash('alert-class', 'danger-2020'); 
-                                        Session::flash('message', $message); 
-                               
+                                    }else{
 
-                                        if($request->langa == "en"){
-                                            return view('front.registerenglish' , $values );
-                                           }else{
-                                            return view('front.register' , $values );
-                                           }
+                                   
 
-
-
-                                    }
+                           
                                 //    if($isTouch){
 
                                    
@@ -668,6 +675,8 @@ if($request->age < 16){
 
 
                                 }
+
+                            }
 
 
                                 // }
