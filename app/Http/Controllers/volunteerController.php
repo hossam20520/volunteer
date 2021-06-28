@@ -489,13 +489,15 @@ if($request->age < 16){
                                     // exception
 
 
-                                    $isTouch = isset($response);
+                                    // $isTouch = isset($response);
 
                                     // print_r($response);
                                 //    if($isTouch){
 
                                    
-
+                                    // try {
+                                 
+                             
                                            
                                      
                                     if($response['success']){
@@ -600,6 +602,39 @@ if($request->age < 16){
       
                                   
                                     } 
+
+
+
+                                }
+                                      
+                                //catch exception
+                                catch(Exception $e) {
+
+
+
+
+           $values = array(
+            "username"=> "",
+            "password"=> "",
+            "email"=> "",
+            "firstname"=> "",
+            "lastname"=> "",
+            "branch"=>"",
+            "country" => "",
+            "ID"=>"",
+            "mid"=>"",
+            "phone"=>"",
+            "age"=>""
+        );
+        if($request->langa == "en"){
+            return view('front.registerenglish' , $values );
+           }else{
+            return view('front.register' , $values );
+           }
+
+
+
+                                }
 
 
                                 // }
