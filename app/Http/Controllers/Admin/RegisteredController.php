@@ -21,7 +21,9 @@ class RegisteredController extends Controller
         abort_if(Gate::denies('registered_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         // $registereds = Registered::all();
-        $registereds = Registered::where('id' , 1)->get();
+        // $registereds = Registered::where('id' ,  1)->get();
+
+        $registereds = Registered::where('id' , '>'  ,   0)->paginate(200);
 
         return view('admin.registereds.index', compact('registereds'));
     }
