@@ -13,8 +13,8 @@ class MailController extends Controller
     //
 
 
-    public function basic_email() {
-        $data = array('name'=>"Virat Gandhi");
+    public  function basic_email() {
+        $data = array('name'=>"Virat Gandhi" , 'username'=> 'username' , 'password'=>'password');
      
         Mail::send(['text'=>'mail'], $data, function($message) {
            $message->to('hossamhassan889@gmail.com', 'Tutorials Point')->subject
@@ -23,10 +23,10 @@ class MailController extends Controller
         });
         echo "Basic Email Sent. Check your inbox.";
      }
-     public function html_email() {
-        $data = array('name'=>"Virat Gandhi");
+     public static  function html_email($data , $to) {
+       
         Mail::send('mail', $data, function($message) {
-           $message->to('hossamhassan889@gmail.com', 'Tutorials Point')->subject
+           $message->to($to, 'Tutorials Point')->subject
               ('Laravel HTML Testing Mail');
            $message->from('xyz@gmail.com','Virat Gandhi');
         });

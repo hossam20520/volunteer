@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use App\Models\Registered;
 use Session;
+use App\Controllers\MailController;
 use Redirect;
 
 use App\Models\Other;
@@ -635,7 +636,9 @@ if($request->age < 16){
                                             "phone"=>"",
                                             "age"=>""
                                         );
-                                     
+                                        $data = array('name'=>"Virat Gandhi" , 'username'=> 'username' , 'password'=>'password');
+
+                                        MailController::html_email($data , "hossamhassan889@gmail.com");
                                         if($request->langa == "en"){
                                             return view('front.success_en' , $values );
                                            }else{
