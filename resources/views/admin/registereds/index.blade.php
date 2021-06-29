@@ -139,7 +139,7 @@
     </div>
 </div>
 
-{!!  $rivers->render() !!}
+{!!  $registereds->render() !!}
 
 @endsection
 @section('scripts')
