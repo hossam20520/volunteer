@@ -79,7 +79,7 @@
                         
                              <select class="form-input" value="{{ $branch }}"  name="branch">
                             
-                                <option>اختر الفرع</option>
+                                <option>اختر المحافظة</option>
                               <option {{ $branch == "فرع مدينة نصر" ? "selected":"" }} value="فرع مدينة نصر ">فرع مدينة نصر </option>
                               <option  {{ $branch == "فرع زينهم" ? "selected":"" }} value="فرع زينهم">فرع زينهم</option>
                               <option value="فرع الجيزة">فرع الجيزة</option>
@@ -107,6 +107,7 @@
                               <option value="فرع اسوان">فرع اسوان</option>
                               <option value="فرع الوادى الجديد">فرع الوادى الجديد</option>
                               <option value="فرع قنا ">فرع قنا </option>
+                              <option value="فرع الاسماعلية ">فرع الاسماعلية </option>
                             </select>
                 
 
@@ -150,7 +151,7 @@
                             {{-- <label for="agree-term" class="label-agree-term"><span><span></span></span>انا موافق على الشروط  <a href="#" class="term-service">الشروط</a></label> --}}
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" class="form-submit" value="تسجل"/>
+                            <input type="submit" name="submit" id="submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" class="form-submit" value="تسجيل"/>
                             
                         </div>
 

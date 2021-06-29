@@ -77,7 +77,7 @@
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $city }}" required name="city">
-                                <option>Select Branch </option>
+                                <option>Select Governorate</option>
                               <option value=" مدينة نصر "> مدينة نصر </option>
                               <option value=" زينهم"> زينهم</option>
                               <option value=" الجيزة"> الجيزة</option>
@@ -105,6 +105,7 @@
                               <option value=" اسوان"> اسوان</option>
                               <option value=" الوادى الجديد"> الوادى الجديد</option>
                               <option value="فرع قنا "> قنا </option>
+                              <option value="فرع الاسماعلية ">فرع الاسماعلية </option>
 
 
                             </select>

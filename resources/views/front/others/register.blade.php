@@ -77,7 +77,7 @@
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $city }}" required  name="city">
-                                <option>اختر الفرع </option>
+                                <option>اختر المحافظة </option>
                               <option value=" مدينة نصر "> مدينة نصر </option>
                               <option value=" زينهم"> زينهم</option>
                               <option value=" الجيزة"> الجيزة</option>
@@ -105,6 +105,7 @@
                               <option value=" اسوان"> اسوان</option>
                               <option value=" الوادى الجديد"> الوادى الجديد</option>
                               <option value="فرع قنا "> قنا </option>
+                              <option value="فرع الاسماعلية ">فرع الاسماعلية </option>
 
 
                             </select>
@@ -157,12 +158,12 @@
                             {{-- <label for="agree-term" class="label-agree-term"><span><span></span></span>انا موافق على الشروط  <a href="#" class="term-service">الشروط</a></label> --}}
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" class="form-submit" value="تسجل"/>
+                            <input type="submit" name="submit" id="submit" style="background-image: linear-gradient(to left, #eb7474, #e69fde);" class="form-submit" value="تسجيل"/>
                             
                         </div>
                     </form>
                     <p class="loginhere">
-                       هل لديك حساب ؟ <a href="https://ercelearning.com/login/" class="loginhere-link"> قم بتسجل الدخول من هنا</a>
+                       هل لديك حساب ؟ <a href="https://ercelearning.com/login/" class="loginhere-link"> قم بتسجيل الدخول من هنا</a>
                     </p>
                 </div>
             </div>
