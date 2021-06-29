@@ -134,6 +134,12 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="card-footer clearfix">
+
+            {!!  $registereds->render() !!}
+
+           </div>
     </div>
 </div>
 
