@@ -47,6 +47,9 @@
                     @endif
                     <form method="POST" id="signup-form"  action="{{ route('registerPostNot') }}" class="signup-form">
                         @csrf
+
+                        <input type="hidden" class="form-input" value="{{ $_GET['checkout'] }}" name="checkout" required id="name"/>
+
                         <h2 class="form-title" style="text-decoration: underline;">انشاء حساب</h2>
                         <div class="form-group">
                             <span style="font-size: 13px;float: right;color: red;"> اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية </span>

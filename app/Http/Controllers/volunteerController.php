@@ -270,10 +270,16 @@ public function chooseEn(){
 
 
                                         // print_r($response);
-                                        Session::flash('username', $username); 
-                                        Session::flash('password', $request->password); 
-                                        Session::flash('alert-class', 'success-2020'); 
-                                        Session::flash('message', 'Thank You'); 
+
+                                    
+                                            Session::flash('username', $username); 
+                                            Session::flash('password', $request->password); 
+                                            Session::flash('alert-class', 'success-2020'); 
+                                            Session::flash('message', 'Thank You'); 
+                                       
+                                            if($request->checkout == true ){
+                                                return Redirect::to('https://ercelearning.com/gateway/checkout/');
+                                             }
 
                                         $values = array(
                                             "username"=> "",
