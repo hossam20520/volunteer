@@ -135,15 +135,11 @@
             </table>
         </div>
 
-        <div class="card-footer clearfix">
-
-            {!!  $registereds->render() !!}
-
-           </div>
+        
     </div>
 </div>
 
-
+{!!  $rivers->render() !!}
 
 @endsection
 @section('scripts')
