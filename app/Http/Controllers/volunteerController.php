@@ -636,9 +636,9 @@ if($request->age < 16){
                                             "phone"=>"",
                                             "age"=>""
                                         );
-                                        $data = array('name'=>"Virat Gandhi" , 'username'=> 'username' , 'password'=>'password');
+                                        // $data = array('name'=>"Virat Gandhi" , 'username'=> 'username' , 'password'=>'password');
 
-                                        MailController::html_email($data , "hossamhassan889@gmail.com");
+                                        // MailController::html_email($data , "hossamhassan889@gmail.com");
                                         if($request->langa == "en"){
                                             return view('front.success_en' , $values );
                                            }else{
