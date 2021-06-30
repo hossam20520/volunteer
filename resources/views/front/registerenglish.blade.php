@@ -100,7 +100,7 @@
                               <option value="فرع بنى سويف ">فرع بنى سويف </option>
                               <option value="فرع المنيا">فرع المنيا</option>
                               <option value="فرع اسيوط">فرع اسيوط </option>
-                              <option value="فرع سوهاج">فرع سوهاج</option>
+                              <option value="فرع سوهاج">فرع سوهاج</option> 
                               <option value="فرع الاقصر">فرع الاقصر</option>
                               <option value="فرع اسوان">فرع اسوان</option>
                               <option value="فرع الوادى الجديد">فرع الوادى الجديد</option>

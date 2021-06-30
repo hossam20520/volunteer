@@ -139,7 +139,7 @@
     </div>
 </div>
 
-{!!  $registereds->render() !!}
+{{-- {!!  $registereds->render() !!} --}}
 
 @endsection
 @section('scripts')
