@@ -79,35 +79,33 @@
                             
                             <select class="form-input" value="{{ $city }}" required name="city">
                                 <option>Select Governorate</option>
-                              <option value=" مدينة نصر "> مدينة نصر </option>
-                              <option value=" زينهم"> زينهم</option>
-                              <option value=" الجيزة"> الجيزة</option>
-                              <option value=" القليوبية "> القليوبية </option>
-                              <option value=" شمال سيناء "> شمال سيناء </option>
-                              <option value=" جنوب سيناء"> جنوب سيناء </option>
-                              <option value=" البحر الاحمر "> البحر الاحمر </option>
-                              <option value=" الاسكندرية"> الاسكندرية</option>
-                              <option value=" مرسى مطروح"> مرسى مطروح</option>
-                              <option value=" بور سعيد"> بور سعيد</option>
-                              <option value=" السويس"> السويس </option>
-                              <option value=" الشرقية"> الشرقية</option>
-                              <option value=" دمياط"> دمياط</option>
-                              <option value=" الدقهلية"> الدقهلية</option>
-                              <option value=" كفر الشيخ"> كفر الشيخ</option>
-                              <option value=" الغربية"> الغربية</option>
-                              <option value=" المنوفية"> المنوفية</option>
-                              <option value=" البحيرة"> البحيرة</option>
-                              <option value=" الفيوم"> الفيوم </option>
-                              <option value=" بنى سويف "> بنى سويف </option>
-                              <option value=" المنيا"> المنيا</option>
-                              <option value=" اسيوط"> اسيوط </option>
-                              <option value=" سوهاج"> سوهاج</option>
-                              <option value=" الاقصر"> الاقصر</option>
-                              <option value=" اسوان"> اسوان</option>
-                              <option value=" الوادى الجديد"> الوادى الجديد</option>
-                              <option value="فرع قنا "> قنا </option>
-                              <option value="فرع الاسماعلية ">فرع الاسماعلية </option>
-
+                                <option value="  القاهرة "> القاهرة  </option>
+                                <option value=" الأسكندرية "> الأسكندرية </option>
+                                <option value=" الإسماعيلية"> الإسماعيلية </option>
+                                <option value=" القليوبية "> القليوبية </option>
+                                <option value=" أسوان  "> أسوان   </option>
+                                <option value=" أسيوط ">  أسيوط  </option>
+                                <option value=" البحر الاحمر "> البحر الاحمر </option>
+                                <option value=" الأقصر "> الأقصر </option>
+                                <option value=" مرسى مطروح"> مرسى مطروح</option>
+                                <option value=" بور سعيد"> بور سعيد</option>
+                                <option value=" السويس"> السويس </option>
+                                <option value=" الشرقية"> الشرقية</option>
+                                <option value=" دمياط"> دمياط</option>
+                                <option value=" الدقهلية"> الدقهلية</option>
+                                <option value=" كفر الشيخ"> كفر الشيخ</option>
+                                <option value=" الغربية"> الغربية</option>
+                                <option value=" المنوفية"> المنوفية</option>
+                                <option value=" البحيرة"> البحيرة</option>
+                                <option value=" الفيوم"> الفيوم </option>
+                                <option value=" بنى سويف "> بنى سويف </option>
+                                <option value=" المنيا"> المنيا</option>
+                                <option value=" اسيوط"> اسيوط </option>
+                                <option value=" سوهاج"> سوهاج</option>
+                                <option value=" الاقصر"> الاقصر</option>
+                                <option value=" البحيرة">البحيرة</option>
+                                <option value=" الوادى الجديد"> الوادى الجديد</option>
+                                <option value="فرع قنا "> قنا </option>
 
                             </select>
 

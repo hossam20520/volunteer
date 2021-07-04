@@ -81,14 +81,14 @@
                             
                             <select class="form-input" value="{{ $city }}" required  name="city">
                                 <option>اختر المحافظة </option>
-                              <option value=" مدينة نصر "> مدينة نصر </option>
-                              <option value=" زينهم"> زينهم</option>
-                              <option value=" الجيزة"> الجيزة</option>
+                              <option value="  القاهرة "> القاهرة  </option>
+                              <option value=" الأسكندرية "> الأسكندرية </option>
+                              <option value=" الإسماعيلية"> الإسماعيلية </option>
                               <option value=" القليوبية "> القليوبية </option>
-                              <option value=" شمال سيناء "> شمال سيناء </option>
-                              <option value=" جنوب سيناء"> جنوب سيناء </option>
+                              <option value=" أسوان  "> أسوان   </option>
+                              <option value=" أسيوط ">  أسيوط  </option>
                               <option value=" البحر الاحمر "> البحر الاحمر </option>
-                              <option value=" الاسكندرية"> الاسكندرية</option>
+                              <option value=" الأقصر "> الأقصر </option>
                               <option value=" مرسى مطروح"> مرسى مطروح</option>
                               <option value=" بور سعيد"> بور سعيد</option>
                               <option value=" السويس"> السويس </option>
@@ -105,10 +105,10 @@
                               <option value=" اسيوط"> اسيوط </option>
                               <option value=" سوهاج"> سوهاج</option>
                               <option value=" الاقصر"> الاقصر</option>
-                              <option value=" اسوان"> اسوان</option>
+                              <option value=" البحيرة">البحيرة</option>
                               <option value=" الوادى الجديد"> الوادى الجديد</option>
                               <option value="فرع قنا "> قنا </option>
-                              <option value="فرع الاسماعلية ">فرع الاسماعلية </option>
+                           
 
 
                             </select>

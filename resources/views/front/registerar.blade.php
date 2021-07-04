@@ -77,7 +77,7 @@
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $branch }}"  name="branch">
-                                <option>Select Governorate</option>
+                                <option>Select branch</option>
                               <option value="فرع مدينة نصر ">فرع مدينة نصر </option>
                               <option value="فرع زينهم">فرع زينهم</option>
                               <option value="فرع الجيزة">فرع الجيزة</option>
