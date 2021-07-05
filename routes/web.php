@@ -12,6 +12,15 @@ Route::get('/home', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/volunteer', 'volunteerController@choose')->name('choose');
+
+
+
+
+
+Route::get('/contact/us/', 'volunteerController@contact');
+
+
+
 Route::get('/volunteer/en', 'volunteerController@chooseEn')->name('choosen');
 
 Route::get('/volunteer/register', 'volunteerController@registerForm')->name('registerForm');
