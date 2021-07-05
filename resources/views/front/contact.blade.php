@@ -49,7 +49,7 @@
                             <option selected>Select Department</option>
                             <option value="first">First Aid</option>
                             <option value="vol">Volunteer</option>
-                            <option value="test">other</option>
+                            <option value="health">Health promotion</option>
                             <option value="IT">IT</option>
                           </select>
 					
