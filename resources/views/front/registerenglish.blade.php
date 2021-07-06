@@ -377,6 +377,7 @@
                         
                         
                         <div class="form-group">
+                            <span style="font-size: 13px; color: red;"> Passport Number not for Egyptians </span>
                             <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email" required placeholder="National ID / Passport Number"/>
                         </div>
 

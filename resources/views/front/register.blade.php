@@ -381,6 +381,7 @@
                         
                         
                         <div class="form-group">
+                            <span style="font-size: 13px;float: right;color: red;"> رقم جواز السفر لغير المصريين </span>
                             <input type="text" class="form-input"  value="{{ $ID }}" name="ID" id="email"  required placeholder="رقم البطاقة \ رقم جواز السفر"/>
                         </div>
 
