@@ -19,127 +19,104 @@
     </div>
 
     <div class="card-body">
-        <div class="table-responsive">
-            <table class=" table table-bordered table-striped table-hover datatable datatable-Registered">
-                <thead>
-                    <tr>
-                        <th width="10">
+        <table class=" table table-bordered table-striped table-hover ajaxTable datatable datatable-Registered">
+            <thead>
+                <tr>
+                    <th width="10">
 
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.id') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.code') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.fname') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.idnumber') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.branch') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.phone') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.registered.fields.age') }}
-                        </th>
-                        <th>
-                            &nbsp;
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                            <input class="search" type="text" placeholder="{{ trans('global.search') }}">
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($registereds as $key => $registered)
-                        <tr data-entry-id="{{ $registered->id }}">
-                            <td>
-
-                            </td>
-                            <td>
-                                {{ $registered->id ?? '' }}
-                            </td>
-                            <td>
-                                {{ $registered->code ?? '' }}
-                            </td>
-                            <td>
-                                {{ $registered->fname ?? '' }}
-                            </td>
-                            <td>
-                                {{ $registered->idnumber ?? '' }}
-                            </td>
-                            <td>
-                                {{ $registered->branch ?? '' }}
-                            </td>
-                            <td>
-                                {{ $registered->phone ?? '' }}
-                            </td>
-                            <td>
-                                {{ $registered->age ?? '' }}
-                            </td>
-                            <td>
-                                @can('registered_show')
-                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.registereds.show', $registered->id) }}">
-                                        {{ trans('global.view') }}
-                                    </a>
-                                @endcan
-
-                                @can('registered_edit')
-                                    <a class="btn btn-xs btn-info" href="{{ route('admin.registereds.edit', $registered->id) }}">
-                                        {{ trans('global.edit') }}
-                                    </a>
-                                @endcan
-
-                                @can('registered_delete')
-                                    <form action="{{ route('admin.registereds.destroy', $registered->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
-                                    </form>
-                                @endcan
-
-                            </td>
-
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
-        </div>
-
-        
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.id') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.code') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.fname') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.idnumber') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.branch') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.phone') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.age') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.country') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.branch_code') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.joined_date') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.have_account') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.registered.fields.gender') }}
+                    </th>
+                    <th>
+                        &nbsp;
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <select class="search" strict="true">
+                            <option value>{{ trans('global.all') }}</option>
+                            @foreach(App\Models\Registered::HAVE_ACCOUNT_SELECT as $key => $item)
+                                <option value="{{ $key }}">{{ $item }}</option>
+                            @endforeach
+                        </select>
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </thead>
+        </table>
     </div>
 </div>
 
-{{-- {!!  $registereds->render() !!} --}}
+
 
 @endsection
 @section('scripts')
@@ -148,14 +125,14 @@
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
 @can('registered_delete')
-  let deleteButtonTrans = '{{ trans('global.datatables.delete') }}'
+  let deleteButtonTrans = '{{ trans('global.datatables.delete') }}';
   let deleteButton = {
     text: deleteButtonTrans,
     url: "{{ route('admin.registereds.massDestroy') }}",
     className: 'btn-danger',
     action: function (e, dt, node, config) {
-      var ids = $.map(dt.rows({ selected: true }).nodes(), function (entry) {
-          return $(entry).data('entry-id')
+      var ids = $.map(dt.rows({ selected: true }).data(), function (entry) {
+          return entry.id
       });
 
       if (ids.length === 0) {
@@ -177,12 +154,34 @@
   dtButtons.push(deleteButton)
 @endcan
 
-  $.extend(true, $.fn.dataTable.defaults, {
+  let dtOverrideGlobals = {
+    buttons: dtButtons,
+    processing: true,
+    serverSide: true,
+    retrieve: true,
+    aaSorting: [],
+    ajax: "{{ route('admin.registereds.index') }}",
+    columns: [
+      { data: 'placeholder', name: 'placeholder' },
+{ data: 'id', name: 'id' },
+{ data: 'code', name: 'code' },
+{ data: 'fname', name: 'fname' },
+{ data: 'idnumber', name: 'idnumber' },
+{ data: 'branch', name: 'branch' },
+{ data: 'phone', name: 'phone' },
+{ data: 'age', name: 'age' },
+{ data: 'country', name: 'country' },
+{ data: 'branch_code', name: 'branch_code' },
+{ data: 'joined_date', name: 'joined_date' },
+{ data: 'have_account', name: 'have_account' },
+{ data: 'gender', name: 'gender' },
+{ data: 'actions', name: '{{ trans('global.actions') }}' }
+    ],
     orderCellsTop: true,
     order: [[ 1, 'desc' ]],
     pageLength: 100,
-  });
-  let table = $('.datatable-Registered:not(.ajaxTable)').DataTable({ buttons: dtButtons })
+  };
+  let table = $('.datatable-Registered').DataTable(dtOverrideGlobals);
   $('a[data-toggle="tab"]').on('shown.bs.tab click', function(e){
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
@@ -209,7 +208,7 @@ table.on('column-visibility.dt', function(e, settings, column, state) {
           visibleColumnsIndexes.push(colIdx);
       });
   })
-})
+});
 
 </script>
 @endsection

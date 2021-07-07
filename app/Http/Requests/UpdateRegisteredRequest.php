@@ -43,6 +43,22 @@ class UpdateRegisteredRequest extends FormRequest
                 'min:-2147483648',
                 'max:2147483647',
             ],
+            'country' => [
+                'string',
+                'nullable',
+            ],
+            'branch_code' => [
+                'string',
+                'nullable',
+            ],
+            'joined_date' => [
+                'date_format:' . config('panel.date_format'),
+                'nullable',
+            ],
+            'gender' => [
+                'string',
+                'nullable',
+            ],
         ];
     }
 }

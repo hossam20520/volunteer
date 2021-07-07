@@ -119,7 +119,7 @@
                            
 
 
-                            <select class="form-input" value="{{ $country }}" id="country" name="country">
+                            <select class="form-input" value="{{ $country }}" id="country" required name="country">
                                
                                     <option value="AW">آروبا</option>
                                     <option value="AZ">أذربيجان</option>

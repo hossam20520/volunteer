@@ -71,6 +71,46 @@
                             {{ $registered->age }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.country') }}
+                        </th>
+                        <td>
+                            {{ $registered->country }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.branch_code') }}
+                        </th>
+                        <td>
+                            {{ $registered->branch_code }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.joined_date') }}
+                        </th>
+                        <td>
+                            {{ $registered->joined_date }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.have_account') }}
+                        </th>
+                        <td>
+                            {{ App\Models\Registered::HAVE_ACCOUNT_SELECT[$registered->have_account] ?? '' }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.registered.fields.gender') }}
+                        </th>
+                        <td>
+                            {{ $registered->gender }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">
