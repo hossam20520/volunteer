@@ -372,10 +372,10 @@
                                 <option {{ $country = "Vatican City State" ? "selected":"" }} value="Vatican City State">دولة الفاتيكان</option>
                                 <option {{ $country = "Venezuela" ? "selected":"" }} value="Venezuela">فنزويلا</option>
                                 <option {{ $country = "Vietnam" ? "selected":"" }} value="Vietnam">فيتنام</option>
-                                <option {{ $country = "Virgin Islands (Brit)" ? "selected":"" }} value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
-                                <option {{ $country = "Virgin Islands (USA)" ? "selected":"" }} value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                            
+ 
                                 <option {{ $country = "Wake Island" ? "selected":"" }} value="Wake Island">ويك آيلاند</option>
-                                <option {{ $country = "Wallis & Futana Is" ? "selected":"" }} value="Wallis & Futana Is">Wallis & Futana هو</option>
+
                                 <option {{ $country = "Yemen" ? "selected":"" }} value="Yemen">اليمن</option>
                                 <option {{ $country = "Zaire" ? "selected":"" }} value="Zaire">زائير</option>
                                 <option {{ $country = "Zambia" ? "selected":"" }} value="Zambia">زامبيا</option>
