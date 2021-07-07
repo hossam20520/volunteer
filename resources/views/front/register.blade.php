@@ -79,7 +79,7 @@
                             <select class="form-input" value="{{ $gender }}"  required name="gender">
                                  <option> اختر النوع </option>
                                 <option {{ $gender == "male" ? "selected":"" }} value="male"> ذكر </option>
-                                <option {{ $gender == "female" ? "selected":"" }} value="male"> انثى </option>
+                                <option {{ $gender == "female" ? "selected":"" }} value="female"> انثى </option>
                           
                         </select>
                         
@@ -131,6 +131,8 @@
 
 
                             <select class="form-input" value="{{ $country }}" id="country" required name="country">
+
+                                
                                
                                     <option value="AW">آروبا</option>
                                     <option value="AZ">أذربيجان</option>
