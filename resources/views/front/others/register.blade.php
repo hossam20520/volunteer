@@ -81,33 +81,41 @@
                             
                             <select class="form-input" value="{{ $city }}" required  name="city">
                                 <option>اختر المحافظة </option>
-                              <option value="القاهرة "> القاهرة  </option>
-                              <option value=" الأسكندرية "> الأسكندرية </option>
-                              <option value=" الإسماعيلية"> الإسماعيلية </option>
-                              <option value=" القليوبية "> القليوبية </option>
-                              <option value=" أسوان  "> أسوان   </option>
-                              <option value=" أسيوط ">  أسيوط  </option>
-                              <option value=" البحر الاحمر "> البحر الاحمر </option>
-                              <option value=" الأقصر "> الأقصر </option>
-                              <option value=" مرسى مطروح"> مرسى مطروح</option>
-                              <option value=" بور سعيد"> بور سعيد</option>
-                              <option value=" السويس"> السويس </option>
-                              <option value=" الشرقية"> الشرقية</option>
-                              <option value=" دمياط"> دمياط</option>
-                              <option value=" الدقهلية"> الدقهلية</option>
-                              <option value=" كفر الشيخ"> كفر الشيخ</option>
-                              <option value=" الغربية"> الغربية</option>
-                              <option value=" المنوفية"> المنوفية</option>
-                              <option value=" البحيرة"> البحيرة</option>
-                              <option value=" الفيوم"> الفيوم </option>
-                              <option value=" بنى سويف "> بنى سويف </option>
-                              <option value=" المنيا"> المنيا</option>
-                              <option value=" اسيوط"> اسيوط </option>
-                              <option value=" سوهاج"> سوهاج</option>
-                              <option value=" الاقصر"> الاقصر</option>
-                              <option value=" البحيرة">البحيرة</option>
-                              <option value=" الوادى الجديد"> الوادى الجديد</option>
-                              <option value="فرع قنا "> قنا </option>
+                                <option {{ $city = "Cairo" ? "selected":"" }} value="Cairo">القاهرة</option>
+                                <option {{ $city = "Alexandria" ? "selected":"" }} value="Alexandria">الإسكندرية</option>
+                                <option {{ $city = "Giza" ? "selected":"" }} value="Giza">الجيزة</option>
+                                <option {{ $city = "Shubra al Khaymah" ? "selected":"" }} value="Shubra al Khaymah">شبرا أل خيمة</option>
+                                <option {{ $city = "Halwan" ? "selected":"" }} value="Halwan">حلوان</option>
+                                <option {{ $city = "Al Mahallah al Kubra" ? "selected":"" }} value="Al Mahallah al Kubra">ألمحله أل كبرى</option>
+                                <option {{ $city = "Port Said" ? "selected":"" }} value="Port Said">بورسعيد</option>
+                                <option {{ $city = "Madinat as Sadis min Uktubar" ? "selected":"" }} value="Madinat as Sadis min Uktubar">مدينة ألسادس من أكتوبر</option>
+                                <option {{ $city = "Suez" ? "selected":"" }} value="Suez">السويس</option>
+                                <option {{ $city = "Al Mansurah" ? "selected":"" }} value="Al Mansurah">المنصورة</option>
+                                <option {{ $city = "Tanta" ? "selected":"" }} value="Tanta">طنطا</option>
+                                <option {{ $city = "Asyut" ? "selected":"" }} value="Asyut">أسيوط</option>
+                                <option {{ $city = "Al Fayyum" ? "selected":"" }} value="Al Fayyum">ألفيوم</option>
+                                <option {{ $city = "Az Zaqaziq" ? "selected":"" }} value="Az Zaqaziq">الزقازيق</option>
+                                <option {{ $city = "Ismailia" ? "selected":"" }} value="Ismailia">الإسماعيلية</option>
+                                <option {{ $city = "Aswan" ? "selected":"" }} value="Aswan">أسوان</option>
+                                <option {{ $city = "Kafr ad Dawwar" ? "selected":"" }} value="Kafr ad Dawwar">كفر الدوار</option>
+                                <option {{ $city = "Damanhur" ? "selected":"" }} value="Damanhur">دمنهور</option>
+                                <option {{ $city = "Al Minya" ? "selected":"" }} value="Al Minya">المنيا</option>
+                                <option {{ $city = "Damietta" ? "selected":"" }} value="Damietta">دمياط</option>
+                                <option {{ $city = "Luxor" ? "selected":"" }} value="Luxor">الاقصر</option>
+                                <option {{ $city = "Qina" ? "selected":"" }} value="Qina">قنا</option>
+                                <option {{ $city = "Suhaj" ? "selected":"" }} value="Suhaj">سوهاج</option>
+                                <option {{ $city = "Bani Suwayf" ? "selected":"" }} value="Bani Suwayf">بني السويف</option>
+                                <option {{ $city = "Shibin al Kawm" ? "selected":"" }} value="Shibin al Kawm">شيبين الكوم</option>
+                                <option {{ $city = "Al Arish" ? "selected":"" }} value="Al Arish">ألعريش</option>
+                                <option {{ $city = "Al Ghardaqah" ? "selected":"" }} value="Al Ghardaqah">الغردقة</option>
+                                <option {{ $city = "Banha" ? "selected":"" }} value="Banha">بنها</option>
+                                <option {{ $city = "Kafr ash Shaykh" ? "selected":"" }} value="Kafr ash Shaykh">كفر الشيخ</option>
+                                <option {{ $city = "Marsa Matruh" ? "selected":"" }} value="Marsa Matruh">مرسى مطروح</option>
+                                <option {{ $city = "Al Kharijah" ? "selected":"" }} value="Al Kharijah">الخارجة</option>
+                                <option {{ $city = "At Tur" ? "selected":"" }} value="At Tur">الطور</option>
+                                <option {{ $city = "Rafah" ? "selected":"" }} value="Rafah">رفح</option>
+                                <option {{ $city = "Ash Shaykh Zuwayd" ? "selected":"" }} value="Ash Shaykh Zuwayd">الشيخ ذايد</option>
+                                <option {{ $city = "Bir al Abd" ? "selected":"" }} value="Bir al Abd">بئر العبد</option>
                             </select>
 
                             

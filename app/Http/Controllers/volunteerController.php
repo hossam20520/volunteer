@@ -442,6 +442,39 @@ public function register(Request $request){
 
  $username = preg_replace("/\s+/", "", $request->username); 
 
+ 
+ $user = Registered::where('code' ,$request->ID)->where('have_account' , "yes")->first();
+
+ if( $user != null){
+
+    $values = array(
+        "username"=> $username,
+        "password"=> $request->password,
+        "email"=> $request->email,
+        "firstname"=>  $request->fname,
+        "lastname"=> $request->lname,
+        "branch"=> $request->branch,
+        "country" => $request->country,
+        "ID"=>$request->ID,
+        "mid"=>$request->mid,
+        "phone"=>$request->phone,
+        "age"=>$request->age,
+        "gender"=> $request->gender
+    );
+            $message = "لقد تم انشاء الحساب سابقا";
+                                            //$message = "This username already exists, choose another";
+             Session::flash('message', $message); 
+             Session::flash('alert-class', 'danger-2020'); 
+
+             if($request->langa == "en"){
+                return view('front.registerenglish' , $values );
+               }else{
+                return view('front.register' , $values );
+               }
+
+}
+
+
  if($request->password != $request->confirm){
 
     $values = array(
@@ -634,7 +667,7 @@ if($request->age < 16){
                                            
                                      
                                     if($response['success']){
-                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone , "gender"=>$request->gender  ]);  
+                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone , "gender"=>$request->gender , "country"=>$request->country  ]);  
 
 
                                         Session::flash('username', $username); 
