@@ -88,36 +88,36 @@
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $branch}}" required  name="branch">
-                                <option>Select Branch</option>
-                              <option value="فرع مدينة نصر ">فرع مدينة نصر </option>
-                              <option value="فرع زينهم">فرع زينهم</option>
-                              <option value="فرع الجيزة">فرع الجيزة</option>
-                              <option value="فرع القليوبية ">فرع القليوبية </option>
-                              <option value="فرع شمال سيناء ">فرع شمال سيناء </option>
-                              <option value="فرع جنوب سيناء">فرع جنوب سيناء </option>
-                              <option value="فرع البحر الاحمر ">فرع البحر الاحمر </option>
-                              <option value="فرع الاسكندرية">فرع الاسكندرية</option>
-                              <option value="فرع مرسى مطروح">فرع مرسى مطروح</option>
-                              <option value="فرع بور سعيد">فرع بور سعيد</option>
-                              <option value="فرع السويس">فرع السويس </option>
-                              <option value="فرع الشرقية">فرع الشرقية</option>
-                              <option value="فرع دمياط">فرع دمياط</option>
-                              <option value="فرع الدقهلية">فرع الدقهلية</option>
-                              <option value="فرع كفر الشيخ">فرع كفر الشيخ</option>
-                              <option value="فرع الغربية">فرع الغربية</option>
-                              <option value="فرع المنوفية">فرع المنوفية</option>
-                              <option value="فرع البحيرة">فرع البحيرة</option>
-                              <option value="فرع الفيوم">فرع الفيوم </option>
-                              <option value="فرع بنى سويف ">فرع بنى سويف </option>
-                              <option value="فرع المنيا">فرع المنيا</option>
-                              <option value="فرع اسيوط">فرع اسيوط </option>
-                              <option value="فرع سوهاج">فرع سوهاج</option> 
-                              <option value="فرع الاقصر">فرع الاقصر</option>
-                              <option value="فرع اسوان">فرع اسوان</option>
-                              <option value="فرع الوادى الجديد">فرع الوادى الجديد</option>
-                              <option value="فرع قنا ">فرع قنا </option>
-                              <option value="فرع الاسماعلية ">فرع الاسماعلية </option>
-
+              
+                                <option selected disabled>Select Branch</option>
+                                <option {{ $branch == "Nasr City" ? "selected":"" }} value="Nasr City">فرع مدينة نصر</option>
+                                <option {{ $branch == "Zeinhom" ? "selected":"" }} value="Zeinhom">فرع زينهم</option>
+                                <option {{ $branch == "Giza" ? "selected":"" }} value="Giza">فرع الجيزة</option>
+                                <option {{ $branch == "Qalyoubeya" ? "selected":"" }}  value="Qalyoubeya">فرع القليوبية </option>
+                                <option {{ $branch == "North Sinai" ? "selected":"" }} value="North Sinai">فرع شمال سيناء </option>
+                                <option {{ $branch == "South Sinai" ? "selected":"" }} value="South Sinai">فرع جنوب سيناء </option>
+                                <option {{ $branch == "Red Sea" ? "selected":"" }} value="Red Sea">فرع البحر الاحمر </option>
+                                <option {{ $branch == "Alexandria" ? "selected":"" }} value="Alexandria">فرع الاسكندرية</option>
+                                <option {{ $branch == "Matrouh" ? "selected":"" }} value="Matrouh">فرع مرسى مطروح</option>
+                                <option {{ $branch == "Port Said" ? "selected":"" }} value="Port Said">فرع بور سعيد</option>
+                                <option {{ $branch == "Ismailia" ? "selected":"" }} value="Ismailia">فرع الاسماعلية </option>
+                                <option {{ $branch == "Suez" ? "selected":"" }} value="Suez">فرع السويس </option>
+                                <option {{ $branch == "Sharkeya" ? "selected":"" }} value="Sharkeya">فرع الشرقية</option>
+                                <option {{ $branch == "Damietta" ? "selected":"" }} value="Damietta">فرع دمياط</option>
+                                <option {{ $branch == "Dakahleya" ? "selected":"" }} value="Dakahleya">فرع الدقهلية</option>
+                                <option {{ $branch == "Kafr El Sheikh" ? "selected":"" }}  value="Kafr El Sheikh">فرع كفر الشيخ</option>
+                                <option {{ $branch == "Gharbeya" ? "selected":"" }} value="Gharbeya">فرع الغربية</option>
+                                <option {{ $branch == "Menoufeya" ? "selected":"" }} value="Menoufeya">فرع المنوفية</option>
+                                <option {{ $branch == "Beheira" ? "selected":"" }}  value="Beheira">فرع البحيرة</option>
+                                <option {{ $branch == "Fayoum" ? "selected":"" }} value="Fayoum">فرع الفيوم </option>
+                                <option {{ $branch == "Beni Suef" ? "selected":"" }} value="Beni Suef">فرع بنى سويف </option>
+                                <option {{ $branch == "Minya" ? "selected":"" }} value="Minya">فرع المنيا</option>
+                                <option {{ $branch == "Assiut" ? "selected":"" }} value="Assiut">فرع اسيوط </option>
+                                <option {{ $branch == "Sohag" ? "selected":"" }} value="Sohag">فرع سوهاج</option>
+                                <option {{ $branch == "Luxor" ? "selected":"" }} value="Luxor">فرع الاقصر</option>
+                                <option {{ $branch == "Aswan" ? "selected":"" }} value="Aswan">فرع اسوان</option>
+                                <option {{ $branch == "New Valley" ? "selected":"" }}  value="New Valley">فرع الوادى الجديد</option>
+                                <option {{ $branch == "Qena" ? "selected":"" }} value="Qena">فرع قنا </option>
 
                             </select>
 
@@ -129,6 +129,7 @@
                             
 
                             <select class="form-input" id="country" value="{{ $country }}" name="country">
+                                <option selected disabled>Select Country</option>
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
