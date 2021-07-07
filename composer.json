@@ -19,6 +19,7 @@
         "laravel/sanctum": "^2.8",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
+        "laraveldaily/laravel-charts": "^0.1.24",
         "nuovo/spreadsheet-reader": "^0.5.11",
         "yajra/laravel-datatables-oracle": "^9.11"
     },
