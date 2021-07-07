@@ -75,6 +75,17 @@
                         </div>
 
                         <div class="form-group">
+                           
+                            <select class="form-input" value="{{ $gender }}"  required name="gender">
+                                 <option> Select Gender </option>
+                                <option {{ $gender == "male" ? "selected":"" }} value="male"> Male </option>
+                                <option {{ $gender == "female" ? "selected":"" }} value="male"> Female </option>
+                          
+                        </select>
+                        
+                        </div>
+
+                        <div class="form-group">
                             
                             <select class="form-input" value="{{ $branch}}" required  name="branch">
                                 <option>Select Branch</option>

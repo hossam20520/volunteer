@@ -76,8 +76,19 @@
 
                         <div class="form-group">
                            
+                            <select class="form-input" value="{{ $gender }}"  required name="gender">
+                                 <option> اختر النوع </option>
+                                <option {{ $gender == "male" ? "selected":"" }} value="male"> ذكر </option>
+                                <option {{ $gender == "female" ? "selected":"" }} value="male"> انثى </option>
+                          
+                        </select>
                         
-                             <select class="form-input" value="{{ $branch }}"  name="branch">
+                        </div>
+
+                        <div class="form-group">
+                           
+                        
+                             <select class="form-input" value="{{ $branch }}"  required name="branch">
                             
                                 <option>اختر الفرع</option>
                               <option {{ $branch == "فرع مدينة نصر" ? "selected":"" }} value="فرع مدينة نصر ">فرع مدينة نصر </option>

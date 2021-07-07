@@ -429,7 +429,8 @@ public function chooseEn(){
             "ID"=>"",
             "mid"=>"",
             "phone"=>"",
-            "age"=>""
+            "age"=>"",
+            "gender"=>""
         );
         return view('front.registerenglish' , $values);
     }
@@ -453,7 +454,8 @@ public function register(Request $request){
         "ID"=>$request->ID,
         "mid"=>$request->mid,
         "phone"=>$request->phone,
-        "age"=>$request->age
+        "age"=>$request->age,
+        "gender"=> $request->gender
     );
             $message = "كلمة السر ليست متطابقة";
                                             //$message = "This username already exists, choose another";
@@ -482,7 +484,8 @@ if($request->age < 16){
         "ID"=>$request->ID,
         "mid"=>$request->mid,
         "phone"=>$request->phone,
-        "age"=>$request->age
+        "age"=>$request->age,
+        "gender"=> $request->gender
     );
             $message = "سنك اقل من 16 سنة";
                                             //$message = "This username already exists, choose another";
@@ -537,7 +540,8 @@ if($request->age < 16){
                 "ID"=>$request->ID,
                 "mid"=>$request->mid,
                 "phone"=>$request->phone,
-                "age"=>$request->age
+                "age"=>$request->age,
+                "gender"=> $request->gender
             );
             if($request->langa == "en"){
                 return view('front.registerenglish' , $values );
@@ -558,7 +562,8 @@ if($request->age < 16){
                 "ID"=>"",
                 "mid"=>"",
                 "phone"=>"",
-                "age"=>""
+                "age"=>"",
+                "gender"=>""
             );
 
 
@@ -595,7 +600,8 @@ if($request->age < 16){
                                                 "ID"=>$request->ID,
                                                 "mid"=>$request->mid,
                                                 "phone"=>$request->phone,
-                                                "age"=>$request->age
+                                                "age"=>$request->age,
+                                                "gender"=> $request->gender
                                             );
     
                                             $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
@@ -627,7 +633,7 @@ if($request->age < 16){
                                            
                                      
                                     if($response['success']){
-                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone]);  
+                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone , "gender"=>$request->gender  ]);  
 
 
                                         Session::flash('username', $username); 
@@ -647,7 +653,8 @@ if($request->age < 16){
                                             "ID"=>"",
                                             "mid"=>"",
                                             "phone"=>"",
-                                            "age"=>""
+                                            "age"=>"",
+                                            "gender"=>""
                                         );
                                         // $data = array('name'=>"Virat Gandhi" , 'username'=> 'username' , 'password'=>'password');
 
@@ -674,7 +681,8 @@ if($request->age < 16){
                                             "ID"=>$ID,
                                             "mid"=>$request->mid,
                                             "phone"=>$request->phone,
-                                            "age"=>$request->age
+                                            "age"=>$request->age,
+                                            "gender"=> $request->gender
                                         );
                                         // $va = json_encode( $values , true);
 
@@ -763,7 +771,8 @@ if($request->age < 16){
             "ID"=>"",
             "mid"=>"",
             "phone"=>"",
-            "age"=>""
+            "age"=>"",
+            "gender"=>""
         );
         if($request->langa == "en"){
             return view('front.registerenglish' , $values );
