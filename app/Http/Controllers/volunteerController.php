@@ -667,7 +667,8 @@ if($request->age < 16){
                                            
                                      
                                     if($response['success']){
-                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch, "phone"=>$request->phone , "gender"=>$request->gender , "country"=>$request->country  ]);  
+                                        Registered::where('code' , $ID)->update(["age"=>$request->age  , "branch"=>$request->branch,
+                                         "phone"=>$request->phone , "gender"=>$request->gender , "country"=>$request->country , "have_account"=>"yes"  ]);  
 
 
                                         Session::flash('username', $username); 
