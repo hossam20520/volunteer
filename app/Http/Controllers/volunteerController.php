@@ -59,7 +59,8 @@ public function chooseEn(){
             "ID"=>"",
             "mid"=>"",
             "phone"=>"",
-            "age"=>""
+            "age"=>"",
+            "gender"=> ""
         );
         return view('front.register' , $values);
     }
