@@ -48,9 +48,9 @@
                         <select name="cars" class="form-control wrap-input2 input2">
                             <option selected>Select Department</option>
                             <option value="first">First Aid</option>
-                            <option value="vol">Volunteer</option>
-                            <option value="health">Health promotion</option>
-                            <option value="IT">IT</option>
+                            <option value="vol">Youth and volunteering department</option>
+                            <option value="health">Health and care department</option>
+                            <option value="IT">Technical support department</option>
                           </select>
 					
 					</div>
