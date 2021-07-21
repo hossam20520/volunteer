@@ -179,7 +179,7 @@
     ],
     orderCellsTop: true,
     order: [[ 1, 'desc' ]],
-    pageLength: 7000,
+    pageLength: 300,
   };
   let table = $('.datatable-Registered').DataTable(dtOverrideGlobals);
   $('a[data-toggle="tab"]').on('shown.bs.tab click', function(e){
