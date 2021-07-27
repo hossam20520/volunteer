@@ -37,6 +37,8 @@ class AnalyticsController extends Controller
                                $response = json_decode($res->getBody(), true);
                                $total_courses = count((array)$response);
 
+                               $total_issued_cert = $this->get_certificates(5);
+
 // dd($response);
                    
 //get all courses from database array courses
@@ -88,7 +90,7 @@ foreach ($youth as  $value) {
 
                
                               
-                                   $total_issued_cert = $this->get_certificates(5);
+                                  
                                       
                         
                                    
@@ -218,7 +220,6 @@ foreach ($youth as  $value) {
 
             // $res->getHeader('content-type');
            $response_1 = json_decode($res1->getBody(), true);
-           dd($response_1);
            $total_issued_cert = count((array)$response_1['issues']);
 
            return $total_issued_cert;
