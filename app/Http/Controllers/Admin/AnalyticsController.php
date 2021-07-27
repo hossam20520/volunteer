@@ -94,7 +94,7 @@ foreach ($youth as  $value) {
                                       
                         
                                    
-          return view('admin.analytics.index' , ['cert'=> $total_issued_cert , 'total_courses'=> $total_courses , 'id'=>$id , 'users'=> $users  ,
+          return view('admin.analytics.index' , ['cert'=> $total_issued_cert , 'total_courses'=> $total_courses  , 'users'=> $users  ,
            'ar'=>$ar  , 'vol'=>$vola , 'youth'=>$nums] );
     }
 
