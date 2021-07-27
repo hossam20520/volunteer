@@ -127,6 +127,38 @@
                             <input type="checkbox" disabled="disabled" {{ $other->accept_terms ? 'checked' : '' }}>
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.idpassport') }}
+                        </th>
+                        <td>
+                            {{ $other->idpassport }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.fullname') }}
+                        </th>
+                        <td>
+                            {{ $other->fullname }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.gender') }}
+                        </th>
+                        <td>
+                            {{ $other->gender }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.other.fields.nationality') }}
+                        </th>
+                        <td>
+                            {{ $other->nationality }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

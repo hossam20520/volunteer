@@ -124,6 +124,46 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 29,
+                'title' => 'analytic_create',
+            ],
+            [
+                'id'    => 30,
+                'title' => 'analytic_edit',
+            ],
+            [
+                'id'    => 31,
+                'title' => 'analytic_show',
+            ],
+            [
+                'id'    => 32,
+                'title' => 'analytic_delete',
+            ],
+            [
+                'id'    => 33,
+                'title' => 'analytic_access',
+            ],
+            [
+                'id'    => 34,
+                'title' => 'course_create',
+            ],
+            [
+                'id'    => 35,
+                'title' => 'course_edit',
+            ],
+            [
+                'id'    => 36,
+                'title' => 'course_show',
+            ],
+            [
+                'id'    => 37,
+                'title' => 'course_delete',
+            ],
+            [
+                'id'    => 38,
+                'title' => 'course_access',
+            ],
+            [
+                'id'    => 39,
                 'title' => 'profile_password_edit',
             ],
         ];

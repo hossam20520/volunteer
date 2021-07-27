@@ -22,7 +22,6 @@ class CreateRegisteredsTable extends Migration
             $table->string('have_account')->nullable();
             $table->string('gender')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 }

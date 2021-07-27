@@ -68,6 +68,18 @@
                         {{ trans('cruds.other.fields.accept_terms') }}
                     </th>
                     <th>
+                        {{ trans('cruds.other.fields.idpassport') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.other.fields.fullname') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.other.fields.gender') }}
+                    </th>
+                    <th>
+                        {{ trans('cruds.other.fields.nationality') }}
+                    </th>
+                    <th>
                         &nbsp;
                     </th>
                 </tr>
@@ -114,6 +126,18 @@
                         <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                     </td>
                     <td>
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                     </td>
                     <td>
                     </td>
@@ -184,6 +208,10 @@
 { data: 'phone', name: 'phone' },
 { data: 'age', name: 'age' },
 { data: 'accept_terms', name: 'accept_terms' },
+{ data: 'idpassport', name: 'idpassport' },
+{ data: 'fullname', name: 'fullname' },
+{ data: 'gender', name: 'gender' },
+{ data: 'nationality', name: 'nationality' },
 { data: 'actions', name: '{{ trans('global.actions') }}' }
     ],
     orderCellsTop: true,

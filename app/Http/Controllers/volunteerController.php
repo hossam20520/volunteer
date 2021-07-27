@@ -84,7 +84,11 @@ public function chooseEn(){
             "city"=> "",
             "phone"=> "",
             "age"=> "",
-            "accept_terms"=> ""
+            "accept_terms"=> "",
+            "gender"=>"",
+            "idpassport"=> "",
+            "fullname"=>"",
+            "nationality"=>""
         );
         return view('front.others.registereng' , $values);
     }
@@ -105,7 +109,11 @@ public function chooseEn(){
             "city"=> "",
             "phone"=> "",
             "age"=> "",
-            "accept_terms"=> ""
+            "accept_terms"=> "",
+            "gender"=>"",
+            "idpassport"=> "",
+            "fullname"=>"",
+            "nationality"=>""
         );
         return view('front.others.register' , $values);
 
@@ -136,6 +144,10 @@ public function chooseEn(){
                 "city"=> $request->city,
                 "phone"=> $request->phone,
                 "age"=> $request->age,
+                "gender"=>$request->gender,
+                "idpassport"=> $request->idpassport,
+                "fullname"=>$request->fullname,
+                "nationality"=>$request->nationality
             );
                     $message = "كلمة السر ليست متطابقة";
                      //$message = "This username already exists, choose another";
@@ -171,6 +183,10 @@ public function chooseEn(){
                 "city"=> $request->city,
                 "phone"=> $request->phone,
                 "age"=> $request->age,
+                "gender"=>$request->gender,
+                "idpassport"=> $request->idpassport,
+                "fullname"=>$request->fullname,
+                "nationality"=>$request->nationality
             );
                     $message = "سنك اقل من 16 سنة";
                                                     //$message = "This username already exists, choose another";
@@ -247,6 +263,10 @@ public function chooseEn(){
                                                 "city"=> $request->city,
                                                 "phone"=> $request->phone,
                                                 "age"=> $request->age,
+                                                "gender"=>$request->gender,
+                                                "idpassport"=> $request->idpassport,
+                                                "fullname"=>$request->fullname,
+                                                "nationality"=>$request->nationality
                                             );
     
                                             $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
@@ -280,7 +300,11 @@ public function chooseEn(){
                                         "city"=> $request->city,
                                         "phone"=> $request->phone,
                                         "age"=> $request->age,
-                                        "accept_terms"=> true
+                                        "accept_terms"=> true,
+                                        "gender"=>$request->gender,
+                                        "idpassport"=> $request->idpassport,
+                                        "fullname"=>$request->fullname,
+                                        "nationality"=>$request->nationality
                                         ]);
 
 
@@ -309,7 +333,11 @@ public function chooseEn(){
                                             "city"=> "",
                                             "phone"=> "",
                                             "age"=> "",
-                                            "accept_terms"=> ""
+                                            "accept_terms"=> "",
+                                            "gender"=>"",
+                                            "idpassport"=> "",
+                                            "fullname"=>"",
+                                            "nationality"=>""
                                         );
                                      
                                         if($request->langa == "en"){
@@ -336,7 +364,11 @@ public function chooseEn(){
                                             "city"=> $request->city,
                                             "phone"=> $request->phone,
                                             "age"=> $request->age,
-                                            "accept_terms"=> true
+                                            "accept_terms"=> true,
+                                            "gender"=>$request->gender,
+                                            "idpassport"=> $request->idpassport,
+                                            "fullname"=>$request->fullname,
+                                            "nationality"=>$request->nationality
                                         );
                                         // $va = json_encode( $values , true);
 

@@ -33,40 +33,60 @@
                             {!! $chart4->renderHtml() !!}
                         </div>
                         <div class="{{ $settings5['column_class'] }}">
-                            <div class="card text-white bg-primary">
-                                <div class="card-body pb-0">
-                                    <div class="text-value">{{ number_format($settings5['total_number']) }}</div>
-                                    <div>{{ $settings5['chart_title'] }}</div>
-                                    <br />
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red" style="display:flex; flex-direction: column; justify-content: center;">
+                                    <i class="fa fa-chart-line"></i>
+                                </span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">{{ $settings5['chart_title'] }}</span>
+                                    <span class="info-box-number">{{ number_format($settings5['total_number']) }}</span>
                                 </div>
+                                <!-- /.info-box-content -->
                             </div>
+                            <!-- /.info-box -->
                         </div>
                         <div class="{{ $settings6['column_class'] }}">
-                            <div class="card text-white bg-primary">
-                                <div class="card-body pb-0">
-                                    <div class="text-value">{{ number_format($settings6['total_number']) }}</div>
-                                    <div>{{ $settings6['chart_title'] }}</div>
-                                    <br />
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red" style="display:flex; flex-direction: column; justify-content: center;">
+                                    <i class="fa fa-chart-line"></i>
+                                </span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">{{ $settings6['chart_title'] }}</span>
+                                    <span class="info-box-number">{{ number_format($settings6['total_number']) }}</span>
                                 </div>
+                                <!-- /.info-box-content -->
                             </div>
+                            <!-- /.info-box -->
                         </div>
                         <div class="{{ $settings7['column_class'] }}">
-                            <div class="card text-white bg-primary">
-                                <div class="card-body pb-0">
-                                    <div class="text-value">{{ number_format($settings7['total_number']) }}</div>
-                                    <div>{{ $settings7['chart_title'] }}</div>
-                                    <br />
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red" style="display:flex; flex-direction: column; justify-content: center;">
+                                    <i class="fa fa-chart-line"></i>
+                                </span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">{{ $settings7['chart_title'] }}</span>
+                                    <span class="info-box-number">{{ number_format($settings7['total_number']) }}</span>
                                 </div>
+                                <!-- /.info-box-content -->
                             </div>
+                            <!-- /.info-box -->
                         </div>
                         <div class="{{ $settings8['column_class'] }}">
-                            <div class="card text-white bg-primary">
-                                <div class="card-body pb-0">
-                                    <div class="text-value">{{ number_format($settings8['total_number']) }}</div>
-                                    <div>{{ $settings8['chart_title'] }}</div>
-                                    <br />
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red" style="display:flex; flex-direction: column; justify-content: center;">
+                                    <i class="fa fa-chart-line"></i>
+                                </span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">{{ $settings8['chart_title'] }}</span>
+                                    <span class="info-box-number">{{ number_format($settings8['total_number']) }}</span>
                                 </div>
+                                <!-- /.info-box-content -->
                             </div>
+                            <!-- /.info-box -->
                         </div>
                         <div class="{{ $chart9->options['column_class'] }}">
                             <h3>{!! $chart9->options['chart_title'] !!}</h3>
@@ -77,22 +97,32 @@
                             {!! $chart10->renderHtml() !!}
                         </div>
                         <div class="{{ $settings11['column_class'] }}">
-                            <div class="card text-white bg-primary">
-                                <div class="card-body pb-0">
-                                    <div class="text-value">{{ number_format($settings11['total_number']) }}</div>
-                                    <div>{{ $settings11['chart_title'] }}</div>
-                                    <br />
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red" style="display:flex; flex-direction: column; justify-content: center;">
+                                    <i class="fa fa-chart-line"></i>
+                                </span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">{{ $settings11['chart_title'] }}</span>
+                                    <span class="info-box-number">{{ number_format($settings11['total_number']) }}</span>
                                 </div>
+                                <!-- /.info-box-content -->
                             </div>
+                            <!-- /.info-box -->
                         </div>
                         <div class="{{ $settings12['column_class'] }}">
-                            <div class="card text-white bg-primary">
-                                <div class="card-body pb-0">
-                                    <div class="text-value">{{ number_format($settings12['total_number']) }}</div>
-                                    <div>{{ $settings12['chart_title'] }}</div>
-                                    <br />
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red" style="display:flex; flex-direction: column; justify-content: center;">
+                                    <i class="fa fa-chart-line"></i>
+                                </span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">{{ $settings12['chart_title'] }}</span>
+                                    <span class="info-box-number">{{ number_format($settings12['total_number']) }}</span>
                                 </div>
+                                <!-- /.info-box-content -->
                             </div>
+                            <!-- /.info-box -->
                         </div>
                         <div class="{{ $chart13->options['column_class'] }}">
                             <h3>{!! $chart13->options['chart_title'] !!}</h3>

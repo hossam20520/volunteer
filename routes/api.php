@@ -16,3 +16,6 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Others
     Route::apiResource('others', 'OthersApiController');
 });
+
+
+Route::post('firstAid', 'anaController@firstAid');

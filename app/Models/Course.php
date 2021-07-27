@@ -3,16 +3,20 @@
 namespace App\Models;
 
 use \DateTimeInterface;
-use App\Traits\Auditable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Other extends Model
+class Course extends Model
 {
-    use Auditable;
     use HasFactory;
 
-    public $table = 'others';
+    public const DEPARTMENT_SELECT = [
+        'F' => 'First Aid',
+        'V' => 'Volunteer',
+        'Y' => 'Youth',
+    ];
+
+    public $table = 'courses';
 
     protected $dates = [
         'created_at',
@@ -21,23 +25,10 @@ class Other extends Model
     ];
 
     protected $fillable = [
-        'email',
-        'firstname',
-        'lastname',
-        'username',
-        'company',
-        'job',
-        'eq',
-        'country',
-        'city',
-        'password',
-        'phone',
-        'age',
-        'accept_terms',
-        'idpassport',
-        'fullname',
-        'gender',
-        'nationality',
+        'course',
+        'courseid',
+        'number_of_trainees',
+        'department',
         'created_at',
         'updated_at',
         'deleted_at',

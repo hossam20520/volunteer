@@ -23,8 +23,11 @@ class CreateOthersTable extends Migration
             $table->string('phone')->nullable();
             $table->integer('age')->nullable();
             $table->boolean('accept_terms')->default(0)->nullable();
+            $table->string('idpassport')->nullable();
+            $table->string('fullname')->nullable();
+            $table->string('gender')->nullable();
+            $table->string('nationality')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 }
