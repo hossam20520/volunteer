@@ -87,21 +87,9 @@ foreach ($youth as  $value) {
 
 
                
-                                $cert = array(
-                                    'wstoken' => '1d5a9968a0f01f743ea73b5bf0fee117',
-                                    'wsfunction' =>  'mod_certificate_get_issued_certificates',
-                                    'certificateid'  => 5
-                                       );
-
-                                $res1 = $client->post(env('FRONT_API_URL'), [
-                                    // 'headers' => ['Content-Type' => 'application/json', 'Accept' => 'application/json'],
-                                    'form_params' =>  $cert
-                                    ]);
-    
-                                    // $res->getHeader('content-type');
-                                   $response_1 = json_decode($res1->getBody(), true);
-                                   $total_issued_cert = count((array)$response_1['issues']);
-
+                              
+                                   $total_issued_cert = $this->get_certificates(5);
+                                      
                         
                                    
           return view('admin.analytics.index' , ['cert'=> $total_issued_cert , 'total_courses'=> $total_courses , 'id'=>$id , 'users'=> $users  ,
@@ -212,6 +200,29 @@ foreach ($youth as  $value) {
                                    return $total_users_2;
 
     }
+
+
+
+    public function get_certificates($id){
+        $client = new client();
+        $cert = array(
+            'wstoken' => '1d5a9968a0f01f743ea73b5bf0fee117',
+            'wsfunction' =>  'mod_certificate_get_issued_certificates',
+            'certificateid'  => $id
+               );
+
+        $res1 = $client->post(env('FRONT_API_URL'), [
+            // 'headers' => ['Content-Type' => 'application/json', 'Accept' => 'application/json'],
+            'form_params' =>  $cert
+            ]);
+
+            // $res->getHeader('content-type');
+           $response_1 = json_decode($res1->getBody(), true);
+           $total_issued_cert = count((array)$response_1['issues']);
+
+           return $total_issued_cert;
+
+}
 
 
 }
