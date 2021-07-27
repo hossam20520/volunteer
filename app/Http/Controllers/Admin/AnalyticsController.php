@@ -197,7 +197,7 @@ foreach ($youth as  $value) {
     
                                     // $res->getHeader('content-type');
                                    $response_2 = json_decode($res2->getBody(), true);
-                                   $total_users_2 = count($response_2);
+                                   $total_users_2 = count((array)$response_2);
 
                                    return $total_users_2;
 
@@ -220,9 +220,9 @@ foreach ($youth as  $value) {
 
             // $res->getHeader('content-type');
            $response_1 = json_decode($res1->getBody(), true);
-        //    $total_issued_cert = count((array)$response_1['issues']);
+          $total_issued_cert = count((array)$response_1['issues']);
 
-           return 1;
+           return $total_issued_cert;
 
 }
 
