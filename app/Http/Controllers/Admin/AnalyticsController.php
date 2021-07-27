@@ -218,6 +218,7 @@ foreach ($youth as  $value) {
 
             // $res->getHeader('content-type');
            $response_1 = json_decode($res1->getBody(), true);
+           dd($response_1);
            $total_issued_cert = count((array)$response_1['issues']);
 
            return $total_issued_cert;
