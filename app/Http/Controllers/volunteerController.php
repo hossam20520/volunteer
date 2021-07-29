@@ -309,8 +309,8 @@ public function chooseEn(){
                                         "gender"=>$request->gender,
                                         "idpassport"=> $request->idpassport,
                                         "fullname"=>$request->fullname,
-                                        "nationality"=>$request->nationality,
-                                        "IDNUM"=>$request->IDNUM
+                                        "nationality"=>$request->nationality
+                                       
                                         ]);
 
 
