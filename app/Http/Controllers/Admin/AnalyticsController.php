@@ -130,6 +130,8 @@ foreach ($youth as  $value) {
     {
         abort_if(Gate::denies('analytic_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
+
+        
         return view('admin.analytics.show', compact('analytic'));
     }
 
@@ -225,6 +227,49 @@ foreach ($youth as  $value) {
            return $total_issued_cert;
 
 }
+
+
+
+
+
+public function course(Request $req , $idC){
+
+    $courses  = Course::where('department' , 'V')->get();
+    if($idC == 5){
+        $total_issued_cert = $this->get_certificates(5);
+    }else{
+        $total_issued_cert = 0;
+    }
+   
+   
+
+    $ar = [];
+
+
+    foreach ($courses as  $value) {
+        $id = $this->get_course_moodle_id($idC)['id'];
+        $name = $this->get_course_moodle_id($idC)['fullname'];
+        $users = $this->get_users_in_course($id);
+        $ar[$users] = $name;
+        if($value->id == 5){
+            $ar[$total_issued_cert] = "الشهادة";
+        }else{
+            $ar[0] = "الشهادة";
+        }
+       
+        
+
+    }
+
+
+    return view('admin.analytics.firstAid' , [ 
+           'ar'=>$ar , 'cert'=>$total_issued_cert ] );
+
+}
+
+
+
+
 
 
 }

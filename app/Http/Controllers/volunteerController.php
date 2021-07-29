@@ -88,7 +88,8 @@ public function chooseEn(){
             "gender"=>"",
             "idpassport"=> "",
             "fullname"=>"",
-            "nationality"=>""
+            "nationality"=>"",
+            "IDNUM"=>""
         );
         return view('front.others.registereng' , $values);
     }
@@ -113,7 +114,8 @@ public function chooseEn(){
             "gender"=>"",
             "idpassport"=> "",
             "fullname"=>"",
-            "nationality"=>""
+            "nationality"=>"",
+            "IDNUM"=>""
         );
         return view('front.others.register' , $values);
 
@@ -147,7 +149,8 @@ public function chooseEn(){
                 "gender"=>$request->gender,
                 "idpassport"=> $request->idpassport,
                 "fullname"=>$request->fullname,
-                "nationality"=>$request->nationality
+                "nationality"=>$request->nationality,
+                "IDNUM"=>$request->IDNUM
             );
                     $message = "كلمة السر ليست متطابقة";
                      //$message = "This username already exists, choose another";
@@ -186,7 +189,8 @@ public function chooseEn(){
                 "gender"=>$request->gender,
                 "idpassport"=> $request->idpassport,
                 "fullname"=>$request->fullname,
-                "nationality"=>$request->nationality
+                "nationality"=>$request->nationality,
+                "IDNUM"=>$request->IDNUM
             );
                     $message = "سنك اقل من 16 سنة";
                                                     //$message = "This username already exists, choose another";
@@ -266,7 +270,8 @@ public function chooseEn(){
                                                 "gender"=>$request->gender,
                                                 "idpassport"=> $request->idpassport,
                                                 "fullname"=>$request->fullname,
-                                                "nationality"=>$request->nationality
+                                                "nationality"=>$request->nationality,
+                                                "IDNUM"=>$request->IDNUM
                                             );
     
                                             $message = "اسم المستخدم يجب ان يتكون من حروف صغيرة باللغة الانجليزية ";
@@ -304,7 +309,8 @@ public function chooseEn(){
                                         "gender"=>$request->gender,
                                         "idpassport"=> $request->idpassport,
                                         "fullname"=>$request->fullname,
-                                        "nationality"=>$request->nationality
+                                        "nationality"=>$request->nationality,
+                                        "IDNUM"=>$request->IDNUM
                                         ]);
 
 
@@ -337,7 +343,8 @@ public function chooseEn(){
                                             "gender"=>"",
                                             "idpassport"=> "",
                                             "fullname"=>"",
-                                            "nationality"=>""
+                                            "nationality"=>"",
+                                            "IDNUM"=>"",
                                         );
                                      
                                         if($request->langa == "en"){
@@ -368,7 +375,8 @@ public function chooseEn(){
                                             "gender"=>$request->gender,
                                             "idpassport"=> $request->idpassport,
                                             "fullname"=>$request->fullname,
-                                            "nationality"=>$request->nationality
+                                            "nationality"=>$request->nationality,
+                                            "IDNUM"=>$request->IDNUM,
                                         );
                                         // $va = json_encode( $values , true);
 

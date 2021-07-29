@@ -61,38 +61,32 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  name="fullname" required id="name" placeholder="الاسم بالكامل كما هو موضح فى جواز السفر لغير المصريين"/>
+                          
+                             <input type="number" class="form-input" value="{{ $idpassport }}"  name="idpassport" required id="name" placeholder="ادخل رقم القومي "/>
                         </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input"  name="fullname" value="{{ $fullname }}"  id="name" placeholder="الاسم بالكامل كما هو موضح فى جواز السفر لغير المصريين"/>
+                        </div>
+
+                    
+
+                        <div class="form-group">
+                           
+                             <input type="number" class="form-input"  name="IDNUM"   value="{{ $IDNUM }}" id="name" placeholder="ادخل رقم جواز السفر لغير المصريين"/>
+                        </div>
+
+
 
                         <div class="form-group">
                             <input type="hidden" class="form-input"   name="lname"  value="lname" required id="name" placeholder=""/>
                         </div>
 
 
-                  
-                        <div class="form-group">
-                            <span style="font-size: 13px;float: right;color: red;"> ادخل رقم جواز السفر لغير المصريين </span>
-                             <input type="number" class="form-input"  name="idpassport" required id="name" placeholder="ادخل رقم القومي "/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="رقم الموبايل"/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $age }}"  required name="age" id="name" placeholder="السن"/>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $nationality }}"  required name="nationality" id="name" placeholder="الجنسية"/>
-                        </div>
-
                         <div class="form-group">
                            
                             <select class="form-input" value="{{ $gender }}"  required name="gender">
-                                 <option> اختر النوع </option>
+                                 <option>  النوع </option>
                                 <option {{ $gender == "male" ? "selected":"" }} value="male"> ذكر </option>
                                 <option {{ $gender == "female" ? "selected":"" }} value="female"> انثى </option>
                           
@@ -101,9 +95,23 @@
                         </div>
 
                         <div class="form-group">
+                            <input type="number" class="form-input"  value="{{ $age }}"  required name="age" id="name" placeholder="السن"/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input"  value="{{ $nationality }}"  required name="nationality" id="name" placeholder="الجنسية"/>
+                        </div>
+              
+
+
+                  
+
+                
+
+                        <div class="form-group">
                             
                             <select class="form-input" value="{{ $city }}" required  name="city">
-                                <option>اختر المحافظة </option>
+                                <option> المحافظة </option>
                                 <option {{ $city == "Alexandria" ? "selected":"" }} value="Alexandria">الإسكندرية</option>
                                 <option {{ $city == "Ismailia" ? "selected":"" }} value="Ismailia">الإسماعيلية</option>
                                 <option {{ $city == "Aswan" ? "selected":"" }} value="Aswan">أسوان</option>
@@ -137,6 +145,29 @@
                             
                           </div>
 
+
+                          
+                        <div class="form-group">
+                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="البريد الالكتروني"/>
+                        </div>
+
+                          
+                        <div class="form-group">
+                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="رقم الموبايل"/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name"  placeholder="الوظيفة"/>
+                        </div>
+                     
+                        <div class="form-group">
+                            <input type="text" class="form-input"  value="{{ $company }}" name="company" id="name"  placeholder="جهة العمل"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="المؤهل الدراسي"/>
+                        </div>
                 
                         <div class="form-group">
                            
@@ -144,21 +175,10 @@
 
                         </div>
 
-                        <div class="form-group">
-                            <input type="email" class="form-input"  value="{{ $email }}" name="email" id="email" required placeholder="البريد الالكتروني"/>
-                        </div>
                        
-                        <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $job }}" name="job" id="name"  placeholder="الوظيفة"/>
-                        </div>
+                   
 
-                        <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $company }}" name="company" id="name"  placeholder="جهة العمل"/>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-input"  value="{{ $eq }}" name="eq" id="name" required placeholder="المؤهل الدراسي"/>
-                        </div>
+              
 
 
                         
