@@ -60,7 +60,7 @@
                            
                         </div> --}}
 
-                        <input type="hiden" class="form-input" value="fname" name="fname" required id="name" placeholder="الاسم بالكامل كما هو موضح فى الرقم القومى"/>
+                        <input type="hidden" class="form-input" value="fname" name="fname" required id="name" />
 
                         <div class="form-group">
                             <input type="text" class="form-input"  name="fullname" value="{{ $fullname }}"  id="name" placeholder="الاسم بالكامل كما هو موضح فى الرقم القومى أو فى جواز السفر لغير المصريين"/>
