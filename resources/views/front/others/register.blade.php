@@ -56,26 +56,22 @@
                         <input type="text" class="form-input" value="{{ $username }}" name="username" required id="name" placeholder="اسم المستخدم"/>
                         </div>
 
+                        {{-- <div class="form-group">
+                           
+                        </div> --}}
+
+                        <input type="hiden" class="form-input" value="fname" name="fname" required id="name" placeholder="الاسم بالكامل كما هو موضح فى الرقم القومى"/>
+
                         <div class="form-group">
-                            <input type="text" class="form-input" value="{{ $firstname }}" name="fname" required id="name" placeholder="الاسم بالكامل كما هو موضح فى الرقم القومى"/>
+                            <input type="text" class="form-input"  name="fullname" value="{{ $fullname }}"  id="name" placeholder="الاسم بالكامل كما هو موضح فى الرقم القومى أو فى جواز السفر لغير المصريين"/>
                         </div>
 
                         <div class="form-group">
                           
-                             <input type="number" class="form-input" value="{{ $idpassport }}"  name="idpassport" required id="name" placeholder="ادخل رقم القومي "/>
+                             <input type="number" class="form-input" value="{{ $idpassport }}"  name="idpassport" required id="name" placeholder="الرقم القومى أو رقم جواز السفر لغير المصريين"/>
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-input"  name="fullname" value="{{ $fullname }}"  id="name" placeholder="الاسم بالكامل كما هو موضح فى جواز السفر لغير المصريين"/>
-                        </div>
-
-                    
-
-                        <div class="form-group">
-                           
-                             <input type="number" class="form-input"  name="IDNUM"   value="{{ $IDNUM }}" id="name" placeholder="ادخل رقم جواز السفر لغير المصريين"/>
-                        </div>
-
+                 
 
 
                         <div class="form-group">
@@ -153,7 +149,7 @@
 
                           
                         <div class="form-group">
-                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="رقم الموبايل"/>
+                            <input type="number" class="form-input"  value="{{ $phone }}" name="phone" required id="name" placeholder="رقم الهاتف المحمول"/>
                         </div>
 
                         <div class="form-group">
@@ -185,7 +181,7 @@
                         <input type="hidden" class="form-input" value="ar" name="langa" id="name" />
             
                         <div class="form-group">
-                            <span style="font-size: 13px;float: right;color: red;">  (&*#!ّّ%^-؟\) يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
+                            <span style="font-size: 13px;float: right;color: red;">   (يجب ألا تقل عن ٨ أحرف) (&*#!ّّ%^-؟\) يجب ان تحتوي كلمة السر على حروف كبيرة ورموز وارقام </span>
                             <input type="text" class="form-input" name="password" id="password"  required placeholder="كلمة السر"/>
                           
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
