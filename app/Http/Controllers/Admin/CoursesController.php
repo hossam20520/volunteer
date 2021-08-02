@@ -74,20 +74,24 @@ class CoursesController extends Controller
        
        
     
-        $ar = [];
-        $certa  = [];
-        $notCert  = [];
-    
+        // $ar = [];
+        // $certa  = [];
+        // $notCert  = [];
+      
+        $numberUsers = 0;
+        $namecourse = "";
         foreach ($courses as  $value) {
             $id = $this->get_course_moodle_id($course->courseid)['id'];
             $name = $this->get_course_moodle_id($course->courseid)['fullname'];
             $users = $this->get_users_in_course($id);
-            $ar[$users] = $name;
+            $numberUsers = $users;
+            $namecourse = $name;
+            // $ar[$users] = $name;
 
             
-            $certa[$total_issued_cert] = "الشهادة";
+            // $certa[$total_issued_cert] = "الشهادة";
 
-            $notCert[($users - $total_issued_cert)] = "لم يستلم الشهادة";
+            // $notCert[($users - $total_issued_cert)] = "لم يستلم الشهادة";
 
         }
 
@@ -100,7 +104,7 @@ class CoursesController extends Controller
 
 
 
-        return view('admin.courses.show', ['course'=> $course , 'ar'=> $ar  , 'certa'=>$certa , 'notCert'=>$notCert ]);
+        return view('admin.courses.show', ['course'=> $course , 'numberUsers'=> $numberUsers , 'namecourse'=>$namecourse , 'total_issued_cert'=>$total_issued_cert  ]);
     }
 
     public function destroy(Course $course)

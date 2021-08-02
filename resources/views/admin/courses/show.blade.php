@@ -70,49 +70,75 @@
 
 
 
-
+{{-- 
 @foreach ($ar as $key => $value )
 
 
 <input type="hidden" class="names_2020" value="{{  $value  }}">
 <input type="hidden" class="values_2020"  value="{{ $key  }}">
     
-@endforeach
+@endforeach --}}
 
 
-@foreach ($certa as $key => $value)
+{{-- @foreach ($certa as $key => $value)
 <input type="hidden" class="names_cert_2020" value="{{  $value  }}">
 <input type="hidden" class="values__cert_2020"  value="{{ $key  }}">
-@endforeach
+@endforeach --}}
 
 
 <div class="row">
-
-    <div class="col-md-4">
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="info-box">
+        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-users"></i></span>
   
-      
+        <div class="info-box-content">
+          <span class="info-box-text">Total Users</span>
+          <span class="info-box-number">
+            {{ $numberUsers }}
+            {{-- <small>%</small> --}}
+          </span>
+        </div>
+        <!-- /.info-box-content -->
       </div>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
 
-
-
-    <div class="col-md-3">
+    <!-- /.col -->
   
-      <div>
-        <canvas id="myChart"></canvas>
+    <!-- fix for small devices only -->
+    <div class="clearfix hidden-md-up"></div>
+  
+
+    <!-- /.col -->
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="info-box mb-3">
+        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-address-card"></i></span>
+  
+        <div class="info-box-content">
+          <span class="info-box-text">Total issued certficate </span>
+          <span class="info-box-number">{{ $total_issued_cert }}</span>
+        </div>
+        <!-- /.info-box-content -->
       </div>
-    
+      <!-- /.info-box -->
     </div>
+
+
+
+    <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+          <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-address-card"></i></span>
     
-    
-     <div class="col-md-4">
-  
-    
-    
-    </div>
-  
-  
-  
-  
+          <div class="info-box-content">
+            <span class="info-box-text">Total Not issued certficate </span>
+            <span class="info-box-number">{{ $numberUsers  - $total_issued_cert }}</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+    <!-- /.col -->
   </div>
 
 
