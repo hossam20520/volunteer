@@ -220,7 +220,10 @@ public function chooseEn(){
                 "password"=> $request->password,
                 "email"=> $request->email,
                 "firstname"=>  $request->fname,
-                "lastname"=> $request->lname
+                "lastname"=> $request->lname,
+                "customprofilefields[6][type]"=> "string",
+                "customprofilefields[6][value]"=> "no",
+                "customprofilefields[6][name]" => "profile_field_volunteer"
                 // "city"=> $request->city,
                 // "country" => $request->country
             )
@@ -481,8 +484,8 @@ public function chooseEn(){
 public function register(Request $request){
 
  $username = preg_replace("/\s+/", "", $request->username); 
+ $username = $username."_v";
 
- 
  $user = Registered::where('code' ,$request->ID)->where('have_account' , "yes")->first();
 
  if( $user != null){
@@ -587,7 +590,10 @@ if($request->age < 16){
             "password"=> $request->password,
             "email"=> $request->email,
             "firstname"=>  $request->fname,
-            "lastname"=> $request->lname
+            "lastname"=> $request->lname,
+            "customprofilefields[6][type]"=> "string",
+            "customprofilefields[6][value]"=> "yes",
+            "customprofilefields[6][name]" => "profile_field_volunteer"
             // "city"=> $request->city,
             // "country" => $request->country
         )
