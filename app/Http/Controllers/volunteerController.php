@@ -223,9 +223,9 @@ public function chooseEn(){
                 "lastname"=> "",
                 "customprofilefields[6][type]"=> "string",
                 "customprofilefields[6][value]"=> "no",
-                "customprofilefields[6][name]" => "profile_field_volunteer"
-                // "city"=> $request->city,
-                // "country" => $request->country
+                "customprofilefields[6][name]" => "profile_field_volunteer",
+                "city"=> $request->city,
+                "country" => $request->country
             )
             );
 
@@ -593,9 +593,9 @@ if($request->age < 16){
             "lastname"=> $request->lname,
             "customprofilefields[6][type]"=> "string",
             "customprofilefields[6][value]"=> "yes",
-            "customprofilefields[6][name]" => "profile_field_volunteer"
-            // "city"=> $request->city,
-            // "country" => $request->country
+            "customprofilefields[6][name]" => "profile_field_volunteer",
+            "city"=> $request->branch,
+            "country" => $request->country
         )
         );
       
