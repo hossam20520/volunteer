@@ -484,7 +484,7 @@ public function chooseEn(){
 public function register(Request $request){
 
  $username = preg_replace("/\s+/", "", $request->username); 
- $username = $username;
+ $username = $username."_v";
 
  $user = Registered::where('code' ,$request->ID)->where('have_account' , "yes")->first();
 
@@ -594,6 +594,7 @@ if($request->age < 16){
             "customprofilefields[6][type]"=> "string",
             "customprofilefields[6][value]"=> "yes",
             "customprofilefields[6][name]" => "profile_field_volunteer"
+            // ,
             // "city"=> $request->branch,
             // "country" => $request->country
         )
