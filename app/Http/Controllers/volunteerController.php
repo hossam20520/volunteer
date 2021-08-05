@@ -484,7 +484,9 @@ public function chooseEn(){
 public function register(Request $request){
 
  $username = preg_replace("/\s+/", "", $request->username); 
- $username = $username."_v";
+ $username = $username;
+ $fullname =  $request->fname." ".$request->lname;
+
 
  $user = Registered::where('code' ,$request->ID)->where('have_account' , "yes")->first();
 
@@ -494,14 +496,14 @@ public function register(Request $request){
         "username"=> $username,
         "password"=> $request->password,
         "email"=> $request->email,
-        "firstname"=>  $request->fname,
-        "lastname"=> $request->lname,
+        "firstname"=> $request->fname,
+        "lastname"=> $request->lname ,
         "branch"=> $request->branch,
         "country" => $request->country,
         "ID"=>$request->ID,
         "mid"=>$request->mid,
         "phone"=>$request->phone,
-        "age"=>$request->age,
+        "age"=> $request->age,
         "gender"=> $request->gender
     );
             $message = "لقد تم انشاء الحساب سابقا";
@@ -589,8 +591,8 @@ if($request->age < 16){
             "username"=> $username,
             "password"=> $request->password,
             "email"=> $request->email,
-            "firstname"=>  $request->fname,
-            "lastname"=> $request->lname,
+            "firstname"=> $fullname ,
+            "lastname"=> "volunteer",
             "customprofilefields[6][type]"=> "string",
             "customprofilefields[6][value]"=> "yes",
             "customprofilefields[6][name]" => "profile_field_volunteer"
