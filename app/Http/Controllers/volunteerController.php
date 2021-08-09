@@ -225,7 +225,10 @@ public function chooseEn(){
                 "customprofilefields[6][value]"=> "no",
                 "customprofilefields[6][name]" => "profile_field_volunteer",
                 "city"=> $request->city,
-                "country" => $request->country
+                "country" => $request->country,
+                "customprofilefields[7][type]"=> "string",
+                "customprofilefields[7][value]"=> $request->phone,
+                "customprofilefields[7][name]" => "profile_field_phone"
             )
             );
 
@@ -595,7 +598,16 @@ if($request->age < 16){
             "lastname"=> "volunteer",
             "customprofilefields[6][type]"=> "string",
             "customprofilefields[6][value]"=> "yes",
-            "customprofilefields[6][name]" => "profile_field_volunteer"
+            "customprofilefields[6][name]" => "profile_field_volunteer",
+            "customprofilefields[7][type]"=> "string",
+            "customprofilefields[7][value]"=> $request->phone,
+            "customprofilefields[7][name]" => "profile_field_phone",
+            "customprofilefields[8][type]"=> "string",
+            "customprofilefields[8][value]"=>$request->branch,
+            "customprofilefields[8][name]" => "profile_field_Branch",
+            "customprofilefields[9][type]"=> "string",
+            "customprofilefields[9][value]"=>$request->ID,
+            "customprofilefields[9][name]" => "profile_field_Nationalid"
             // ,
             // "city"=> $request->branch,
             // "country" => $request->country
