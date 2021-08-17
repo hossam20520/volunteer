@@ -179,14 +179,14 @@ function GetArrayData(className){
 <script>
 const DATA_COUNT = 3;
 // const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
-const CHART_COLORS  = ['Red',  'Green', 'Blue']
+const CHART_COLORS  = ['Red',  'Green', 'Blue' ,  'Orange' , 'Yellow']
 const data = {
   labels: GetArrayData('names_2020'),
   datasets: [
     {
       label: 'Dataset 1',
       data: GetArrayData('values_2020') ,
-      backgroundColor: ['Red',  'Green', 'Blue']
+      backgroundColor: ['Red',  'Green', 'Blue' ,  'Orange' , 'Yellow']
     }
 
    
@@ -220,7 +220,7 @@ const data = {
 
 
 const DATA_COUNT_2 = 3;
-const CHART_COLORS_2  = ['Red',  'Green', 'Blue']
+const CHART_COLORS_2  = ['Red',  'Green', 'Blue' , 'Orange' , 'Yellow']
 const data_2 = {
   labels: GetArrayData('vol_name_20520'),
   datasets: [
@@ -260,7 +260,7 @@ const data_2 = {
 
 
 
-const CHART_COLORS_3  = ['Red',  'Green', 'Blue']
+const CHART_COLORS_3  = ['Red',  'Green', 'Blue' ,  'Orange' , 'Yellow']
 const data_3 = {
   labels: GetArrayData('youth_name_20520'),
   datasets: [
