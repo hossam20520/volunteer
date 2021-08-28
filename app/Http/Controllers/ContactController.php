@@ -17,7 +17,7 @@ if($req->dep == "firstAid"){
 
     $data = array('name'=>'Mr.Moahmed',   'email'=>$req->email ,  'Name'=>$req->name    ,  'phone'=> $req->phone , 'subject'=>$req->subjectt  , 'messagee'=>$req->message);
     Mail::send('mail', $data, function($message) {
-        $message->to("hossamhassan889@gmail.com", 'First Aid Department')->subject
+        $message->to("firstaid@egyptianrc.org", 'First Aid Department')->subject
            ("First Aid Department");
         $message->from("support@ercelearning.com", $req->name);
      });
