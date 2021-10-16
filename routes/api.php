@@ -19,5 +19,6 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
 
 Route::post('firstAid', 'anaController@firstAid');
+Route::get('link', 'anaController@api');
 
 Route::post('frorm/contact', 'ContactController@contact');

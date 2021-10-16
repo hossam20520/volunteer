@@ -12,7 +12,18 @@ class anaController extends Controller
 {
     //
 
+public function  api(){
 
+
+
+    return response()->json([
+        'message' => true,
+        'status'=> true,
+        'code'=> 200
+         ], 200);
+
+
+}
 public function firstAid(){
 
 $id = $this->get_course_moodle_id(1)['id'];
