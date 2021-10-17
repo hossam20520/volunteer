@@ -126,7 +126,7 @@
 
                 
            <div class="form-group">
-            <select class="custom-select" value="{{ $country }}" name="country" id="id_country">
+            <select class="form-input" value="{{ $country }}" name="country" id="id_country">
             <option value="">Select a country...</option>
             <option value="AF">Afghanistan</option>
             <option value="AX">Åland Islands</option>
