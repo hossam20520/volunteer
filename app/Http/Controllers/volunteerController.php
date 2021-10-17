@@ -228,7 +228,10 @@ public function chooseEn(){
                 "country" => $request->country,
                 "customprofilefields[7][type]"=> "string",
                 "customprofilefields[7][value]"=> $request->phone,
-                "customprofilefields[7][name]" => "profile_field_phone"
+                "customprofilefields[7][name]" => "profile_field_phone",
+                "customprofilefields[8][type]"=> "string",
+                "customprofilefields[8][value]"=>"Egypt",
+                "customprofilefields[8][name]" => "profile_field_Branch",
             )
             );
 
@@ -607,10 +610,9 @@ if($request->age < 16){
             "customprofilefields[8][name]" => "profile_field_Branch",
             "customprofilefields[9][type]"=> "string",
             "customprofilefields[9][value]"=>$request->ID,
-            "customprofilefields[9][name]" => "profile_field_Nationalid"
-            // ,
-            // "city"=> $request->branch,
-            // "country" => $request->country
+            "customprofilefields[9][name]" => "profile_field_Nationalid",
+            "city"=> $request->branch,
+            "country" => $request->country
         )
         );
       
