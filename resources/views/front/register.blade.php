@@ -132,16 +132,16 @@
                             <div class="form-group">
                                 <select class="form-input" value="{{ $country }}" name="country" id="id_country">
                                 <option value="">Select a country...</option>
-                                <option value="AF">Afghanistan</option>
-                                <option value="AX">Åland Islands</option>
-                                <option value="AL">Albania</option>
-                                <option value="DZ">Algeria</option>
-                                <option value="AS">American Samoa</option>
-                                <option value="AD">Andorra</option>
-                                <option value="AO">Angola</option>
-                                <option value="AI">Anguilla</option>
-                                <option value="AQ">Antarctica</option>
-                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AF">افغانستان</option>
+                                <option value="AX">جزر آلاند</option>
+                                <option value="AL">البانيا</option>
+                                <option value="DZ">الجزائر</option>
+                                <option value="AS">ساموا الأمريكية</option>
+                                <option value="AD">أندورا</option>
+                                <option value="AO">أنغولا</option>
+                                <option value="AI">أنغيلا</option>
+                                <option value="AQ">أنتاركتيكا</option>
+                                <option value="AG">أنتيغوا وبربودا</option>
                                 <option value="AR">Argentina</option>
                                 <option value="AM">Armenia</option>
                                 <option value="AW">Aruba</option>
