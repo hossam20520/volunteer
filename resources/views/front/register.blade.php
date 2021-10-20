@@ -125,7 +125,43 @@
 
                             
                           </div>
+               
 
+                          <div class="form-group">
+
+                            <select class="form-input" value="{{ $city }}" required  name="city">
+                                <option> المحافظة </option>
+                                <option {{ $city == "Alexandria" ? "selected":"" }} value="Alexandria">الإسكندرية</option>
+                                <option {{ $city == "Ismailia" ? "selected":"" }} value="Ismailia">الإسماعيلية</option>
+                                <option {{ $city == "Aswan" ? "selected":"" }} value="Aswan">أسوان</option>
+                                <option {{ $city == "Asyut" ? "selected":"" }} value="Asyut">أسيوط</option>
+                                <option {{ $city == "Luxor" ? "selected":"" }} value="Luxor">الاقصر</option>
+                                <option {{ $city == "Red_Sea" ? "selected":"" }} value="Red_Sea">البحر الاحمر</option>
+                                <option {{ $city == "El_Beheira" ? "selected":"" }} value="El_Beheira">البحيرة</option>
+                                <option {{ $city == "Bani Suwayf" ? "selected":"" }} value="Bani Suwayf">بني السويف</option>
+                                <option {{ $city == "Port Said" ? "selected":"" }} value="Port Said">بورسعيد</option>
+                                <option {{ $city == "South Sinai" ? "selected":"" }} value="South Sinai">جنوب سيناء</option>
+                                <option {{ $city == "Giza" ? "selected":"" }} value="Giza">الجيزة</option>
+                                <option {{ $city == "Dakahlia" ? "selected":"" }} value="Dakahlia">الدقهلية</option>
+                                <option {{ $city == "Damietta" ? "selected":"" }} value="Damietta">دمياط</option>
+                                <option {{ $city == "Suhaj" ? "selected":"" }} value="Suhaj">سوهاج</option>
+                                <option {{ $city == "Suez" ? "selected":"" }} value="Suez">السويس</option>
+                                <option {{ $city == "Ash Sharqia" ? "selected":"" }} value="Ash Sharqia">الشرقية</option>
+                                <option {{ $city == "North Sinai" ? "selected":"" }} value="North Sinai">شمال سيناء</option>
+                                <option {{ $city == "Gharbia" ? "selected":"" }} value="Gharbia">الغربية</option>
+                                <option {{ $city == "Al Fayyum" ? "selected":"" }} value="Al Fayyum">ألفيوم</option>
+                                <option {{ $city == "Cairo" ? "selected":"" }} value="Cairo">القاهرة</option>
+                                <option {{ $city == "Al Qalyubia" ? "selected":"" }} value="Al Qalyubia">القليوبية</option>
+                                <option {{ $city == "Qena" ? "selected":"" }} value="Qena">قنا</option>
+                                <option {{ $city == "Kafr ash Shaykh" ? "selected":"" }} value="Kafr ash Shaykh">كفر الشيخ</option>
+                                <option {{ $city == "Marsa Matruh" ? "selected":"" }} value="Marsa Matruh">مرسى مطروح</option>
+                                <option {{ $city == "Menofia" ? "selected":"" }} value="Menofia">المنوفية</option>
+                                <option {{ $city == "Al Minya" ? "selected":"" }} value="Al Minya">المنيا</option>
+                                <option {{ $city == "New Valley" ? "selected":"" }} value="New Valley">الوادي الجديد</option>
+                                
+                            </select>
+
+                          </div>
                 
                         <div class="form-group">
                            

@@ -137,8 +137,8 @@ public function chooseEn(){
                 "username"=> $username,
                 "password"=> $request->password,
                 "email"=> $request->email,
-                "firstname"=>  $request->fullname,
-                "lastname"=>  "",
+                "firstname"=>  $request->fname,
+                "lastname"=>  $request->lname,
                 "company"=> $request->company,
                 "job"=> $request->job,
                 "eq"=> $request->eq,
@@ -177,8 +177,8 @@ public function chooseEn(){
                 "username"=> $username,
                 "password"=> $request->password,
                 "email"=> $request->email,
-                "firstname"=>  $request->fullname,
-                "lastname"=> "",
+                "firstname"=>  $request->fname,
+                "lastname"=> $request->lname,
                 "company"=> $request->company,
                 "job"=> $request->job,
                 "eq"=> $request->eq,
@@ -219,8 +219,8 @@ public function chooseEn(){
                 "username"=> $username,
                 "password"=> $request->password,
                 "email"=> $request->email,
-                "firstname"=>  $request->fullname,
-                "lastname"=> "",
+                "firstname"=>  $request->fname,
+                "lastname"=> $request->lname,
                 "customprofilefields[6][type]"=> "string",
                 "customprofilefields[6][value]"=> "no",
                 "customprofilefields[6][name]" => "profile_field_volunteer",
@@ -230,7 +230,7 @@ public function chooseEn(){
                 "customprofilefields[7][value]"=> $request->phone,
                 "customprofilefields[7][name]" => "profile_field_phone",
                 "customprofilefields[8][type]"=> "string",
-                "customprofilefields[8][value]"=>"Egypt",
+                "customprofilefields[8][value]"=>"not_volunteer",
                 "customprofilefields[8][name]" => "profile_field_Branch",
             )
             );
@@ -476,6 +476,7 @@ public function chooseEn(){
             "lastname"=> "",
             "branch"=>"",
             "country" => "",
+            "city" => "",
             "ID"=>"",
             "mid"=>"",
             "phone"=>"",
@@ -506,6 +507,7 @@ public function register(Request $request){
         "lastname"=> $request->lname ,
         "branch"=> $request->branch,
         "country" => $request->country,
+        "city" => $request->city,
         "ID"=>$request->ID,
         "mid"=>$request->mid,
         "phone"=>$request->phone,
@@ -536,6 +538,7 @@ public function register(Request $request){
         "lastname"=> $request->lname,
         "branch"=> $request->branch,
         "country" => $request->country,
+        "city" => $request->city,
         "ID"=>$request->ID,
         "mid"=>$request->mid,
         "phone"=>$request->phone,
@@ -566,6 +569,7 @@ if($request->age < 16){
         "lastname"=> $request->lname,
         "branch"=> $request->branch,
         "country" => $request->country,
+        "city" => $request->city,
         "ID"=>$request->ID,
         "mid"=>$request->mid,
         "phone"=>$request->phone,
@@ -611,7 +615,7 @@ if($request->age < 16){
             "customprofilefields[9][type]"=> "string",
             "customprofilefields[9][value]"=>$request->ID,
             "customprofilefields[9][name]" => "profile_field_Nationalid",
-            "city"=> $request->branch,
+            "city"=> $request->city,
             "country" => $request->country
         )
         );
@@ -634,6 +638,7 @@ if($request->age < 16){
                 "lastname"=> $request->lname,
                 "branch"=> $request->branch,
                 "country" => $request->country,
+                "city" => $request->city,
                 "ID"=>$request->ID,
                 "mid"=>$request->mid,
                 "phone"=>$request->phone,
@@ -656,6 +661,7 @@ if($request->age < 16){
                 "lastname"=> "",
                 "branch"=>"",
                 "country" => "",
+                "city" => "",
                 "ID"=>"",
                 "mid"=>"",
                 "phone"=>"",
@@ -694,8 +700,10 @@ if($request->age < 16){
                                                 "lastname"=> $request->lname,
                                                 "branch"=> $request->branch,
                                                 "country" => $request->country,
+                                                "city" => $request->city,
                                                 "ID"=>$request->ID,
                                                 "mid"=>$request->mid,
+
                                                 "phone"=>$request->phone,
                                                 "age"=>$request->age,
                                                 "gender"=> $request->gender
@@ -748,6 +756,7 @@ if($request->age < 16){
                                             "lastname"=> "",
                                             "branch"=>"",
                                             "country" => "",
+                                            "city" => "",
                                             "ID"=>"",
                                             "mid"=>"",
                                             "phone"=>"",
@@ -776,6 +785,7 @@ if($request->age < 16){
                                             "lastname"=> $request->lname,
                                             "branch"=> $request->branch,
                                             "country" => $request->country,
+                                            "city" => $request->city,
                                             "ID"=>$ID,
                                             "mid"=>$request->mid,
                                             "phone"=>$request->phone,
@@ -866,6 +876,7 @@ if($request->age < 16){
             "lastname"=> "",
             "branch"=>"",
             "country" => "",
+            "city" => "",
             "ID"=>"",
             "mid"=>"",
             "phone"=>"",
@@ -885,36 +896,12 @@ if($request->age < 16){
                             }
 
 
-                                // }
-                                
-                                // else{
-
-                                //     $values = array(
-                                //         "username"=> "",
-                                //         "password"=> "",
-                                //         "email"=> "",
-                                //         "firstname"=> "",
-                                //         "lastname"=> "",
-                                //         "branch"=>"",
-                                //         "country" => "",
-                                //         "ID"=>"",
-                                //         "mid"=>"",
-                                //         "phone"=>"",
-                                //         "age"=>""
-                                //     );
-                                //     if($request->langa == "en"){
-                                //         return view('front.registerenglish' , $values );
-                                //        }else{
-                                //         return view('front.register' , $values );
-                                //        }
-
-
-                                // }
+                       
         }
 
 
                    
-                            // $errorCode =  $response['ErrorCode'];
+                         
 
 
     }
