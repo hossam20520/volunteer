@@ -85,9 +85,9 @@
                  
 
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <input type="hidden" class="form-input"   name="lname"  value="lname" required id="name" placeholder=""/>
-                        </div>
+                        </div> --}}
 
 
                         <div class="form-group">

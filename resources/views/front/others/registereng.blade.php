@@ -61,12 +61,12 @@
                         </div> --}}
 
                         <div class="form-group">
-                            <input type="text" class="form-input" value="fname" name="fname" required id="name"  placeholder="first name" />
+                            <input type="text" class="form-input" value="{{ $fname }}" name="fname" required id="name"  placeholder="first name" />
                              </div>
     
     
                             <div class="form-group">
-                                <input type="text" class="form-input"   name="lname"  value="lname" required id="name" placeholder="last name"/>
+                                <input type="text" class="form-input"   name="lname"  value="{{ $lname }}" required id="name" placeholder="last name"/>
                             </div>
 
                         <div class="form-group">
