@@ -60,7 +60,14 @@
                            
                         </div> --}}
 
-                      
+                        <div class="form-group">
+                            <input type="text" class="form-input" value="fname" name="fname" required id="name"  placeholder="first name" />
+                             </div>
+    
+    
+                            <div class="form-group">
+                                <input type="text" class="form-input"   name="lname"  value="lname" required id="name" placeholder="last name"/>
+                            </div>
 
                         <div class="form-group">
                             <input type="hidden" class="form-input"  name="fullname" value="fullname"  id="name" placeholder="الاسم بالكامل "/>
@@ -71,14 +78,7 @@
                              <input type="number" class="form-input" value="{{ $idpassport }}"  name="idpassport" required id="name" placeholder="الرقم القومى أو رقم جواز السفر لغير المصريين"/>
                         </div>
 
-                        <div class="form-group">
-                        <input type="text" class="form-input" value="fname" name="fname" required id="name"  placeholder="first name" />
-                         </div>
-
-
-                        <div class="form-group">
-                            <input type="text" class="form-input"   name="lname"  value="lname" required id="name" placeholder="last name"/>
-                        </div>
+                  
 
 
                         <div class="form-group">
