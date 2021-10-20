@@ -60,10 +60,21 @@
                            
                         </div> --}}
 
-                        <input type="hidden" class="form-input" value="fname" name="fname" required id="name" />
+                        {{-- <input type="hidden" class="form-input" value="fullname" name="f" required id="name" /> --}}
+
+                     
 
                         <div class="form-group">
-                            <input type="text" class="form-input"  name="fullname" value="{{ $fullname }}"  id="name" placeholder="الاسم بالكامل "/>
+                            <input type="text" class="form-input"  name="fname" value="{{ $fname }}"  id="name" placeholder="الاسم الاول "/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input"  name="lname" value="{{ $lname }}"  id="name" placeholder="الاسم الثاني "/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="hidden" class="form-input"  name="fullname" value="{{ $fullname }}"  id="name" placeholder="الاسم بالكامل "/>
                         </div>
 
                         <div class="form-group">
