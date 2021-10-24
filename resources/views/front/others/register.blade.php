@@ -110,7 +110,7 @@
 
 
                             <select class="form-input" name="country" id="id_country">
-                                <option value="">Select a country...</option>
+                                <option value="EG">Select a country...</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Åland Islands</option>
                                 <option value="AL">Albania</option>

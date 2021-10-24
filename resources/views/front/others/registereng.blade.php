@@ -100,7 +100,7 @@
                             <input type="hidden" class="form-input"  value="00"  required name="nationality" id="name" placeholder="الجنسية"/>
 
                             <select class="form-input"  name="country" id="id_country">
-                                <option value="">Select a country...</option>
+                                <option value="EG">Select a country...</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Åland Islands</option>
                                 <option value="AL">Albania</option>
