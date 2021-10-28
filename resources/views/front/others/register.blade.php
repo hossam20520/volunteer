@@ -110,256 +110,257 @@
 
 
                             <select class="form-input" name="country" id="id_country">
-                                <option value="EG">Select a country...</option>
-                                <option value="AF">Afghanistan</option>
-                                <option value="AX">Åland Islands</option>
-                                <option value="AL">Albania</option>
-                                <option value="DZ">Algeria</option>
-                                <option value="AS">American Samoa</option>
-                                <option value="AD">Andorra</option>
-                                <option value="AO">Angola</option>
-                                <option value="AI">Anguilla</option>
-                                <option value="AQ">Antarctica</option>
-                                <option value="AG">Antigua and Barbuda</option>
-                                <option value="AR">Argentina</option>
-                                <option value="AM">Armenia</option>
-                                <option value="AW">Aruba</option>
-                                <option value="AU">Australia</option>
-                                <option value="AT">Austria</option>
-                                <option value="AZ">Azerbaijan</option>
-                                <option value="BS">Bahamas</option>
-                                <option value="BH">Bahrain</option>
-                                <option value="BD">Bangladesh</option>
-                                <option value="BB">Barbados</option>
-                                <option value="BY">Belarus</option>
-                                <option value="BE">Belgium</option>
-                                <option value="BZ">Belize</option>
-                                <option value="BJ">Benin</option>
-                                <option value="BM">Bermuda</option>
-                                <option value="BT">Bhutan</option>
-                                <option value="BO">Bolivia (Plurinational State of)</option>
-                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-                                <option value="BA">Bosnia and Herzegovina</option>
-                                <option value="BW">Botswana</option>
-                                <option value="BV">Bouvet Island</option>
-                                <option value="BR">Brazil</option>
-                                <option value="IO">British Indian Ocean Territory</option>
-                                <option value="BN">Brunei Darussalam</option>
-                                <option value="BG">Bulgaria</option>
-                                <option value="BF">Burkina Faso</option>
-                                <option value="BI">Burundi</option>
-                                <option value="CV">Cabo Verde</option>
-                                <option value="KH">Cambodia</option>
-                                <option value="CM">Cameroon</option>
-                                <option value="CA">Canada</option>
-                                <option value="KY">Cayman Islands</option>
-                                <option value="CF">Central African Republic</option>
-                                <option value="TD">Chad</option>
-                                <option value="CL">Chile</option>
-                                <option value="CN">China</option>
-                                <option value="CX">Christmas Island</option>
-                                <option value="CC">Cocos (Keeling) Islands</option>
-                                <option value="CO">Colombia</option>
-                                <option value="KM">Comoros</option>
-                                <option value="CG">Congo</option>
-                                <option value="CD">Congo (the Democratic Republic of the)</option>
-                                <option value="CK">Cook Islands</option>
-                                <option value="CR">Costa Rica</option>
-                                <option value="CI">Côte d'Ivoire</option>
-                                <option value="HR">Croatia</option>
-                                <option value="CU">Cuba</option>
-                                <option value="CW">Curaçao</option>
-                                <option value="CY">Cyprus</option>
-                                <option value="CZ">Czechia</option>
-                                <option value="DK">Denmark</option>
-                                <option value="DJ">Djibouti</option>
-                                <option value="DM">Dominica</option>
-                                <option value="DO">Dominican Republic</option>
-                                <option value="EC">Ecuador</option>
-                                <option value="EG">Egypt</option>
-                                <option value="SV">El Salvador</option>
-                                <option value="GQ">Equatorial Guinea</option>
-                                <option value="ER">Eritrea</option>
-                                <option value="EE">Estonia</option>
-                                <option value="SZ">Eswatini</option>
-                                <option value="ET">Ethiopia</option>
-                                <option value="FK">Falkland Islands (Malvinas)</option>
-                                <option value="FO">Faroe Islands</option>
-                                <option value="FJ">Fiji</option>
-                                <option value="FI">Finland</option>
-                                <option value="FR">France</option>
-                                <option value="GF">French Guiana</option>
-                                <option value="PF">French Polynesia</option>
-                                <option value="TF">French Southern Territories</option>
-                                <option value="GA">Gabon</option>
-                                <option value="GM">Gambia</option>
-                                <option value="GE">Georgia</option>
-                                <option value="DE">Germany</option>
-                                <option value="GH">Ghana</option>
-                                <option value="GI">Gibraltar</option>
-                                <option value="GR">Greece</option>
-                                <option value="GL">Greenland</option>
-                                <option value="GD">Grenada</option>
-                                <option value="GP">Guadeloupe</option>
-                                <option value="GU">Guam</option>
-                                <option value="GT">Guatemala</option>
-                                <option value="GG">Guernsey</option>
-                                <option value="GN">Guinea</option>
-                                <option value="GW">Guinea-Bissau</option>
-                                <option value="GY">Guyana</option>
-                                <option value="HT">Haiti</option>
-                                <option value="HM">Heard Island and McDonald Islands</option>
-                                <option value="VA">Holy See</option>
-                                <option value="HN">Honduras</option>
-                                <option value="HK">Hong Kong</option>
-                                <option value="HU">Hungary</option>
-                                <option value="IS">Iceland</option>
-                                <option value="IN">India</option>
-                                <option value="ID">Indonesia</option>
-                                <option value="IR">Iran (Islamic Republic of)</option>
-                                <option value="IQ">Iraq</option>
-                                <option value="IE">Ireland</option>
-                                <option value="IM">Isle of Man</option>
-                                <option value="IL">Israel</option>
-                                <option value="IT">Italy</option>
-                                <option value="JM">Jamaica</option>
-                                <option value="JP">Japan</option>
-                                <option value="JE">Jersey</option>
-                                <option value="JO">Jordan</option>
-                                <option value="KZ">Kazakhstan</option>
-                                <option value="KE">Kenya</option>
-                                <option value="KI">Kiribati</option>
-                                <option value="KP">Korea (the Democratic People's Republic of)</option>
-                                <option value="KR">Korea (the Republic of)</option>
-                                <option value="KW">Kuwait</option>
-                                <option value="KG">Kyrgyzstan</option>
-                                <option value="LA">Lao People's Democratic Republic</option>
-                                <option value="LV">Latvia</option>
-                                <option value="LB">Lebanon</option>
-                                <option value="LS">Lesotho</option>
-                                <option value="LR">Liberia</option>
-                                <option value="LY">Libya</option>
-                                <option value="LI">Liechtenstein</option>
-                                <option value="LT">Lithuania</option>
-                                <option value="LU">Luxembourg</option>
-                                <option value="MO">Macao</option>
-                                <option value="MG">Madagascar</option>
-                                <option value="MW">Malawi</option>
-                                <option value="MY">Malaysia</option>
-                                <option value="MV">Maldives</option>
-                                <option value="ML">Mali</option>
-                                <option value="MT">Malta</option>
-                                <option value="MH">Marshall Islands</option>
-                                <option value="MQ">Martinique</option>
-                                <option value="MR">Mauritania</option>
-                                <option value="MU">Mauritius</option>
-                                <option value="YT">Mayotte</option>
-                                <option value="MX">Mexico</option>
-                                <option value="FM">Micronesia (Federated States of)</option>
-                                <option value="MD">Moldova (the Republic of)</option>
-                                <option value="MC">Monaco</option>
-                                <option value="MN">Mongolia</option>
-                                <option value="ME">Montenegro</option>
-                                <option value="MS">Montserrat</option>
-                                <option value="MA">Morocco</option>
-                                <option value="MZ">Mozambique</option>
-                                <option value="MM">Myanmar</option>
-                                <option value="NA">Namibia</option>
-                                <option value="NR">Nauru</option>
-                                <option value="NP">Nepal</option>
-                                <option value="NL">Netherlands</option>
-                                <option value="NC">New Caledonia</option>
-                                <option value="NZ">New Zealand</option>
-                                <option value="NI">Nicaragua</option>
-                                <option value="NE">Niger</option>
-                                <option value="NG">Nigeria</option>
-                                <option value="NU">Niue</option>
-                                <option value="NF">Norfolk Island</option>
-                                <option value="MK">North Macedonia</option>
-                                <option value="MP">Northern Mariana Islands</option>
-                                <option value="NO">Norway</option>
-                                <option value="OM">Oman</option>
-                                <option value="PK">Pakistan</option>
-                                <option value="PW">Palau</option>
-                                <option value="PS">Palestine, State of</option>
-                                <option value="PA">Panama</option>
-                                <option value="PG">Papua New Guinea</option>
-                                <option value="PY">Paraguay</option>
-                                <option value="PE">Peru</option>
-                                <option value="PH">Philippines</option>
-                                <option value="PN">Pitcairn</option>
-                                <option value="PL">Poland</option>
-                                <option value="PT">Portugal</option>
-                                <option value="PR">Puerto Rico</option>
-                                <option value="QA">Qatar</option>
-                                <option value="RE">Réunion</option>
-                                <option value="RO">Romania</option>
-                                <option value="RU">Russian Federation</option>
-                                <option value="RW">Rwanda</option>
-                                <option value="BL">Saint Barthélemy</option>
-                                <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
-                                <option value="KN">Saint Kitts and Nevis</option>
-                                <option value="LC">Saint Lucia</option>
-                                <option value="MF">Saint Martin (French part)</option>
-                                <option value="PM">Saint Pierre and Miquelon</option>
-                                <option value="VC">Saint Vincent and the Grenadines</option>
-                                <option value="WS">Samoa</option>
-                                <option value="SM">San Marino</option>
-                                <option value="ST">Sao Tome and Principe</option>
-                                <option value="SA">Saudi Arabia</option>
-                                <option value="SN">Senegal</option>
-                                <option value="RS">Serbia</option>
-                                <option value="SC">Seychelles</option>
-                                <option value="SL">Sierra Leone</option>
-                                <option value="SG">Singapore</option>
-                                <option value="SX">Sint Maarten (Dutch part)</option>
-                                <option value="SK">Slovakia</option>
-                                <option value="SI">Slovenia</option>
-                                <option value="SB">Solomon Islands</option>
-                                <option value="SO">Somalia</option>
-                                <option value="ZA">South Africa</option>
-                                <option value="GS">South Georgia and the South Sandwich Islands</option>
-                                <option value="SS">South Sudan</option>
-                                <option value="ES">Spain</option>
-                                <option value="LK">Sri Lanka</option>
-                                <option value="SD">Sudan</option>
-                                <option value="SR">Suriname</option>
-                                <option value="SJ">Svalbard and Jan Mayen</option>
-                                <option value="SE">Sweden</option>
-                                <option value="CH">Switzerland</option>
-                                <option value="SY">Syrian Arab Republic</option>
-                                <option value="TW">Taiwan</option>
-                                <option value="TJ">Tajikistan</option>
-                                <option value="TZ">Tanzania, the United Republic of</option>
-                                <option value="TH">Thailand</option>
-                                <option value="TL">Timor-Leste</option>
-                                <option value="TG">Togo</option>
-                                <option value="TK">Tokelau</option>
-                                <option value="TO">Tonga</option>
-                                <option value="TT">Trinidad and Tobago</option>
-                                <option value="TN">Tunisia</option>
-                                <option value="TR">Turkey</option>
-                                <option value="TM">Turkmenistan</option>
-                                <option value="TC">Turks and Caicos Islands</option>
-                                <option value="TV">Tuvalu</option>
-                                <option value="UG">Uganda</option>
-                                <option value="UA">Ukraine</option>
-                                <option value="AE">United Arab Emirates</option>
-                                <option value="GB">United Kingdom</option>
-                                <option value="US">United States</option>
-                                <option value="UM">United States Minor Outlying Islands</option>
-                                <option value="UY">Uruguay</option>
-                                <option value="UZ">Uzbekistan</option>
-                                <option value="VU">Vanuatu</option>
-                                <option value="VE">Venezuela (Bolivarian Republic of)</option>
-                                <option value="VN">Viet Nam</option>
-                                <option value="VG">Virgin Islands (British)</option>
-                                <option value="VI">Virgin Islands (U.S.)</option>
-                                <option value="WF">Wallis and Futuna</option>
-                                <option value="EH">Western Sahara</option>
-                                <option value="YE">Yemen</option>
-                                <option value="ZM">Zambia</option>
-                                <option value="ZW">Zimbabwe</option>
+                                <option value="EG">اختر الدولة</option>
+                                <option {{ $country == "AF" ? "selected":""   }} value="AF">أفغانستان</option>
+                                <option {{ $country == "AX" ? "selected":""   }} value="AX">جزر آلاند</option>
+                                <option {{ $country == "AL" ? "selected":""   }} value="AL">ألبانيا</option>
+                                <option {{ $country == "DZ" ? "selected":""   }} value="DZ">الجزائر</option>
+                                <option {{ $country == "AS" ? "selected":""   }} value="AS">ساموا الأمريكية</option>
+                                <option {{ $country == "AD" ? "selected":""   }} value="AD">أندورا</option>
+                                <option {{ $country == "AO" ? "selected":""   }} value="AO">أنغولا</option>
+                                <option {{ $country == "AI" ? "selected":""   }} value="AI">أنغيلا</option>
+                                <option {{ $country == "AQ" ? "selected":""   }} value="AQ">أنتاركتيكا</option>
+                                <option {{ $country == "AG" ? "selected":""   }} value="AG">أنتيغوا وبربودا</option>
+                                <option {{ $country == "AR" ? "selected":""   }} value="AR">الأرجنتين</option>
+                                <option {{ $country == "AM" ? "selected":""   }} value="AM">أرمينيا</option>
+                                <option {{ $country == "AW" ? "selected":""   }} value="AW">أروبا</option>
+                                <option {{ $country == "AU" ? "selected":""   }} value="AU">أستراليا</option>
+                                <option {{ $country == "AT" ? "selected":""   }} value="AT">النمسا</option>
+                                <option {{ $country == "AZ" ? "selected":""   }} value="AZ">أذربيجان</option>
+                                <option {{ $country == "BS" ? "selected":""   }} value="BS">جزر البهاما</option>
+                                <option {{ $country == "BH" ? "selected":""   }} value="BH">البحرين</option>
+                                <option {{ $country == "BD" ? "selected":""   }} value="BD">بنغلاديش</option>
+                                <option {{ $country == "BB" ? "selected":""   }} value="BB">بربادوس</option>
+                                <option {{ $country == "BY" ? "selected":""   }} value="BY">بيلاروسيا</option>
+                                <option {{ $country == "BE" ? "selected":""   }} value="BE">بلجيكا</option>
+                                <option {{ $country == "BZ" ? "selected":""   }} value="BZ">بليز</option>
+                                <option {{ $country == "BJ" ? "selected":""   }} value="BJ">بنين</option>
+                                <option {{ $country == "BM" ? "selected":""   }} value="BM">برمودا</option>
+                                <option {{ $country == "BT" ? "selected":""   }} value="BT">بوتان</option>
+                                <option {{ $country == "BO" ? "selected":""   }} value="BO">بوليفيا (دولة متعددة الجنسيات)</option>
+                                <option {{ $country == "BQ" ? "selected":""   }} value="BQ">بونير، سينت أوستاتيوس وسابا</option>
+                                <option {{ $country == "BA" ? "selected":""   }} value="BA">البوسنة والهرسك</option>
+                                <option {{ $country == "BW" ? "selected":""   }} value="BW">بوتسوانا</option>
+                                <option {{ $country == "BV" ? "selected":""   }} value="BV">جزيرة بوجيت</option>
+                                <option {{ $country == "BR" ? "selected":""   }} value="BR">البرازيل</option>
+                                <option {{ $country == "IO" ? "selected":""   }} value="IO">إقليم المحيط البريطاني الهندي</option>
+                                <option {{ $country == "BN" ? "selected":""   }} value="BN">بروناي دار السلام</option>
+                                <option {{ $country == "BG" ? "selected":""   }} value="BG">بلغاريا</option>
+                                <option {{ $country == "BF" ? "selected":""   }} value="BF">بوركينا فاسو</option>
+                                <option {{ $country == "BI" ? "selected":""   }} value="BI">بوروندي</option>
+                                <option {{ $country == "CV" ? "selected":""   }} value="CV">كابو فيردي</option>
+                                <option {{ $country == "KH" ? "selected":""   }} value="KH">كمبوديا</option>
+                                <option {{ $country == "CM" ? "selected":""   }} value="CM">الكاميرون</option>
+                                <option {{ $country == "CA" ? "selected":""   }} value="CA">كندا</option>
+                                <option {{ $country == "KY" ? "selected":""   }} value="KY">جزر كايمان</option>
+                                <option {{ $country == "CF" ? "selected":""   }} value="CF">جمهورية افريقيا الوسطى</option>
+                                <option {{ $country == "TD" ? "selected":""   }} value="TD">تشاد</option>
+                                <option {{ $country == "CL" ? "selected":""   }} value="CL">شيلي</option>
+                                <option {{ $country == "CN" ? "selected":""   }} value="CN">الصين</option>
+                                <option {{ $country == "CX" ? "selected":""   }} value="CX">جزيرة الكريسماس</option>
+                                <option {{ $country == "CC" ? "selected":""   }} value="CC">جزر كوكوس (كيلينغ)</option>
+                                <option {{ $country == "CO" ? "selected":""   }} value="CO">كولومبيا</option>
+                                <option {{ $country == "KM" ? "selected":""   }} value="KM">جزر القمر</option>
+                                <option {{ $country == "CG" ? "selected":""   }} value="CG">كونغو</option>
+                                <option {{ $country == "CD" ? "selected":""   }} value="CD">الكونغو (الجمهورية الديمقراطية)</option>
+                                <option {{ $country == "CK" ? "selected":""   }} value="CK">جزر كوك</option>
+                                <option {{ $country == "CR" ? "selected":""   }} value="CR">كوستا ريكا</option>
+                                <option {{ $country == "CI" ? "selected":""   }} value="CI">ساحل العاج.</option>
+                                <option {{ $country == "HR" ? "selected":""   }} value="HR">كرواتيا</option>
+                                <option {{ $country == "CU" ? "selected":""   }} value="CU">كوبا</option>
+                                <option {{ $country == "CW" ? "selected":""   }} value="CW">كوراساو.</option>
+                                <option {{ $country == "CY" ? "selected":""   }} value="CY">قبرص</option>
+                                <option {{ $country == "CZ" ? "selected":""   }} value="CZ">تشيكيا</option>
+                                <option {{ $country == "DK" ? "selected":""   }} value="DK">الدنمارك</option>
+                                <option {{ $country == "DJ" ? "selected":""   }} value="DJ">جيبوتي</option>
+                                <option {{ $country == "DM" ? "selected":""   }} value="DM">دومينيكا</option>
+                                <option {{ $country == "DO" ? "selected":""   }} value="DO">جمهورية الدومينيكان</option>
+                                <option {{ $country == "EC" ? "selected":""   }} value="EC">الإكوادور</option>
+                                <option {{ $country == "EG" ? "selected":""   }} value="EG">مصر</option>
+                                <option {{ $country == "SV" ? "selected":""   }} value="SV">السلفادور</option>
+                                <option {{ $country == "GQ" ? "selected":""   }} value="GQ">غينيا الإستوائية</option>
+                                <option {{ $country == "ER" ? "selected":""   }} value="ER">إريتريا</option>
+                                <option {{ $country == "EE" ? "selected":""   }} value="EE">إستونيا</option>
+                                <option {{ $country == "SZ" ? "selected":""   }} value="SZ">سوازيلاند</option>
+                                <option {{ $country == "ET" ? "selected":""   }} value="ET">أثيوبيا</option>
+                                <option {{ $country == "FK" ? "selected":""   }} value="FK">جزر فوكلاند (مالفيناس)</option>
+                                <option {{ $country == "FO" ? "selected":""   }} value="FO">جزر فاروس</option>
+                                <option {{ $country == "FJ" ? "selected":""   }} value="FJ">فيجي</option>
+                                <option {{ $country == "FI" ? "selected":""   }} value="FI">فنلندا</option>
+                                <option {{ $country == "FR" ? "selected":""   }} value="FR">فرنسا</option>
+                                <option {{ $country == "GF" ? "selected":""   }} value="GF">غيانا الفرنسية</option>
+                                <option {{ $country == "PF" ? "selected":""   }} value="PF">بولينيزيا الفرنسية</option>
+                                <option {{ $country == "TF" ? "selected":""   }} value="TF">المناطق الجنوبية لفرنسا</option>
+                                <option {{ $country == "GA" ? "selected":""   }} value="GA">غابون</option>
+                                <option {{ $country == "GM" ? "selected":""   }} value="GM">غامبيا</option>
+                                <option {{ $country == "GE" ? "selected":""   }} value="GE">جورجيا</option>
+                                <option {{ $country == "DE" ? "selected":""   }} value="DE">ألمانيا</option>
+                                <option {{ $country == "GH" ? "selected":""   }} value="GH">غانا</option>
+                                <option {{ $country == "GI" ? "selected":""   }} value="GI">جبل طارق</option>
+                                <option {{ $country == "GR" ? "selected":""   }} value="GR">اليونان</option>
+                                <option {{ $country == "GL" ? "selected":""   }} value="GL">الأرض الخضراء</option>
+                                <option {{ $country == "GD" ? "selected":""   }} value="GD">غرينادا</option>
+                                <option {{ $country == "GP" ? "selected":""   }} value="GP">غواديلوب</option>
+                                <option {{ $country == "GU" ? "selected":""   }} value="GU">غوام</option>
+                                <option {{ $country == "GT" ? "selected":""   }} value="GT">غواتيمالا</option>
+                                <option {{ $country == "GG" ? "selected":""   }} value="GG">غيرنسي</option>
+                                <option {{ $country == "GN" ? "selected":""   }} value="GN">غينيا</option>
+                                <option {{ $country == "GW" ? "selected":""   }} value="GW">غينيا بيساو</option>
+                                <option {{ $country == "GY" ? "selected":""   }} value="GY">غيانا</option>
+                                <option {{ $country == "HT" ? "selected":""   }} value="HT">هايتي</option>
+                                <option {{ $country == "HM" ? "selected":""   }} value="HM">قلب الجزيرة وجزر ماكدونالز</option>
+                                <option {{ $country == "VA" ? "selected":""   }} value="VA">الكرسي الرسولي</option>
+                                <option {{ $country == "HN" ? "selected":""   }} value="HN">هندوراس</option>
+                                <option {{ $country == "HK" ? "selected":""   }} value="HK">هونج كونج</option>
+                                <option {{ $country == "HU" ? "selected":""   }} value="HU">هنغاريا</option>
+                                <option {{ $country == "IS" ? "selected":""   }} value="IS">أيسلندا</option>
+                                <option {{ $country == "IN" ? "selected":""   }} value="IN">الهند</option>
+                                <option {{ $country == "ID" ? "selected":""   }} value="ID">إندونيسيا</option>
+                                <option {{ $country == "IR" ? "selected":""   }} value="IR">إيران (جمهورية)</option>
+                                <option {{ $country == "IQ" ? "selected":""   }} value="IQ">العراق</option>
+                                <option {{ $country == "IE" ? "selected":""   }} value="IE">أيرلندا</option>
+                                <option {{ $country == "IM" ? "selected":""   }} value="IM">جزيرة آيل أوف مان</option>
+                                <option {{ $country == "IL" ? "selected":""   }} value="IL">إسرائيل</option>
+                                <option {{ $country == "IT" ? "selected":""   }} value="IT">إيطاليا</option>
+                                <option {{ $country == "JM" ? "selected":""   }} value="JM">جامايكا</option>
+                                <option {{ $country == "JP" ? "selected":""   }} value="JP">اليابان</option>
+                                <option {{ $country == "JE" ? "selected":""   }} value="JE">جيرسي</option>
+                                <option {{ $country == "JO" ? "selected":""   }} value="JO">الأردن</option>
+                                <option {{ $country == "KZ" ? "selected":""   }} value="KZ">كازاخستان</option>
+                                <option {{ $country == "KE" ? "selected":""   }} value="KE">كينيا</option>
+                                <option {{ $country == "KI" ? "selected":""   }} value="KI">كيريباتي</option>
+                                <option {{ $country == "KP" ? "selected":""   }} value="KP">كوريا (جمهورية الشعب الديمقراطي)</option>
+                                <option {{ $country == "KR" ? "selected":""   }} value="KR">كوريا (جمهورية)</option>
+                                <option {{ $country == "KW" ? "selected":""   }} value="KW">الكويت</option>
+                                <option {{ $country == "KG" ? "selected":""   }} value="KG">قيرغيزستان</option>
+                                <option {{ $country == "LA" ? "selected":""   }} value="LA">جمهورية لاو الديمقراطية الشعبية</option>
+                                <option {{ $country == "LV" ? "selected":""   }} value="LV">لاتفيا</option>
+                                <option {{ $country == "LB" ? "selected":""   }} value="LB">لبنان</option>
+                                <option {{ $country == "LS" ? "selected":""   }} value="LS">ليسوتو</option>
+                                <option {{ $country == "LR" ? "selected":""   }} value="LR">ليبيريا</option>
+                                <option {{ $country == "LY" ? "selected":""   }} value="LY">ليبيا</option>
+                                <option {{ $country == "LI" ? "selected":""   }} value="LI">ليختنشتاين</option>
+                                <option {{ $country == "LT" ? "selected":""   }} value="LT">ليتوانيا</option>
+                                <option {{ $country == "LU" ? "selected":""   }} value="LU">لوكسمبورغ</option>
+                                <option {{ $country == "MO" ? "selected":""   }} value="MO">ماكاو</option>
+                                <option {{ $country == "MG" ? "selected":""   }} value="MG">مدغشقر</option>
+                                <option {{ $country == "MW" ? "selected":""   }} value="MW">ملاوي</option>
+                                <option {{ $country == "MY" ? "selected":""   }} value="MY">ماليزيا</option>
+                                <option {{ $country == "MV" ? "selected":""   }} value="MV">جزر المالديف</option>
+                                <option {{ $country == "ML" ? "selected":""   }} value="ML">مالي</option>
+                                <option {{ $country == "MT" ? "selected":""   }} value="MT">مالطا</option>
+                                <option {{ $country == "MH" ? "selected":""   }} value="MH">جزر مارشال</option>
+                                <option {{ $country == "MQ" ? "selected":""   }} value="MQ">مارتينيك</option>
+                                <option {{ $country == "MR" ? "selected":""   }} value="MR">موريتانيا</option>
+                                <option {{ $country == "MU" ? "selected":""   }} value="MU">موريشيوس</option>
+                                <option {{ $country == "YT" ? "selected":""   }} value="YT">مايوت</option>
+                                <option {{ $country == "MX" ? "selected":""   }} value="MX">المكسيك</option>
+                                <option {{ $country == "FM" ? "selected":""   }} value="FM">ميكرونيزيا (الولايات الفيدرالية)</option>
+                                <option {{ $country == "MD" ? "selected":""   }} value="MD">مولدافيا (جمهورية)</option>
+                                <option {{ $country == "MC" ? "selected":""   }} value="MC">موناكو</option>
+                                <option {{ $country == "MN" ? "selected":""   }} value="MN">منغوليا</option>
+                                <option {{ $country == "ME" ? "selected":""   }} value="ME">الجبل الأسود</option>
+                                <option {{ $country == "MS" ? "selected":""   }} value="MS">مونتسيرات</option>
+                                <option {{ $country == "MA" ? "selected":""   }} value="MA">المغرب</option>
+                                <option {{ $country == "MZ" ? "selected":""   }} value="MZ">موزمبيق</option>
+                                <option {{ $country == "MM" ? "selected":""   }} value="MM">ميانمار</option>
+                                <option {{ $country == "NA" ? "selected":""   }} value="NA">ناميبيا</option>
+                                <option {{ $country == "NR" ? "selected":""   }} value="NR">ناورو</option>
+                                <option {{ $country == "NP" ? "selected":""   }} value="NP">نيبال</option>
+                                <option {{ $country == "NL" ? "selected":""   }} value="NL">هولندا</option>
+                                <option {{ $country == "NC" ? "selected":""   }} value="NC">كاليدونيا الجديدة</option>
+                                <option {{ $country == "NZ" ? "selected":""   }} value="NZ">نيوزيلاندا</option>
+                                <option {{ $country == "NI" ? "selected":""   }} value="NI">نيكاراغوا</option>
+                                <option {{ $country == "NE" ? "selected":""   }} value="NE">النيجر</option>
+                                <option {{ $country == "NG" ? "selected":""   }} value="NG">نيجيريا</option>
+                                <option {{ $country == "NU" ? "selected":""   }} value="NU">نييوي</option>
+                                <option {{ $country == "NF" ? "selected":""   }} value="NF">جزيرة نورفولك</option>
+                                <option {{ $country == "MK" ? "selected":""   }} value="MK">مقدونيا الشمالية</option>
+                                <option {{ $country == "MP" ? "selected":""   }} value="MP">جزر مريانا الشمالية</option>
+                                <option {{ $country == "NO" ? "selected":""   }} value="NO">النرويج</option>
+                                <option {{ $country == "OM" ? "selected":""   }} value="OM">سلطنة عمان</option>
+                                <option {{ $country == "PK" ? "selected":""   }} value="PK">باكستان</option>
+                                <option {{ $country == "PW" ? "selected":""   }} value="PW">بالاو</option>
+                                <option {{ $country == "PS" ? "selected":""   }} value="PS">فلسطين، ولاية</option>
+                                <option {{ $country == "PA" ? "selected":""   }} value="PA">بنما</option>
+                                <option {{ $country == "PG" ? "selected":""   }} value="PG">بابوا غينيا الجديدة</option>
+                                <option {{ $country == "PY" ? "selected":""   }} value="PY">باراجواي</option>
+                                <option {{ $country == "PE" ? "selected":""   }} value="PE">بيرو</option>
+                                <option {{ $country == "PH" ? "selected":""   }} value="PH">فيلبيني</option>
+                                <option {{ $country == "PN" ? "selected":""   }} value="PN">بيتكيرن</option>
+                                <option {{ $country == "PL" ? "selected":""   }} value="PL">بولندا</option>
+                                <option {{ $country == "PT" ? "selected":""   }} value="PT">البرتغال</option>
+                                <option {{ $country == "PR" ? "selected":""   }} value="PR">بويرتو ريكو</option>
+                                <option {{ $country == "QA" ? "selected":""   }} value="QA">دولة قطر</option>
+                                <option {{ $country == "RE" ? "selected":""   }} value="RE">رونيون</option>
+                                <option {{ $country == "RO" ? "selected":""   }} value="RO">رومانيا</option>
+                                <option {{ $country == "RU" ? "selected":""   }} value="RU">الاتحاد الروسي</option>
+                                <option {{ $country == "RW" ? "selected":""   }} value="RW">رواندا</option>
+                                <option {{ $country == "BL" ? "selected":""   }} value="BL">سانت بارثيم </option>
+                                <option {{ $country == "SH" ? "selected":""   }} value="SH">سانت هيلانة، الصعود و ترابيسان دا كونا</option>
+                                <option {{ $country == "KN" ? "selected":""   }} value="KN">سانت كيتس ونيفيس</option>
+                                <option {{ $country == "LC" ? "selected":""   }} value="LC">القديسة لوسيا</option>
+                                <option {{ $country == "MF" ? "selected":""   }} value="MF">سانت مارتن (الجزء الفرنسي)</option>
+                                <option {{ $country == "PM" ? "selected":""   }} value="PM">سانت بيير وميكلون</option>
+                                <option {{ $country == "VC" ? "selected":""   }} value="VC">سانت فنسنت وجزر غرينادين</option>
+                                <option {{ $country == "WS" ? "selected":""   }} value="WS">ساموا</option>
+                                <option {{ $country == "SM" ? "selected":""   }} value="SM">سان مارينو</option>
+                                <option {{ $country == "ST" ? "selected":""   }} value="ST">ساو تومي وبرينسيبي</option>
+                                <option {{ $country == "SA" ? "selected":""   }} value="SA">المملكة العربية السعودية</option>
+                                <option {{ $country == "SN" ? "selected":""   }} value="SN">السنغال</option>
+                                <option {{ $country == "RS" ? "selected":""   }} value="RS">صربيا</option>
+                                <option {{ $country == "SC" ? "selected":""   }} value="SC">سيشيل</option>
+                                <option {{ $country == "SL" ? "selected":""   }} value="SL">سيرا ليون</option>
+                                <option {{ $country == "SG" ? "selected":""   }} value="SG">سنغافورة</option>
+                                <option {{ $country == "SX" ? "selected":""   }} value="SX">سينت مارتن (الجزء الهولندي)</option>
+                                <option {{ $country == "SK" ? "selected":""   }} value="SK">سلوفاكيا</option>
+                                <option {{ $country == "SI" ? "selected":""   }} value="SI">سلوفينيا</option>
+                                <option {{ $country == "SB" ? "selected":""   }} value="SB">جزر سليمان</option>
+                                <option {{ $country == "SO" ? "selected":""   }} value="SO">الصومال</option>
+                                <option {{ $country == "ZA" ? "selected":""   }} value="ZA">جنوب أفريقيا</option>
+                                <option {{ $country == "GS" ? "selected":""   }} value="GS">جورجيا الجنوبية وجزر ساندويتش الجنوبية</option>
+                                <option {{ $country == "SS" ? "selected":""   }} value="SS">جنوب السودان</option>
+                                <option {{ $country == "ES" ? "selected":""   }} value="ES">إسبانيا</option>
+                                <option {{ $country == "LK" ? "selected":""   }} value="LK">سيريلانكا</option>
+                                <option {{ $country == "SD" ? "selected":""   }} value="SD">السودان</option>
+                                <option {{ $country == "SR" ? "selected":""   }} value="SR">سورينام</option>
+                                <option {{ $country == "SJ" ? "selected":""   }} value="SJ">سفالبارد وجان ماين</option>
+                                <option {{ $country == "SE" ? "selected":""   }} value="SE">السويد</option>
+                                <option {{ $country == "CH" ? "selected":""   }} value="CH">سويسرا</option>
+                                <option {{ $country == "SY" ? "selected":""   }} value="SY">الجمهورية العربية السورية</option>
+                                <option {{ $country == "TW" ? "selected":""   }} value="TW">تايوان</option>
+                                <option {{ $country == "TJ" ? "selected":""   }} value="TJ">طاجيكستان</option>
+                                <option {{ $country == "TZ" ? "selected":""   }} value="TZ">تنزانيا، جمهورية المملكة المتحدة</option>
+                                <option {{ $country == "TH" ? "selected":""   }} value="TH">تايلاند</option>
+                                <option {{ $country == "TL" ? "selected":""   }} value="TL">تيمور - ليشتي</option>
+                                <option {{ $country == "TG" ? "selected":""   }} value="TG">توجو</option>
+                                <option {{ $country == "TK" ? "selected":""   }} value="TK">توكيلاو</option>
+                                <option {{ $country == "TO" ? "selected":""   }} value="TO">تونغا</option>
+                                <option {{ $country == "TT" ? "selected":""   }} value="TT">ترينداد وتوباغو</option>
+                                <option {{ $country == "TN" ? "selected":""   }} value="TN">تونس</option>
+                                <option {{ $country == "TR" ? "selected":""   }} value="TR">ديك رومى</option>
+                                <option {{ $country == "TM" ? "selected":""   }} value="TM">تركمانستان</option>
+                                <option {{ $country == "TC" ? "selected":""   }} value="TC">جزر تركس وكايكوس</option>
+                                <option {{ $country == "TV" ? "selected":""   }} value="TV">توفالو</option>
+                                <option {{ $country == "UG" ? "selected":""   }} value="UG">أوغندا</option>
+                                <option {{ $country == "UA" ? "selected":""   }} value="UA">أوكرانيا</option>
+                                <option {{ $country == "AE" ? "selected":""   }} value="AE">الإمارات العربية المتحدة</option>
+                                <option {{ $country == "GB" ? "selected":""   }} value="GB">المملكة المتحدة</option>
+                                <option {{ $country == "US" ? "selected":""   }} value="US">الولايات المتحدة الأمريكية</option>
+                                <option {{ $country == "UM" ? "selected":""   }} value="UM">جزر الولايات المتحدة البعيدة الصغرى</option>
+                                <option {{ $country == "UY" ? "selected":""   }} value="UY">أوروجواي</option>
+                                <option {{ $country == "UZ" ? "selected":""   }} value="UZ">أوزبكستان</option>
+                                <option {{ $country == "VU" ? "selected":""   }} value="VU">فانواتو</option>
+                                <option {{ $country == "VE" ? "selected":""   }} value="VE">فنزويلا (جمهورية البوليفارية)</option>
+                                <option {{ $country == "VN" ? "selected":""   }} value="VN">فييت نام</option>
+                                <option {{ $country == "VG" ? "selected":""   }} value="VG">جزر العذراء البريطانية</option>
+                                <option {{ $country == "VI" ? "selected":""   }} value="VI">جزر فيرجن (الولايات المتحدة)</option>
+                                <option {{ $country == "WF" ? "selected":""   }} value="WF">واليس وفوتونا</option>
+                                <option {{ $country == "EH" ? "selected":""   }} value="EH">الصحراء الغربية</option>
+                                <option {{ $country == "YE" ? "selected":""   }} value="YE">اليمن</option>
+                                <option {{ $country == "ZM" ? "selected":""   }} value="ZM">زامبيا</option>
+                                <option {{ $country == "ZW" ? "selected":""   }} value="ZW">زيمبابوي</option>
+                                
                             </select>
 
 
@@ -374,7 +375,7 @@
                         <div class="form-group">
                             
                             <select class="form-input" value="{{ $city }}" required  name="city">
-                                <option> المحافظة </option>
+                                <option value="Cairo"> المحافظة </option>
                                 <option {{ $city == "Alexandria" ? "selected":"" }} value="Alexandria">الإسكندرية</option>
                                 <option {{ $city == "Ismailia" ? "selected":"" }} value="Ismailia">الإسماعيلية</option>
                                 <option {{ $city == "Aswan" ? "selected":"" }} value="Aswan">أسوان</option>
